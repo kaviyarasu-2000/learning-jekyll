@@ -6,27 +6,33 @@ body{
 }
 .box{
     
-     background-image:url("https://th.bing.com/th/id/R.f7530fdef06d86245c8cd739f2a5cf76?rik=EUjOSc4UjUYVCQ&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f04%2fMountain-wallpaper-HD-pictures-images-photos.jpg&ehk=vq8nbZerNFD2C1EvsPq8%2fibw03iCbvqKJ%2bMAVqR4YRk%3d&risl=&pid=ImgRaw&r=0" );
+     background-image:url("image/image.jpg");
     font-size: 20px;
     padding-bottom: 30px;
     padding-top: 40px;
-   
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     padding-left: 40px;
-    padding-right: 0px;
     color: snow;
+    height: 340px;
 
+}
+span{
+    opacity: 50%;
+}
+tr{
+    height: 0px;
 }
 .photo{ 
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 40px;
     border: 0%;
-    text-decoration-color:white;
     background-color: #0674be;
     margin:0%;
     color: white;
 }
-.table{
+table{
     padding-top: 5px;
     padding-bottom: 3px;
     border-spacing:30px;
@@ -34,30 +40,51 @@ body{
 td, th{
     border-left-style: solid;
     border-color:#2596be;
-    padding: 5px;
+    padding-left: 20px;
     border-left= 5px;
+    font-size: x-large;
 }
 img{ 
-    border-radius: 100%;
+    border-radius: 50%;
+    border: 5px solid grey;
+    
+
 }
-.About{
+.about{
     padding-top: 20px;
     border-left-width: 10px;
-    border-color: black;
     background-color: #067ecb;
     padding-bottom: 40px;
     color: white;
     padding-left: 30px;
     
     }
-#two{
-    margin-top: 0px;
+.end-span{
+    font-size: 80px;
+    position: relative;
+    top: 80px;
+
 }
-#one{
+.two{
+    border-left-style: solid;
+    border-color:#2596be;
+    border-left= 5px;
+    padding-left: 20px;
+}
+.about p{
+      
+    margin-bottom: 0px;
+    line-height: 30px;
+}
+.one{
     opacity: 50%;
     margin-top: 0px;
 }
-#end{
-    padding-left: 20px;
+.end{
+    padding-left: 40px;
     font-family: sans-serif;
+    text-align:match-parent;
+    margin: 0;
+        font-size: xx-large;
+        
 }
