@@ -1,21 +1,17 @@
 body{
     width:1200px;
- margin: auto;
-    font-family:Arial,Helvetica,sans-serif;
-    
+    margin: auto;
+    font-family: 'Oswald', sans-serif;
 }
-.box{
-    
-     background-image:url("image/image.jpg");
+.head{
+    background-image:url("image/image.jpg");
     font-size: 20px;
     padding-bottom: 30px;
     padding-top: 40px;
     background-size: 100% 100%;
-    background-repeat: no-repeat;
     padding-left: 40px;
-    color: snow;
+    color: #ffffff;
     height: 340px;
-
 }
 span{
     opacity: 50%;
@@ -30,61 +26,57 @@ tr{
     border: 0%;
     background-color: #0674be;
     margin:0%;
-    color: white;
+    color: #ffffff;
 }
 table{
     padding-top: 5px;
-    padding-bottom: 3px;
-    border-spacing:30px;
+    border-spacing:24px;
 }
 td, th{
     border-left-style: solid;
     border-color:#2596be;
     padding-left: 20px;
+    padding-right:85px;
     border-left= 5px;
-    font-size: x-large;
+    font-size: 25px;
 }
 img{ 
     border-radius: 50%;
     border: 5px solid grey;
-    
-
 }
-.about{
+.footer{
     padding-top: 20px;
     border-left-width: 10px;
     background-color: #067ecb;
     padding-bottom: 40px;
-    color: white;
-    padding-left: 30px;
-    
-    }
-.end-span{
+    color: #ffffff;
+    padding-left: 30px;    
+}
+.quts{
     font-size: 80px;
     position: relative;
     top: 80px;
 
 }
-.two{
+.abt{
     border-left-style: solid;
     border-color:#2596be;
     border-left= 5px;
     padding-left: 20px;
 }
-.about p{
-      
+.footer p{
     margin-bottom: 0px;
     line-height: 30px;
 }
-.one{
+.first{
     opacity: 50%;
     margin-top: 0px;
 }
-.end{
+.foot{
     padding-left: 40px;
-    font-family: sans-serif;
-    text-align:match-parent;
     margin: 0;
-        font-size: xx-large;
-        
+        font-size:30px;
+}
+.color{
+    color:#ffff00;
 }
