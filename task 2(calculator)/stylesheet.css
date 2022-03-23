@@ -1,26 +1,22 @@
 .num{
-    color: aliceblue;
+    color: #ffffff;
     position: relative;
-    top:240px;
+    top:243px;
     right:-242px;
     font-size:90px;
 }
-
 .icon{
     position: relative;
-    top: -90px;
-    right: -24px;
+    top: -105px;
+    right: -10px;
     padding-right: 210px;
-    font-size: 18px;
+    font-size: 25px;
     color: white;
-    
 }
 .calculator {
-
     width: 650px;
     margin: 0 auto;
     background: black;
-    
 }
 .display {
     height: 80px;
@@ -43,4 +39,8 @@
 }
 .keyboard button.zero {
     width: 322px;
+}
+.carrier{
+    color: #ffffff;
+    margin-top: 0px;
 }
