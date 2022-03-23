@@ -11,14 +11,14 @@
     right: -10px;
     padding-right: 210px;
     font-size: 25px;
-    color: white;
+    color:#ffffff;
 }
 .calculator {
     width: 650px;
-    margin: 0 auto;
-    background: black;
+    margin: auto;
+    background: #000000;
 }
-.display {
+.screen{
     height: 80px;
     padding-bottom: 250px;
 }
@@ -35,7 +35,7 @@
 }
 .keyboard button.operator {
     background-color: #f57a12;
-    color: white;
+    color: #ffffff;
 }
 .keyboard button.zero {
     width: 322px;
