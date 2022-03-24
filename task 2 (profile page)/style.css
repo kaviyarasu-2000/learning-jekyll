@@ -1,12 +1,8 @@
-
-
 body{
     width:1200px;
     margin: auto;
     font-family: 'Raleway', sans-serif;
 }
-
-
 .head{
     background-image:url("image/image.jpg");
     font-size: 20px;
@@ -28,6 +24,9 @@ span{
     background-color: #0674be;
     margin:0%;
     color: #ffffff;
+    display:flex;
+    height: auto;
+    padding-left: 20px;
 }
 img{ 
     border-radius: 50%;
@@ -76,24 +75,27 @@ img{
     padding-bottom: 2px;
     border-spacing: 10px;
     border-left: solid 3px;
+    border-left-width: 5px;
+    padding-left: 20px;
+    max-width: 300px;
 }
-. bio p{
+. bio . p{
     padding-left:30px;
     border-left: solid 3px;
+    opacity: 50%;
 }
+.glance h2{
+    opacity: 50%;
+    margin-top: 0;
+        padding-left: 25px;
+    color: #ffffff;
 
-
-
-.table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
 }
+.glance{
+    height: 40px;
+    background-color: #0674be;
+    margin-top: 0;
+    margin-bottom: 0;
 
-td, th,tr {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-    width: 100%;
-    border-left-width: 5px;
-    columns: 6;
+
+}
