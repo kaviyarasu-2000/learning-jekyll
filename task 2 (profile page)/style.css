@@ -1,8 +1,12 @@
+
+
 body{
     width:1200px;
     margin: auto;
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
+
+
 .head{
     background-image:url("image/image.jpg");
     font-size: 20px;
@@ -16,9 +20,6 @@ body{
 span{
     opacity: 50%;
 }
-tr{
-    height: 0px;
-}
 .photo{ 
     padding-top: 20px;
     padding-bottom: 20px;
@@ -27,18 +28,6 @@ tr{
     background-color: #0674be;
     margin:0%;
     color: #ffffff;
-}
-table{
-    padding-top: 5px;
-    border-spacing:24px;
-}
-td, th{
-    border-left-style: solid;
-    border-color:#2596be;
-    padding-left: 20px;
-    padding-right:85px;
-    border-left= 5px;
-    font-size: 25px;
 }
 img{ 
     border-radius: 50%;
@@ -62,6 +51,7 @@ img{
     border-color:#2596be;
     border-left= 5px;
     padding-left: 20px;
+    font-family: 'Raleway', sans-serif;
 }
 .footer p{
     margin-bottom: 0px;
@@ -79,3 +69,31 @@ img{
 .color{
     color:#ffff00;
 }
+
+.bio{
+    margin-left: 20px;
+    color: #fefefe;
+    padding-bottom: 2px;
+    border-spacing: 10px;
+    border-left: solid 3px;
+}
+. bio p{
+    padding-left:30px;
+    border-left: solid 3px;
+}
+
+
+
+.table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th,tr {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+    width: 100%;
+    border-left-width: 5px;
+    columns: 6;
