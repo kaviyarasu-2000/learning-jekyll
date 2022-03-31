@@ -1,8 +1,9 @@
+
 .num {
     color: #ffffff;
     position: relative;
     top: 215px;
-    right: -266px;
+    right: -250px;
     font-size: 90px;
     font-family: 'Source Sans Pro', sans-serif;
 }
@@ -11,14 +12,15 @@
     position: relative;
     top: -116px;
     padding-right: 230px;
-    font-size: 24px;
+    font-size: 21px;
     color: #ffffff;
 }
 
 .calculator {
-    width: 650px;
+    width: 636px;
     margin: auto;
     background: #000000;
+    
 }
 
 .screen {
@@ -27,32 +29,34 @@
 }
 
 .keyboard {
-    display: table;
-    padding: 1px;
+    display:flex;
+    flex-flow: wrap;
 }
 
-.keyboard button {
+.keyboard div {
     background-color: #cfd0d2;
-    width: 160px;
-    height: 160px;
+    width: 157px;
+    height: 150px;
+   font-size: 50px;
+   font-family: 'Source Sans Pro', sans-serif;
+    display:flex;
     margin: 1px;
-    font-size: 50px;
-    font-family: 'Source Sans Pro', sans-serif;
+    justify-content: center;
+    align-items: center;
 }
 
-.keyboard button.operator {
+.keyboard div.operator {
     background-color: #f57a12;
     color: #ffffff;
 }
 
-.keyboard button.zero {
-    width: 322px;
+.keyboard div.zero {
+    width: 316px;
 }
 
 .carrier {
     color: #ffffff;
-    margin-top: -75px;
+    margin-top: -30px;
     position: relative;
-    left: 62px;
-    bottom: -18px;
+    left: 38px;
 }
