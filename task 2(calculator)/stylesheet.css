@@ -1,62 +1,60 @@
-
 .num {
-    color: #ffffff;
-    position: relative;
-    top: 215px;
-    right: -250px;
-    font-size: 90px;
-    font-family: 'Source Sans Pro', sans-serif;
+   color: #ffffff;
+   position: relative;
+   top: 215px;
+   right: -250px;
+   font-size: 90px;
+   font-family: 'Source Sans Pro', sans-serif;
 }
 
 .icon {
-    position: relative;
-    top: -116px;
-    padding-right: 230px;
-    font-size: 21px;
-    color: #ffffff;
+   position: relative;
+   top: -116px;
+   padding-right: 230px;
+   font-size: 21px;
+   color: #ffffff;
 }
 
 .calculator {
-    width: 636px;
-    margin: auto;
-    background: #000000;
-    
+   width: 636px;
+   margin: auto;
+   background: #000000;
 }
 
 .screen {
-    height: 80px;
-    padding-bottom: 250px;
+   height: 80px;
+   padding-bottom: 250px;
 }
 
 .keyboard {
-    display:flex;
-    flex-flow: wrap;
+   display: flex;
+   flex-flow: wrap;
 }
 
 .keyboard div {
-    background-color: #cfd0d2;
-    width: 157px;
-    height: 150px;
+   background-color: #cfd0d2;
+   width: 157px;
+   height: 150px;
    font-size: 50px;
    font-family: 'Source Sans Pro', sans-serif;
-    display:flex;
-    margin: 1px;
-    justify-content: center;
-    align-items: center;
+   display: flex;
+   margin: 1px;
+   justify-content: center;
+   align-items: center;
 }
 
 .keyboard div.operator {
-    background-color: #f57a12;
-    color: #ffffff;
+   background-color: #f57a12;
+   color: #ffffff;
 }
 
 .keyboard div.zero {
-    width: 316px;
+   width: 316px;
 }
 
 .carrier {
-    color: #ffffff;
-    margin-top: -30px;
-    position: relative;
-    left: 38px;
+   color: #ffffff;
+   margin-top: -30px;
+   position: relative;
+   left: 38px;
 }
