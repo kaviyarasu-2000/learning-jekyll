@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+   <title>Basic Calculator using Javascript.</title>
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel=stylesheet href="style.css">
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Source+Sans+Pro:wght@200&display=swap" rel="stylesheet">
+      <script src="https://kit.fontawesome.com/adb809e447.js" crossorigin="anonymous"></script>
+   </head>
+   <body>
+      <div class="calculator">
+         <table>
+            <tr>
+               <td class="icon1">Carrier<i class="fa-solid fa-wifi"></i><td>
+               <td class="icon2">8.42AM</td>
+               <td class="icon3"><i class="fa-solid fa-battery-full"></i></td>
+            </tr>
+         </table>
+         <div><input type="text"  id="solution"/></div>
+         <div class="keyboard">
+            <input type="button" value="c"  onclick="clr()"/>
+            <input type="button" value="+/-"  onclick="button('+/-')"/>
+            <input type="button" value="%"  onclick="button('%')"/>
+            <input type="button" id="operator" value="/"  onclick="button('/')"/>
+            <input type="button" value="7"  onclick="button('7')"/>
+            <input type="button" value="8"  onclick="button('8')"/>
+            <input type="button" value="9"  onclick="button('9')"/>
+            <input type="button" id="operator" value="*"  onclick="button('*')"/>
+            <input type="button" value="4"  onclick="button('4')"/>
+            <input type="button" value="5"  onclick="button('5')"/>
+            <input type="button" value="6"  onclick="button('6')"/>
+            <input type="button" id="operator" value="-"  onclick="button('-')"/>
+            <input type="button" value="1"  onclick="button('1')"/>
+            <input type="button" value="2"  onclick="button('2')"/>
+            <input type="button" value="3"  onclick="button('3')"/>
+            <input type="button" id="operator" value="+"  onclick="button('+')"/>
+            <input type="button" value="0" id="zero" onclick="button('0')"/>
+            <input type="button" value="."  onclick="button('.')"/>
+            <input type="button" id="operator" value="="  onclick="eqvl()"/>
+         </div>
+      </div>
+      <script>
+         function button(val)
+         {
+             document.getElementById("solution").value+=val;
+         }
+         function tokenize(s) {
+         const r = [];
+         let token = '';
+         for (const character of s) {
+             if ('%*/+-'.indexOf(character) > -1) {
+                 if (token === '' && character === '-') {
+                     token = '-';
+                 } else {
+                     r.push(parseFloat(token), character);
+                     token = "";
+                 }
+             } else {
+                 token += character;
+             }
+         }
+         if (token !== '') {
+             r.push(parseFloat(token));
+         }
+         return r;
+         }
+         
+         function calculate(tokens) {
+         const operatorPrecedence = [{'%': (a, b) => a % b},{'*': (a, b) => a * b, '/': (a, b) => a / b},
+                                     {'+': (a, b) => a + b, '-': (a, b) => a - b}];
+         let operator;
+         for (const operators of operatorPrecedence) {
+             const newTokens = [];
+             for (const token of tokens) {
+                 if (token in operators) {
+                     operator = operators[token];
+                 } else if (operator) {
+                     newTokens[newTokens.length - 1] = 
+                         operator(newTokens[newTokens.length - 1], token);
+                       operator = null;
+                 } else {
+                     newTokens.push(token);
+                 }
+             }
+             tokens = newTokens;
+         }
+         if (tokens.length > 1) {
+
+             return tokens;
+         } else {
+        
+             document.getElementById('solution').value = tokens[0];
+         }
+         }
+         function eqvl(){
+         let a = document.getElementById('solution').value;
+             calculate(tokenize(a));
+         }
+         function clr(){
+             document.getElementById("solution").value="";
+         }
+         
+      </script>
+   </body>
+</html>
