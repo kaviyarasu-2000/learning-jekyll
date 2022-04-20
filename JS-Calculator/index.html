@@ -10,16 +10,12 @@
    </head>
    <body>
       <div class="calculator">
-         <table>
-            <tr>
-               <td class="icon1">Carrier<i class="fa-solid fa-wifi"></i><td>
-               <td class="icon2">8.42AM</td>
-               <td class="icon3"><i class="fa-solid fa-battery-full"></i></td>
-            </tr>
-         </table>
+             <span class="icon1">Carrier&#160; <i class="fa-solid fa-wifi"></i></span>
+             <span  class="icon2">8.42AM</span>
+             <span  class="icon3"><i class="fa-solid fa-battery-full"></i></span>
          <div><input type="text"  id="result"></div>
          <div class="keyboard">
-            <input type="button" value="c"  onclick="clr()"/>
+            <input type="button" value="c"  onclick="clr()">
             <input type="button" value="+/-"  onclick="button('+/-')">
             <input type="button" value="%"  onclick="button('%')">
             <input type="button" id="operator" value="/"  onclick="button('/')">
@@ -40,54 +36,8 @@
             <input type="button" id="operator" value="="  onclick="solve()">
          </div>
       </div>
-       <script>
-       
-function button(a)
-{	
-	document.getElementById("result").value+=a;
-}
-
-function int(){
-		var res = [];
-		var answer;
-
-		if(document.getElementById("result").value.includes("+")){
-		res = document.getElementById("result").value.split('+');
-            return parseInt(res[0]) + parseInt(res[1]);    
-		}
-
-	else	if(document.getElementById("result").value.includes("-")){
-		res = document.getElementById("result").value.split('-');
-		return parseInt(res[0]) - parseInt(res[1]);
-		}
-
-	else	if(document.getElementById("result").value.includes("/")){
-		res = document.getElementById("result").value.split('/');
-		return parseInt(res[0]) / parseInt(res[1]);
-		}
-    
-    else    if(document.getElementById("result").value.includes("%")){
-		res = document.getElementById("result").value.split('%');
-		return parseInt(res[0]) % parseInt(res[1]);
-		}
-
-		else{
-		res = document.getElementById("result").value.split('*');
-		return answer= parseInt(res[0]) * parseInt(res[1]);
-		}
-}
-
-function solve(){	
-var a = int();
-document.getElementById('result').value = a; 
-}
-
-function clr()
-	{
-		document.getElementById('result').value="";
-    }
-       </script>
-       
+       <script type="text/javascript" src="app.js"></script>
       </body>
-      </html>
+    
+</html>
       
