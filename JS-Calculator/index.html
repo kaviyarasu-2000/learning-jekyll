@@ -56,17 +56,17 @@ function int(){
             return parseInt(res[0]) + parseInt(res[1]);    
 		}
 
-		if(document.getElementById("result").value.includes("-")){
+	else	if(document.getElementById("result").value.includes("-")){
 		res = document.getElementById("result").value.split('-');
 		return parseInt(res[0]) - parseInt(res[1]);
 		}
 
-		if(document.getElementById("result").value.includes("/")){
+	else	if(document.getElementById("result").value.includes("/")){
 		res = document.getElementById("result").value.split('/');
 		return parseInt(res[0]) / parseInt(res[1]);
 		}
     
-        if(document.getElementById("result").value.includes("%")){
+    else    if(document.getElementById("result").value.includes("%")){
 		res = document.getElementById("result").value.split('%');
 		return parseInt(res[0]) % parseInt(res[1]);
 		}
