@@ -134,15 +134,38 @@
 			}
 			
 	
+    function loadDataFromLocal() {
+      debugger;
+      let localData = localStorage.getItem('localData');
+      if (localData) {
+        $("#tblData tbody").html("");
+        let localArray = JSON.parse(localData);
+        let index = 1;
+        localArray.forEach(element => {
+          let tableRow = "<tr>";
+           "<td> " + index + "</td>";
+          "<td class='txtName'  data-id=" + element.id + ">" + element.personName + "</td>";
+          "<td class='txtContact'>" + element.assignedTask + "</td>";
+        "<td class='txtAltNo'>" + element.initDate + "</td>";
+         "<td class='txtAddress'>" + element.dueDate + "</td>";
+          "<td class='txtAddress'>" + element.commits + "</td>";
+          "<td class='txtAddress'>" + element.status + "</td>";
+           " </tr>";
+          $("#tblData tbody").append(tableRow);
+          index++;
+        });
+      }
+      addEmptyRow();
+    }
 
-	function loadDataFromLocal() {
-		let localData = localStorage.getItem('localData');
-		let localArray = JSON.parse(localData);
-		if(localData) {
-			buildTable(localArray);
-		}
-		addEmptyRow();
-	}
+//	function loadDataFromLocal() {
+//		let localData = localStorage.getItem('localData');
+//		let localArray = JSON.parse(localData);
+//		if(localData) {
+//			buildTable(localArray);
+//		}
+//		addEmptyRow();
+//	}
 
 	function addDataToLocal() {
 		let localData = localStorage.getItem('localData');
