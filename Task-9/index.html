@@ -1,23 +1,25 @@
-<html lang="en">
+<!DOCTYPE html>
+<html>
 
 <head>
 	<title>Task List</title>
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- Bootstrap CSS -->
+	<!-- Bootstrap cdn -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 	<!--font awesome-->
 	<script src="https://kit.fontawesome.com/11d663dbfb.js" crossorigin="anonymous"></script>
-	<!--jquery-->
+	<!--jquery cdn -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<!--pickadate-->
 	<link rel="stylesheet" href="https://common.olemiss.edu/_js/pickadate.js-3.5.3/lib/themes/classic.css" id="theme_base">
 	<link rel="stylesheet" href="https://common.olemiss.edu/_js/pickadate.js-3.5.3/lib/themes/classic.date.css" id="theme_date"> </head>
 
 <body>
-	<nav class="navbar navbar-expand-lg navbar-light bg-success">
+<!--    nave bar-->
+	<nav class="navbar navbar-expand-lg navbar-light bg-info">
 		<div class="container"> <a class="navbar-brand" href="#">Task List</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button>
 			<div class="collapse navbar-collapse" id="navbarNav">
@@ -39,7 +41,8 @@
 						<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 					</div>
 					<div class="modal-body">
-						<form autocomplete="off" id="form">
+<!--                        form-->
+						<form id="form">
 							<div class="col-mb-3">
 								<label for="assignedTask">Person Name&nbsp;<span style="color: red"> *</span></label>
 								<input type="text" class="form-control txtName " id="txtName" placeholder="Person Name" minlength="3" required>
@@ -49,10 +52,16 @@
 								<input type="text" class="form-control assignedTask" id="assignedTask" placeholder="Assigned tasks" minlength="2" required> </div>
 							<div class="col-mb-3">
 								<label for="dueDate">Starting Date</label>
-								<input autocomplete="off" type="text" autofocuss class="form-control date initDate datepicker" id="initDate" placeholder="Select the starting date" required> </div>
+								<input autocomplete="off" type="text" autofocuss class="form-control date initDate datepicker" id="initDate" placeholder="Select the starting date" minlength="DD/MM/YYYY" required> </div>
 							<div class="col-mb-3">
 								<label for="dueDate">Due date&nbsp;<span style="color: red"> *</span></label>
-								<input autocomplete="off" type="text" name="date" class="form-control date dueDate datepicker" id="dueDate" placeholder="Select the due date" required> </div>
+								<input autocomplete="off" type="text" name="date" class="form-control date dueDate datepicker" id="dueDate" placeholder="Select the due date" minlength="DD/MM/YYYY" required> </div>
+                            
+							<div class="col-mb-3">
+								<label for="commits">Comments</label>
+								<textarea class="form-control commits" placeholder="Write a Comments" id="commits" style="height: 100px"></textarea>
+							</div>
+                            
 							<div class="col-mb-3">
 								<label for="commits">Status&nbsp;<span style="color: red"> *</span></label>
 								<select class="form-select form-select-sm status" id="status" aria-label="form-select-sm example">
@@ -60,10 +69,6 @@
 									<option value="In-progress">In-progress</option>
 									<option value="Success">Success</option>
 								</select>
-							</div>
-							<div class="col-mb-3">
-								<label for="commits">Comments</label>
-								<textarea class="form-control commits" placeholder="Write a Comments" id="commits" style="height: 100px"></textarea>
 							</div>
 							<div class="modal-footer">
 								<button type="submit" class="btn btn-primary" id="btnSave" name="submit" value="Submit">Submit</button>
@@ -81,14 +86,13 @@
 			<table id="tblData" class="table table-bordered table-hover">
 				<thead>
 					<tr>
-						<th class="text-center" id="sno">Sr No</th>
-						<th class="text-center sort " data-column="taskId" data-order="asc"> Task No </th>
-						<th class="text-center name sort" data-column="personName" data-order="des">Person name </th>
+						<th class="text-center">Sr No</th>
+						<th class="text-center">Person name </th>
 						<th class="text-center"> Assigned tasks</th>
-						<th class="text-center sort" data-column="initDate" data-order="des"> Starting Date </th>
-						<th class="text-center sort" data-column="dueDate" data-order="des">Due date </th>
+						<th class="text-center"> Starting Date </th>
+						<th class="text-center">Due date </th>
 						<th class="text-center">Comments</th>
-						<th class="text-center sort" data-column="status" data-order="des">Status </th>
+						<th class="text-center">Status </th>
 						<th class="text-center">Action</th>
 					</tr>
 				</thead>
@@ -96,15 +100,71 @@
 			</table>
 		</div>
 	</div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
 	<!--      pickadate-->
 	<script src="https://common.olemiss.edu/_js/jquery.js"></script>
 	<script src="https://common.olemiss.edu/_js/pickadate.js"></script>
 	<script>
+        
+        
 	let noData = `<tr class="table-dark"><td colspan='9' class='text-center'>No Records Available</td></tr>`;
-	$('.datepicker').pickadate()
-	debugger;
+         function addEmptyRow() {
+      debugger;
+      if ($("#tblData tbody").children().children().length == 0) {
+        $("#tblData tbody").append(noData);
+      }
+    } 
+        
+        
+        $('.datepicker').pickadate()
+        
+        
+        $(document).ready(function() {
+		loadDataFromLocal();
+		$('#tblData').on('click', '.btn-edit', function() {
+            debugger;
+			const personName = $(this).parent().parent().find(".txtName").html();
+			const assignedTask = $(this).parent().parent().find(".assignedTask").html();
+			const initDate = $(this).parent().parent().find(".initDate").html();
+			const dueDate = $(this).parent().parent().find(".dueDate").html();
+			const commits = $(this).parent().parent().find(".commits").html();
+			const status = $(this).parent().parent().find(".status").text();
+			$("#txtName").val(personName);
+			$("#assignedTask").val(assignedTask);
+			$("#initDate").val(initDate);
+			$("#dueDate").val(dueDate);
+			$("#commits").val(commits);
+			$("#status").val(status);
+			$("#btnSave").text("save");
+		});
+             $('#tblData').on('click', '.btn-delete', function () {
+        debugger;
+        const id = $(this).parent().parent().find(".txtName").attr("data-id");
+        deleteDataFromLocal(id);
+      });
 
-	function clearForm() {
+            $("#btnSave").click(function () {
+        debugger;
+        if ($("#txtId").val() == '') {
+          addDataToLocal();
+        } else {
+          updateDataFromLocal();
+        }
+      });
+
+      $("#btnClear").click(function () {
+        debugger;
+        clearForm();
+      });
+    });
+        
+        
+        
+        
+        
+        
+        	function clearForm() {
 		$("#txtName").val("");
 		$("#assignedTask").val("");
 		$("#initDate").val("");
@@ -112,29 +172,10 @@
 		$("#commits").val("");
 		$("#status").val("Open");
 	}
-
-	function addEmptyRow() {
-		if($("#tblData tbody").children().children().length == 0) {
-			$("#tblData tbody").append(noData);
-		}
-	}
-
-	function buildTable(data) {
-		debugger;
-		$("#tblData tbody").html("");
-		let i = 1;
-		let bgColor = "";
-		data.forEach(element => {
-			if(element.status === "In-progress") {
-				bgColor = "table-primary";
-			} else if(element.status === "Success") {
-				bgColor = "table-success";
-			} else {
-				bgColor = "";
-			}
-			
-	
-    function loadDataFromLocal() {
+        
+        
+        
+               function loadDataFromLocal() {
       debugger;
       let localData = localStorage.getItem('localData');
       if (localData) {
@@ -142,90 +183,68 @@
         let localArray = JSON.parse(localData);
         let index = 1;
         localArray.forEach(element => {
-          let tableRow = "<tr>";
-           "<td> " + index + "</td>";
-          "<td class='txtName'  data-id=" + element.id + ">" + element.personName + "</td>";
-          "<td class='txtContact'>" + element.assignedTask + "</td>";
-        "<td class='txtAltNo'>" + element.initDate + "</td>";
-         "<td class='txtAddress'>" + element.dueDate + "</td>";
-          "<td class='txtAddress'>" + element.commits + "</td>";
-          "<td class='txtAddress'>" + element.status + "</td>";
-           " </tr>";
-          $("#tblData tbody").append(tableRow);
+            debugger;
+          let dynamicTR = "<tr>";
+          dynamicTR = dynamicTR + "<td> " + index + "</td>";
+          dynamicTR = dynamicTR + "<td class='txtName'  data-id=" + element.id + ">" + element.personName + "</td>";
+          dynamicTR = dynamicTR + "<td class='assignedTask'>" + element.assignedTask + "</td>";
+          dynamicTR = dynamicTR + "<td class='initDate'>" + element.initDate + "</td>";
+          dynamicTR = dynamicTR + "<td class='dueDate'>" + element.dueDate + "</td>";
+          dynamicTR = dynamicTR + "<td class='commits'>" + element.commits + "</td>";
+          dynamicTR = dynamicTR + "<td class='status'>" + element.status + "</td>";
+          dynamicTR = dynamicTR + "    <td class='tdAction text-center'>";
+          dynamicTR = dynamicTR + "        <button class='btn btn-sm btn-success btn-edit  data-bs-toggle=`modal` data-bs-target=`#staticBackdrop'> Edit</button>";
+          dynamicTR = dynamicTR + "        <button class='btn btn-sm btn-danger btn-delete'> Delete</button>";
+          dynamicTR = dynamicTR + "    </td>";
+          dynamicTR = dynamicTR + " </tr>";
+          $("#tblData tbody").append(dynamicTR);
           index++;
         });
       }
       addEmptyRow();
     }
-
-//	function loadDataFromLocal() {
-//		let localData = localStorage.getItem('localData');
-//		let localArray = JSON.parse(localData);
-//		if(localData) {
-//			buildTable(localArray);
-//		}
-//		addEmptyRow();
-//	}
-
-	function addDataToLocal() {
-		let localData = localStorage.getItem('localData');
-		let taskStorage = localStorage.getItem('taskStorage');
-		if(taskStorage) {
-			let taskStorageArray = JSON.parse(taskStorage);
-			let taskId = taskStorageArray.length + 1;
-			taskStorageArray.push(taskId);
-			localStorage.setItem('taskStorage', JSON.stringify(taskStorageArray));
-			console.log((taskStorageArray))
-		} else {
-			const taskobj = [];
-			const taskId = 1;
-			taskobj.push(taskId);
-			localStorage.setItem('taskStorage', JSON.stringify(taskobj));
-		}
-		if(localData) {
-			let taskStorage = localStorage.getItem('taskStorage');
-			let taskStorageArray = JSON.parse(taskStorage);
-			let localArray = JSON.parse(localData);
-			const obj = {
-				id: localArray.length + 1,
-				taskId: taskStorageArray.length,
+        
+        
+            function addDataToLocal() {
+      debugger;
+      let localData = localStorage.getItem('localData');
+      if (localData) {
+        let localArray = JSON.parse(localData);
+        const obj = {
+          id: localArray.length + 1,
 				personName: $("#txtName").val(),
 				assignedTask: $("#assignedTask").val(),
 				initDate: $("#initDate").val(),
 				dueDate: $("#dueDate").val(),
 				commits: $("#commits").val(),
 				status: $("#status").val()
-			};
-			localArray.push(obj);
-			localStorage.setItem('localData', JSON.stringify(localArray));
-			loadDataFromLocal();
-		} else {
-			let taskStorage = localStorage.getItem('taskStorage');
-			let taskStorageArray = JSON.parse(taskStorage);
-			const arryObj = [];
-			const obj = {
-				id: 1,
+        };
+        localArray.push(obj);
+        localStorage.setItem('localData', JSON.stringify(localArray));
+        loadDataFromLocal();
+      } else {
+        const arryObj = [];
+        const obj = {
+          id: 1,
+             
 				personName: $("#txtName").val(),
 				assignedTask: $("#assignedTask").val(),
 				initDate: $("#initDate").val(),
 				dueDate: $("#dueDate").val(),
 				commits: $("#commits").val(),
 				status: $("#status").val()
-			};
-			console.log(taskStorageArray)
-			if(taskStorage) {
-				obj.taskId = taskStorageArray.length;
-			} else {
-				obj.taskId = 1;
-			}
-			arryObj.push(obj);
-			localStorage.setItem('localData', JSON.stringify(arryObj));
-			loadDataFromLocal();
-		}
-		clearForm();
-	}
-
-	function updateDataFromLocal() {
+        };
+        arryObj.push(obj);
+        localStorage.setItem('localData', JSON.stringify(arryObj));
+        loadDataFromLocal();
+      }
+      clearForm();
+    }
+     
+        
+        
+        
+        	function updateDataFromLocal() {
 		let localData = localStorage.getItem('localData');
 		let localArray = JSON.parse(localData);
 		const oldRecord = localArray.find(m => m.id == $("#txtId").val());
@@ -240,67 +259,27 @@
 		clearForm();
 	}
 
-	function deleteDataFromLocal(id) {
-		let localData = localStorage.getItem('localData');
-		let localArray = JSON.parse(localData);
-		let i = 0;
-		while(i < localArray.length) {
-			if(localArray[i].id === Number(id)) {
-				localArray.splice(i, 1);
-			} else {
-				++i;
-			}
-		}
-		localStorage.setItem('localData', JSON.stringify(localArray));
-		loadDataFromLocal();
-	}
-	$(document).ready(function() {
-		loadDataFromLocal();
-		$('#tblData').on('click', '.btn-edit', function() {
-			console.log($(this));
-			const personName = $(this).parent().parent().find(".txtName").html();
-			const assignedTask = $(this).parent().parent().find(".assignedTask").html();
-			const initDate = $(this).parent().parent().find(".initDate").html();
-			const dueDate = $(this).parent().parent().find(".dueDate").html();
-			const commits = $(this).parent().parent().find(".commits").html();
-			const id = $(this).parent().parent().find(".txtName").attr("data-id");
-			const status = $(this).parent().parent().find(".status").text();
-			console.log($('#status'));
-			$("#txtName").val(personName);
-			$("#assignedTask").val(assignedTask);
-			$("#initDate").val(initDate);
-			$("#dueDate").val(dueDate);
-			$("#commits").val(commits);
-			$("#txtId").val(id);
-			$("#status").val(status);
-			$("#btnSave").text("Save");
-		});
-		$('#tblData').on('click', '.btn-delete', function() {
-			const id = $(this).parent().parent().find(".txtName").attr("data-id");
-			deleteDataFromLocal(id);
-		});
-		$('.newEntry').on('click', function() {
-			clearForm();
-		})
-
-		$("#status").change(function() {
-			if($("#status").val() === 'In-progress' || $("#status").val() === 'Success') {
-				console.log("true");
-				$('#initDate').attr('required', true);
-			}
-		});
-		$("#form").on('submit', function() {
-			if($("#txtId").val() == '') {
-				addDataToLocal();
-			} else {
-				updateDataFromLocal();
-			}
-		});
-		$("#btnClear").click(function() {
-			clearForm();
-		});
-	});
+        
+            function deleteDataFromLocal(id) {
+      debugger;
+      let localData = localStorage.getItem('localData');
+      let localArray = JSON.parse(localData);
+      let i = 0;
+      while (i < localArray.length) {
+        if (localArray[i].id === Number(id)) {
+          localArray.splice(i, 1);
+        } else {
+          ++i;
+        }
+      }
+      localStorage.setItem('localData', JSON.stringify(localArray));
+      loadDataFromLocal();
+    }
+        
+        
+        
 	</script>
+    
 </body>
 
 </html>
