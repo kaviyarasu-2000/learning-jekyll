@@ -5,7 +5,7 @@ $('.datepicker').pickadate({
 let noData = `<tr class="table-dark"><td colspan='9' class='text-center'>No Records Available</td></tr>`;
 
 function addEmptyRow() {
-    debugger;
+    
     if ($("#tblData tbody").children().children().length == 0) {
         $("#tblData tbody").append(noData);
     }
@@ -33,14 +33,13 @@ function buildTable(data) {
         } else if (element.status == "Success") {
             bgColor = "table-success";
         } else {
-            bgColor = "";
+            bgColor = "table-light";
         }
 
         let tableRow = `
-          <tr class="${bgColor}">
-          <td class="text-center"> ${i}</td>
-          <td class='text-center'>${element.taskId}</td>
-          <td class='txtName'  data-id="${element.id}">${element.personName} </td>
+          <tr class='${bgColor}'>
+          <td class='text-center'> ${i}</td>
+          <td class='txtName' data-id="${element.id}">${element.personName} </td>
           <td class='assignedTask'>${element.assignedTask}</td>
           <td class='initDate'>${element.initDate}</td>
           <td class='dueDate'>${element.dueDate}</td>
@@ -67,26 +66,12 @@ function loadDataFromLocal() {
 
 function addDataToLocal() {
     let localData = localStorage.getItem('localData');
-    let taskStorage = localStorage.getItem('taskStorage');
-    if (taskStorage) {
-        let taskStorageArray = JSON.parse(taskStorage);
-        let taskId = taskStorageArray.length + 1;
-        taskStorageArray.push(taskId);
-        localStorage.setItem('taskStorage', JSON.stringify(taskStorageArray));
 
-    } else {
-        const taskobj = [];
-        const taskId = 1;
-        taskobj.push(taskId);
-        localStorage.setItem('taskStorage', JSON.stringify(taskobj));
-    }
     if (localData) {
-        let taskStorage = localStorage.getItem('taskStorage');
-        let taskStorageArray = JSON.parse(taskStorage);
+
         let localArray = JSON.parse(localData);
         const obj = {
             id: localArray.length + 1,
-            taskId: taskStorageArray.length,
             personName: $("#txtName").val(),
             assignedTask: $("#assignedTask").val(),
             initDate: $("#initDate").val(),
@@ -96,28 +81,6 @@ function addDataToLocal() {
         };
         localArray.push(obj);
         localStorage.setItem('localData', JSON.stringify(localArray));
-        loadDataFromLocal();
-    } else {
-        let taskStorage = localStorage.getItem('taskStorage');
-        let taskStorageArray = JSON.parse(taskStorage);
-        const arryObj = [];
-        const obj = {
-            id: 1,
-            personName: $("#txtName").val(),
-            assignedTask: $("#assignedTask").val(),
-            initDate: $("#initDate").val(),
-            dueDate: $("#dueDate").val(),
-            comments: $("#comments").val(),
-            status: $("#status").val()
-        };
-
-        if (taskStorage) {
-            obj.taskId = taskStorageArray.length;
-        } else {
-            obj.taskId = 1;
-        }
-        arryObj.push(obj);
-        localStorage.setItem('localData', JSON.stringify(arryObj));
         loadDataFromLocal();
     }
     clearForm();
@@ -162,7 +125,6 @@ $(document).ready(function() {
         const comments = $(this).parent().parent().find(".comments").html();
         const id = $(this).parent().parent().find(".txtName").attr("data-id");
         const status = $(this).parent().parent().find(".status").text();
-        console.log($('#status'));
         $("#txtName").val(personName);
         $("#assignedTask").val(assignedTask);
         $("#initDate").val(initDate);
@@ -174,7 +136,7 @@ $(document).ready(function() {
     });
 
     $('#tblData').on('click', '.btn-delete', function() {
-        debugger;
+        
         const id = $(this).parent().parent().find(".txtName").attr("data-id");
         deleteDataFromLocal(id);
     });
@@ -189,6 +151,7 @@ $(document).ready(function() {
 
             updateDataFromLocal();
         }
+          $('#staticBackdrop').modal('hide');
     });
     $("#btnClear").click(function() {
         clearForm();

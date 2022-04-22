@@ -41,19 +41,19 @@
                <div class="modal-content ">
                   <div class="modal-header">
                      <h5 class="modal-title" id="staticBackdropLabel">Fill the Details.</h5>
-                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" ></button>
                   </div>
                   <div class="modal-body">
                      <!--form-->
-                     <form id="form" autocomplete="off">
+                     <form id="form" autocomplete="off" onsubmit="return false">
                         <div class="col-mb-3">
-                           <label for="personName">Person Name&nbsp; <span style="color: #FF0000"> *</span>
+                           <label for="personName">Person Name&nbsp; <span class="text-danger">*</span>
                            </label>
                            <input type="text" class="form-control txtName " id="txtName" placeholder="Person Name" minlength="3" required>
                            <input id="txtId" type="hidden">
                         </div>
                         <div class="col-mb-3">
-                           <label for="assignedTask">Assigned Tasks&nbsp; <span style="color: #FF0000"> *</span>
+                           <label for="assignedTask">Assigned Tasks&nbsp; <span class="text-danger">*</span>
                            </label>
                            <input type="text" class="form-control assignedTask" id="assignedTask" placeholder="Assigned task" minlength="1" required>
                         </div>
@@ -62,7 +62,7 @@
                            <input type="text" autofocuss class="form-control date initDate datepicker" id="initDate" placeholder="Select the starting date" required>
                         </div>
                         <div class="col-mb-3">
-                           <label for="dueDate">Due Date&nbsp; <span style="color: #FF0000"> *</span>
+                           <label for="dueDate">Due Date&nbsp; <span class="text-danger">*</span>
                            </label>
                            <input type="text" name="date" class="form-control date dueDate datepicker" id="dueDate" placeholder="Select the due date" required>
                         </div>
@@ -71,7 +71,7 @@
                            <textarea class="form-control comments" placeholder="Write a Comments" id="comments" style="height: 100px"></textarea>
                         </div>
                         <div class="col-mb-3">
-                           <label for="status">Status&nbsp; <span style="color: #FF0000"> *</span>
+                           <label for="status">Status&nbsp; <span class="text-danger">*</span>
                            </label>
                            <select class="form-select form-select-sm status" id="status" aria-label="form-select-sm example">
                               <option>Open</option>
@@ -91,12 +91,11 @@
       </div>
       <!--table data-->
       <div class=" container mt-5">
-         <div class="col-md-12 col-sm-12">
+         <div class="col-md-12 table-responsive col-sm-12">
             <table id="tblData" class="table table-bordered table-hover">
                <thead>
                   <tr>
                      <th class="text-center">Sr No</th>
-                     <th class="text-center">Task No</th>
                      <th class="text-center">Person Name </th>
                      <th class="text-center">Assigned Task</th>
                      <th class="text-center">Starting Date </th>
