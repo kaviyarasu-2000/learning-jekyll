@@ -1,45 +1,59 @@
-function button(a)
-{	
-	document.getElementById("result").value+=a;
-}
+    function button(val)
+         {
+             document.getElementById("solution").value+=val;
+         }
+         function answer(s) {
+         const r = [];
+         let number = " ";
+         for (const character of s) {
+             if ('%*/+-'.indexOf(character) > -1) {
+                 if (number === '' && character === '-') {
+                     number = '-';
+                 } else {
+                     r.push(parseFloat(number), character);
+                     number = "";
+                 }
+             } else {
+                 number += character;
+             }
+         }
+         if (number !== '') {
+             r.push(parseFloat(number));
+         }
+         return r;
+         }
+         
+         function calculate(numbers) {
+         const operatorPrecedence = [{'%': (a, b) => a % b},{'*': (a, b) => a * b, '/': (a, b) => a / b},
+                                     {'+': (a, b) => a + b, '-': (a, b) => a - b}];
+         let operator;
+         for (const operators of operatorPrecedence) {
+             const newNumbers = [];
+             for (const number of numbers) {
+                 if (number in operators) {
+                     operator = operators[number];
+                 } else if (operator) {
+                     newNumbers[newNumbers.length - 1] = 
+                         operator(newNumbers[newNumbers.length - 1], number);
+                       operator = null;
+                 } else {
+                     newNumbers.push(number);
+                 }
+             }
+             numbers = newNumbers;
+         }
+         if (numbers.length > 1) {
 
-function int(){
-		var res = [];
-		var answer;
-
-		if(document.getElementById("result").value.includes("+")){
-		res = document.getElementById("result").value.split('+');
-            return parseInt(res[0]) + parseInt(res[1]);    
-		}
-
-	else if(document.getElementById("result").value.includes("-")){
-		res = document.getElementById("result").value.split('-');
-		return parseInt(res[0]) - parseInt(res[1]);
-		}
-
-	else if(document.getElementById("result").value.includes("/")){
-		res = document.getElementById("result").value.split('/');
-		return parseInt(res[0]) / parseInt(res[1]);
-		}
-    
-    else if(document.getElementById("result").value.includes("%")){
-		res = document.getElementById("result").value.split('%');
-		return parseInt(res[0]) % parseInt(res[1]);
-		}
-
-		else{
-		res = document.getElementById("result").value.split('*');
-		return answer= parseInt(res[0]) * parseInt(res[1]);
-		}
-}
-
-function solve(){	
-var a = int();
-document.getElementById('result').value = a; 
-}
-
-function clr()
-	{
-		document.getElementById('result').value="";
-    }
-       
+             return numbers;
+         } else {
+        
+             document.getElementById('solution').value = numbers[0];
+         }
+         }
+         function solve(){
+         let a = document.getElementById('solution').value;
+             calculate(answer(a));
+         }
+         function clr(){
+             document.getElementById("solution").value="";
+         }
