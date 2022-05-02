@@ -17,7 +17,7 @@
    color: 	#FFFFFF;
    padding-left: 110px;
 }
-
+ 
 .keyboard {
    display: flex;
    flex-wrap: wrap;
@@ -31,6 +31,8 @@ input[type="text"] {
    color: white;
    height: 130px;
    font-size: 50px;
+   font-family: 'Source Sans Pro', sans-serif;
+    
 }
 
 #operator {
