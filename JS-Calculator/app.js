@@ -1,8 +1,8 @@
-function button(value) {
-    document.getElementById("solution").value += value;
+function button(a) {
+    document.getElementById("solution").value += a;
 }
-   
-function result(s) {
+function answer(s) {
+    
     const r = [];
     let number = '';
     for (const char of s) {
@@ -23,34 +23,35 @@ function result(s) {
     return r;
 }
 
-function calculate(numbers) {
+function calculate(numbers) { 
+    
     const operatorPrecedence = [{
-            '%': function(a, b) {
-                return a % b
-            }
-        },
-        {
-            '*': function(a, b) {
-                return a * b
-            },
-            'x': function(a, b) {
-                return a * b
-            },
-            '/': function(a, b) {
-                return a / b
-            },
-        },
-        {
-            '+': function(a, b) {
-                return a + b
-            },
-            '-': function(a, b) {
-                return a - b
-            }
+        '%': function (a, b) {
+            return a % b
         }
+    },
+    {
+        '*': function (a, b) {
+            return a * b
+        },
+        'x': function (a, b) {
+            return a * b
+        },
+        '/': function (a, b) {
+            return a / b
+        },
+    },
+    {
+        '+': function (a, b) {
+            return a + b
+        },
+        '-': function (a, b) {
+            return a - b
+        }
+    }
     ];
     let operator;
-    for (const operators of operatorPrecedence) {
+    for (const operators of operatorPrecedence) { debugger;
         const newNumbers = [];
         for (const number of numbers) {
             if (number in operators) {
@@ -73,12 +74,10 @@ function calculate(numbers) {
         document.getElementById('solution').value = numbers[0];
     }
 }
-
 function solve() {
     let a = document.getElementById('solution').value;
-    calculate(result(a));
+    calculate(answer(a));
 }
-
 function clr() {
-    document.getElementById("solution").value = " ";
-};
+    document.getElementById("solution").value = "";
+}
