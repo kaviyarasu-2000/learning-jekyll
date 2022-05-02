@@ -51,7 +51,7 @@ function calculate(numbers) {
     }
     ];
     let operator;
-    for (const operators of operatorPrecedence) { debugger;
+    for (const operators of operatorPrecedence) { 
         const newNumbers = [];
         for (const number of numbers) {
             if (number in operators) {
