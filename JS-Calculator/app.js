@@ -1,17 +1,18 @@
 function button(a) {
     document.getElementById("solution").value += a;
 }
+
 function answer(s) {
-    
-    const r = [];
-    let number = '';
-    for (const char of s) {
+
+    var r = [];
+    var number = '';
+    for (let char of s) {
         if ('%*/+-'.indexOf(char) > -1) {
-            if (number === '' && char === '-') {
-                number = '-';
+            if (number === '' && (char === '-' || char === '+')) {
+                number = char;
             } else {
                 r.push(parseFloat(number), char);
-                number = "";
+                number = '';
             }
         } else {
             number += char;
@@ -23,37 +24,66 @@ function answer(s) {
     return r;
 }
 
-function calculate(numbers) { 
-    
-    const operatorPrecedence = [{
-        '%': function (a, b) {
-            return a % b
-        }
-    },
-    {
-        '*': function (a, b) {
-            return a * b
-        },
-        'x': function (a, b) {
-            return a * b
-        },
-        '/': function (a, b) {
-            return a / b
-        },
-    },
-    {
-        '+': function (a, b) {
-            return a + b
-        },
-        '-': function (a, b) {
-            return a - b
+function plusminus() {
+    let inpute = document.getElementById("solution").value;
+    let number = '';
+    let r = [];
+    for (let char of inpute) {
+        if ('+-*x/%'.indexOf(char) > -1) {
+            if (number === '' && (char === '-' || char === '+')) {
+                number = char;
+            } else {
+                r.push(parseFloat(number), char);
+                number = '';
+            }
+        } else {
+            number += char;
         }
     }
+
+    if (number !== '') {
+        r.push(parseFloat(number));
+
+        if (r[r.length - 1] > 0) {
+            
+            r[r.length - 1] = -Math.abs(r[r.length - 1])
+        } else {
+            r[r.length - 1] = +Math.abs(r[r.length - 1])
+        }
+        r = r.toString();
+        r = r.replace(/,/g, '');
+        document.getElementById('solution').value = r;
+    }
+}
+
+function calculate(numbers) {
+    const operatorPrecedence = [{
+            '%': function(a, b) {
+                return (a / 100) * b
+            }
+        },
+        {
+            '*': function(a, b) {
+                return a * b
+            },
+            '/': function(a, b) {
+                return a / b
+            },
+        },
+        {
+            '+': function(a, b) {
+                return a + b
+            },
+            '-': function(a, b) {
+                return a - b
+            }
+
+        }
     ];
     let operator;
-    for (const operators of operatorPrecedence) { 
-        const newNumbers = [];
-        for (const number of numbers) {
+    for (let operators of operatorPrecedence) {
+        let newNumbers = [];
+        for (let number of numbers) {
             if (number in operators) {
                 operator = operators[number];
             } else if (operator) {
@@ -71,13 +101,15 @@ function calculate(numbers) {
         return numbers;
     } else {
 
-        document.getElementById('solution').value = numbers[0];
+        document.getElementById('solution').value = numbers;
     }
 }
+
 function solve() {
     let a = document.getElementById('solution').value;
     calculate(answer(a));
 }
+
 function clr() {
     document.getElementById("solution").value = "";
 }

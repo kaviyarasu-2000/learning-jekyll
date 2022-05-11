@@ -1,30 +1,31 @@
 .calculator {
-   width: 350px;
+   width: 348px;
    margin: auto;
    background: #000000;
 }
 
 .icon1 {
-   color: 	#FFFFFF;
+   color: #FFFFFF;
 }
 
 .icon2 {
-   color: 	#FFFFFF;
+   color: #FFFFFF;
    padding-left: 85px;
 }
 
 .icon3 {
-   color: 	#FFFFFF;
-   padding-left: 110px;
+   color: #FFFFFF;
+   padding-left: 107px;
 }
  
 .keyboard {
    display: flex;
    flex-wrap: wrap;
+    
 }
 
 input[type="text"] {
-   width: 345px;
+   width: 340px;
    background-color: #000000;
    border:none;
    text-align-last: right;
@@ -49,5 +50,5 @@ input[type="button"] {
 }
 
 #zero {
-   width: 175px;
+   width: 174px;
 }
