@@ -22,7 +22,6 @@ input {
 
 .first_block {
     color: #A9A9A9;
-
 }
 
 .second_block {
@@ -43,7 +42,6 @@ input {
     border: none;
     height: 30px;
     width: 30px;
-
 }
 
 #dropdownbutton {
@@ -56,13 +54,10 @@ input {
 
 
 .dropdown {
-
     display: inline;
-
 }
 
 .dropdown-content {
-
     margin-left: 330px;
     position: absolute;
     display: none;
@@ -71,9 +66,6 @@ input {
     z-index: 1;
     flex-wrap: wrap;
     width: 200px;
-
-
-
 }
 
 .dropdown:hover .dropdown-content {
@@ -86,15 +78,103 @@ input {
     overflow-wrap: break-word;
     width: 400px;
     font-size: 25px;
-
 }
 
 .showbox {
-
     height: 260px;
     width: 400px;
     display: flex;
     align-items: center;
+}
+#one{
+    background-color: #b3b5fd;
+}
+#two{
+    background-color: #676bfb;
+}
 
 
+#three{
+    background-color: #363ffb;
+}
+#four{
+    background-color: #1f2efb;
+}
+#five{
+    background-color: #010864;
+}
+#six{
+    background-color: #01044c;
+}
+#seven{
+    background-color: #fdb4cc; 
+}
+#eight{
+    background-color: #fd6899;
+}
+#nine{
+    background-color: #fc3878; 
+}
+#ten{
+    background-color: #e30e4e;
+}
+#eleven{
+    background-color: #970634;
+}
+#twele{
+    background-color: #7e042b;
+}
+#thirteen{
+    background-color: #fda36c; 
+}
+#fourteen{
+    background-color: #fd9455;
+}
+#fifteen{
+    background-color: #fd752d; 
+}
+#sixteen{
+    background-color: #e45b1c;
+}
+#seventeen{
+    background-color: #b14714;
+}
+#eighteen{
+    background-color: #973d0f;
+}
+#nineteen{
+    background-color: #fffd72; 
+}
+#twenty{
+    background-color: #fffd3f;
+}
+#twentyone{
+    background-color: #c9ca2a;
+}
+#twentytwo{
+    background-color: #b0b224; 
+}
+#twentythree{
+    background-color: #939607; 
+}
+#twentyfour{
+    background-color: #97981d; 
+}
+#twentyfive{
+    background-color: #b4e4b5;
+}
+#twentysix{
+    background-color: #8fd790;  
+}
+#twentyseven{
+    background-color: #6bc96c;
+}
+#twentyeight{
+    background-color: #59c25a;  
+}
+#twentynine{
+    background-color: #39973a; 
+}
+#thirty{
+    background-color: #2a712b; 
 }
