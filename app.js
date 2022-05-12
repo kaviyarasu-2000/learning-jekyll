@@ -7,15 +7,14 @@ $(document).ready(function() {
 	});
 	$('.container').on('click', function() { 
 		var containerColor = $(this).val(); 
-			$('.showbox').css("background-color", containerColor);
-			$('#Bg-color').val(containerColor);
-			$('.boxcolor').css("background-color", containerColor);
+        $('.showbox').css("background-color", containerColor);
+        $('#Bg-color').val(containerColor);
+        $('.boxcolor').css("background-color", containerColor);
 		
 	});
-    
-        $('#showtext').keyup(function () {
-        let writeText = $(this).val();
-        $('.textshow').text(writeText);
+       $('#showtext').keyup(function() {
+       let writeText = $(this).val();
+       $('.textshow').text(writeText);
         
     })
 });
