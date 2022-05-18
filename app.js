@@ -13,9 +13,14 @@ $(document).ready(function() {
 		
 	});
        $('#showtext').keyup(function() {
-       let writeText = $(this).val();
-       $('.textshow').text(writeText);
+       let write = $(this).val();
+       $('.textshow').text(write);
         
     })
 });
+
+      function myFunction(id) { 
+      var popup = document.getElementById(id);
+      popup.classList.toggle("show");
+}
     
