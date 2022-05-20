@@ -10,6 +10,7 @@ input {
   height: 34px;
   font-weight: bolder;
   padding-left: 10px;
+    padding-right: 10px;
   font-size: 15px;
   border-radius: 5px;
 }
@@ -40,14 +41,13 @@ h1 {
   border-radius: 2px;
   height: 30px;
   width: 30px;
-  margin: 1px;
 }
 
 #dropdownbutton {
   padding: 7px 19px;
   display: inline;
   position: relative;
-  left: 473px;
+  left: 481px;
   bottom: 29px;
   border-radius: 5px;
 }
@@ -60,7 +60,7 @@ h1 {
 .popup {
   position: relative;
   display: inline-block;
-  cursor: pointer;
+  cursor: default;
 }
 .popup .popuptext {
   visibility: hidden;
@@ -68,33 +68,39 @@ h1 {
   background-color: #fff;
   text-align: center;
   border-radius: 6px;
-  padding: 5px 0px;
   position: absolute;
   z-index: 1;
   top: 150%;
-  box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
 }
 .popup .popuptext::after {
   content: "";
   position: absolute;
-  bottom: 92%;
-  left: 87%;
-  border: 11px solid;
+  bottom: 90%;
+  left: 85%;
+  border: 10px solid;
   border-color: transparent transparent #fff #fff;
-  box-shadow: 1px 4px 8px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   transform: rotate(135deg);
+  z-index: -1;
 }
 .popup .show {
-  visibility: visible;
-  margin-left: -170px;
-  width: 217px;
+    visibility: visible;
+    margin-left: -170px;
+    width: 200px;
+    top: 125%;
+    padding: 4px;
+    height: 162px;
 }
 .textshow {
   text-align: center;
-  overflow-wrap: break-word;
   width: 400px;
   font-size: 25px;
   color: #970634;
+  display: -webkit-box;
+  -webkit-line-clamp: 9;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
 }
 
 .showbox {
