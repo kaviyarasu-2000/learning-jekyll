@@ -1,5 +1,4 @@
 $(document).ready(function() {
-    var textColor = 1;
     $('.font').on('click', function() {
         var textColor = $(this).val();
         color = $(this).val();
@@ -19,10 +18,13 @@ $(document).ready(function() {
             $('.boxcolor').css("background-color", containerColor);
         }
     });
-    $('#showtext').keyup(function() {
+    $('#showtext').keyup(function(){      
         let write = $(this).val();
-        $('.textshow').text(write);
-
+        if( write == ""){ 
+        $('.textshow').text("Text");
+         } else{
+        $('.textshow').text(write);   
+        }
     })
 });
 
