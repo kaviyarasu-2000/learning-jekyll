@@ -41,6 +41,7 @@ h1 {
   border-radius: 2px;
   height: 30px;
   width: 30px;
+  cursor: pointer;
 }
 
 #dropdownbutton {
@@ -60,7 +61,6 @@ h1 {
 .popup {
   position: relative;
   display: inline-block;
-  cursor: default;
 }
 .popup .popuptext {
   visibility: hidden;
@@ -79,9 +79,9 @@ h1 {
   bottom: 90%;
   left: 85%;
   border: 10px solid #fff;
-  border-color: transparent transparent #fff #fff;
+  border-color: transparent transparent rgba(0, 0, 0, 0.5);
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  transform: rotate(135deg);
+  transform: rotate(45deg);
   z-index: -1;
 }
 .popup .show {

@@ -10,6 +10,7 @@ $(document).ready(function() {
         var containerColor = $(this).val();
         if (containerColor == color) {
             $(color).attr("disabled", 'disabled');
+            alert("You select the same color, so it's not to change backround-color");
         } else {
             $(color).attr("enable", 'enable');
 
