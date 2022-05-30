@@ -1,0 +1,12 @@
+url: http://maxinternational.com 
+baseurl: 
+
+
+defaults:
+  - scope:
+      path: "assets/images"
+    values: 
+      image: true
+      
+      
+      

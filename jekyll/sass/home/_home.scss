@@ -1,0 +1,76 @@
+@import'../sass/nav/nav';
+
+.home-container {
+  background-image: url(../../assets/images/homebg.jpg);
+  background-repeat: no-repeat;
+  background-size:100% 100%;
+}
+ .home-container .row {
+    height: 800px;
+    justify-content: flex-end;
+}
+
+.poster {
+  border-style: dashed;
+  border-width: thin;
+  padding: 20px !important;
+  height: 500px;
+  width: 500px; 
+  border-radius: $border-radius;
+  &-des{
+        padding: 20px;
+    }
+    
+  &-title {
+    color: #d41d1f;
+    font-weight: bold;
+    font-size: 25px;
+}
+}
+.poster .rounded {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 450px;
+    width: 450px;
+    border-radius:  $border-radius !important; 
+    background-color:  #ffffff80;
+   
+}
+
+.form {
+  background-color: #ffffff;
+  padding: 15px;
+    color:  #8490a1;
+  border-radius: 10px;
+  width: 200px;
+  box-shadow: -2px 2px 5px 0px #8490a1; 
+}
+
+
+
+@media  only screen and (max-width: 992px) {
+.home-container .row {
+    height:450px;}
+.poster {
+    font-size: 5px;
+    height: 150px;
+    width: 150px; }
+.poster .rounded {
+      height: 150px;
+      width: 150px;
+    margin-left: -20px;
+    margin-top: -20px;}
+.poster-title {
+      font-size: 5px;}
+.poster-des {
+      font-size: 5px; 
+    padding: 0px;}
+
+.form {
+    width: 100px;
+    font-size: 4px;}
+    .form-control{
+        font-size: 3px;
+    }} 
+

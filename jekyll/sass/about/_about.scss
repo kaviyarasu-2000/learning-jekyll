@@ -1,0 +1,20 @@
+.about {
+  background-image: url(../../assets/images/about-bg.png);
+  background-repeat: no-repeat;
+  background-size: 350px 600px;
+  background-position: left !important;
+  padding-top: 30px;
+font-family: 'Signika Negative', sans-serif !important;
+     &--title {
+     @include bottom-line;
+    }
+    &--des__one{
+    margin-top: 30px;
+    }
+
+    &--des__two {
+      font-weight: 300;
+      color: #4d4d4d;
+    padding: 20px 0px;
+    }
+}

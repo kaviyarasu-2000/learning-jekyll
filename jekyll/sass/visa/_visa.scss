@@ -1,0 +1,47 @@
+.visa-title {
+   margin-top: 20px;
+	@include bottom-line;
+}
+
+.profile-border {
+	padding: 5px;
+	border: 1px dashed $dark;
+	border-radius: $border-radius;
+	width: 130px;
+}
+.profile-photo {
+	border-radius: $border-radius;
+	width: 118px;
+}
+
+
+.information {
+	padding-top: 50px;
+	
+}
+
+.visa-type {
+    display: flex;
+    flex-flow: column;
+	align-items: center;
+	width: 320px;
+}
+.visa-des {
+	color: #666666;
+}
+
+
+.visa-heading{
+    color: $color-danger !important ;
+	margin-top: 20px;
+}
+
+@media only screen and (max-width:992px){
+    .information{
+   display: flex !important;
+    flex-flow: column !important;
+     align-self: center;
+
+}
+    }
+

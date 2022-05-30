@@ -1,0 +1,35 @@
+.footer{
+     font-family: initial !important;
+    &-content{
+    @include footer; 
+    margin-top: 30px;
+}
+    &-end{
+    color: #fff;
+    opacity:0.5;
+    font-size: 12px;    
+}
+    &--heading{
+    font-size: 12px;
+}
+}
+
+.contact--details{
+    @extend .footer--heading;
+}
+
+.contact--details__highlight{
+    @include footer; 
+}
+.subscribe--btn{
+    background-color: #575e64;
+    color: #84898d;
+    border-radius: 0px;
+}
+.email--input{
+    background-color: #313538;
+    border-radius: 0px;
+    border: none;
+    height: 38px;
+    padding: 10px;
+}

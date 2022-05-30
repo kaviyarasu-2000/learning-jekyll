@@ -1,0 +1,20 @@
+
+html, body {
+    font-family: 'Signika Negative', sans-serif;
+}
+
+@import'../sass/variables/variables';
+
+@import '../sass/mixins/mixins';
+
+@import'../sass/components/components';
+
+@import '../sass/home/home';
+ 
+@import'../sass/about/about';
+
+@import '../sass/visa/visa';
+
+@import '../sass/testimonials/testimonial';
+
+@import '../sass/footer/footer';

@@ -1,0 +1,87 @@
+html, body { font-family: 'Signika Negative', sans-serif; }
+
+.vertical-line { height: 70px; width: 50%; border-right: 1px dashed #000000; }
+
+.point { margin-top: 30px; align-self: center; height: 10px; width: 10px; background-color: #eda3a5; border-radius: 50%; }
+
+.row-1 { border-right-style: solid; border-right-width: 1px; }
+
+.row-2 { border-top-style: solid; border-top-width: 1px; }
+
+a.nav-link:hover { color: #d41d1f !important; }
+
+.home-container { background-image: url(../../assets/images/homebg.jpg); background-repeat: no-repeat; background-size: 100% 100%; }
+
+.home-container .row { height: 800px; justify-content: flex-end; }
+
+.poster { border-style: dashed; border-width: thin; padding: 20px !important; height: 500px; width: 500px; border-radius: 50%; }
+
+.poster-des { padding: 20px; }
+
+.poster-title { color: #d41d1f; font-weight: bold; font-size: 25px; }
+
+.poster .rounded { display: flex; flex-direction: column; justify-content: center; height: 450px; width: 450px; border-radius: 50% !important; background-color: #ffffff80; }
+
+.form { background-color: #ffffff; padding: 15px; color: #8490a1; border-radius: 10px; width: 200px; box-shadow: -2px 2px 5px 0px #8490a1; }
+
+@media only screen and (max-width: 992px) { .home-container .row { height: 450px; } .poster { font-size: 5px; height: 150px; width: 150px; } .poster .rounded { height: 150px; width: 150px; margin-left: -20px; margin-top: -20px; } .poster-title { font-size: 5px; } .poster-des { font-size: 5px; padding: 0px; } .form { width: 100px; font-size: 4px; } .form-control { font-size: 3px; } }
+
+.about { background-image: url(../../assets/images/about-bg.png); background-repeat: no-repeat; background-size: 350px 600px; background-position: left !important; padding-top: 30px; font-family: 'Signika Negative', sans-serif !important; }
+
+.about--title { border-bottom: 2px solid transparent; border-image: linear-gradient(to right, #000000 50%, #d41d1f 50%); border-image-slice: 1; align-self: center; font-size: 20px; }
+
+.about--des__one { margin-top: 30px; }
+
+.about--des__two { font-weight: 300; color: #4d4d4d; padding: 20px 0px; }
+
+.visa-title { margin-top: 20px; border-bottom: 2px solid transparent; border-image: linear-gradient(to right, #000000 50%, #d41d1f 50%); border-image-slice: 1; align-self: center; font-size: 20px; }
+
+.profile-border { padding: 5px; border: 1px dashed #000000; border-radius: 50%; width: 130px; }
+
+.profile-photo { border-radius: 50%; width: 118px; }
+
+.information { padding-top: 50px; }
+
+.visa-type { display: flex; flex-flow: column; align-items: center; width: 320px; }
+
+.visa-des { color: #666666; }
+
+.visa-heading { color: #d41d1f !important; margin-top: 20px; }
+
+@media only screen and (max-width: 992px) { .information { display: flex !important; flex-flow: column !important; align-self: center; } }
+
+.client { margin-bottom: 30px; }
+
+.client--title { border-bottom: 2px solid transparent; border-image: linear-gradient(to right, #000000 50%, #d41d1f 50%); border-image-slice: 1; align-self: center; font-size: 20px; margin-top: 20px; margin-bottom: 25px; font-size: 20px; }
+
+.client-photo { height: 130px; width: 130px; margin-top: 80px; }
+
+.client-reviewer { margin-top: 30px; font-size: 20px; padding-top: 20px; }
+
+.client-reviewer--comment { margin-top: -40px; padding-bottom: 20px; }
+
+.carousel-indicators { margin-bottom: -20px; }
+
+.carousel-indicators button { width: 10px !important; height: 10px !important; border-radius: 100% !important; border: 1px solid #000000 !important; }
+
+.carousel-indicators .active { background-color: #d41d1f !important; }
+
+.line { border-bottom: 2px solid transparent; border-image: linear-gradient(to right, #000000 50%, #d41d1f 50%); border-image-slice: 1; align-self: center; font-size: 20px; width: 120px; margin-bottom: -20px; }
+
+.double-quotes { font-size: 80px; font-family: Georgia; }
+
+.footer { font-family: initial !important; }
+
+.footer-content { text-decoration: none; color: white; opacity: 0.5; font-size: 12px; margin-top: 30px; }
+
+.footer-end { color: #fff; opacity: 0.5; font-size: 12px; }
+
+.footer--heading, .contact--details { font-size: 12px; }
+
+.contact--details__highlight { text-decoration: none; color: white; opacity: 0.5; font-size: 12px; }
+
+.subscribe--btn { background-color: #575e64; color: #84898d; border-radius: 0px; }
+
+.email--input { background-color: #313538; border-radius: 0px; border: none; height: 38px; padding: 10px; }
+
+/*# sourceMappingURL=main.css.map */
