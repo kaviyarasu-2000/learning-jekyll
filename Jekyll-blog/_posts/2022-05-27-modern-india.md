@@ -1,0 +1,11 @@
+---
+layout: post
+title: Modern-india
+author: Madhav kohsla
+tags: India
+image: "/assets/images/modern.jpg"
+---
+
+<img class="image" src="{{ site.baseurl }}/assets/images/modern-india.jpg">
+
+The history of modern constitutionalism has immortalized several events of much moment. It has, however, cast scant attention upon a great deal other episodes that merit greater engagement. Among this latter category is the making of modern India – the crafting of the constitutional text that would create the world’s largest democracy. The Indian case invites attention not merely because of its size but rather because of its conditions. This postcolonial experiment involved the coming together of democratization and constitution-making in a setting that was poor, uneducated, and divided, and one that was stepped in centuries of tradition. Unlike in the West where voting rights were expanded gradually in settings that witnessed the spread of wealth and literacy and the cementing of administrative institutions, India reversed the historically ordained process to self-rule. For India’s founders, democratic citizens were to be created through democratic practice.

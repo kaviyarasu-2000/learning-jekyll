@@ -1,0 +1,14 @@
+{
+	"version": 3,
+	"file": "main.css",
+	"sources": [
+		"main.scss",
+		"_sass/main.scss"
+	],
+	"sourcesContent": [
+		"@import \"main\";\n",
+		"html,body{\n    background-image: url(https://images.unsplash.com/photo-1501436513145-30f24e19fcc8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGJsb2clMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60);\n    background-size: cover;\n}\n.pagetitle{\n    color: green;\n}\n.image{\n border-radius: 20px;\n box-shadow: 5px 5px 5px black;\n  display: block;\n    margin: auto;\n    height: 200px;\n    width:400px;\n}\n.wallpaper{\n    height: 350px;\n    width: 300px;\n border-radius: 20px;\n box-shadow: 5px 5px 5px black;\n    \n}\n\n.post-url:hover {\n    color: #8F00FF !important;\n}\n\n.nav-link{\n    color: black;\n}\n.nav-brand{\n    height: 60px;\n    width: 150px;\n}\n"
+	],
+	"names": [],
+	"mappings": "ACAA,AAAA,IAAI,EAAC,IAAI,CAAA,EACL,gBAAgB,EAAE,8LAA8L,EAChN,eAAe,EAAE,KAAK,GACzB;;AACD,AAAA,UAAU,CAAA,EACN,KAAK,EAAE,KAAK,GACf;;AACD,AAAA,MAAM,CAAA,EACL,aAAa,EAAE,IAAI,EACnB,UAAU,EAAE,iBAAiB,EAC5B,OAAO,EAAE,KAAK,EACZ,MAAM,EAAE,IAAI,EACZ,MAAM,EAAE,KAAK,EACb,KAAK,EAAC,KAAK,GACd;;AACD,AAAA,UAAU,CAAA,EACN,MAAM,EAAE,KAAK,EACb,KAAK,EAAE,KAAK,EACf,aAAa,EAAE,IAAI,EACnB,UAAU,EAAE,iBAAiB,GAE7B;;AAED,AAAA,SAAS,CAAC,KAAK,CAAC,EACZ,KAAK,EAAE,kBAAkB,GAC5B;;AAED,AAAA,SAAS,CAAA,EACL,KAAK,EAAE,KAAK,GACf;;AACD,AAAA,UAAU,CAAA,EACN,MAAM,EAAE,IAAI,EACZ,KAAK,EAAE,KAAK,GACf"
+}

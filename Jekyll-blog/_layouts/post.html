@@ -1,0 +1,58 @@
+---
+layout: default
+title: Blogs
+---
+
+
+{% include head.html %}
+{% include nav.html %}
+    <div class="container">
+<h4 class="mt-5 pagetitle">{{ page.title }}</h4>
+{% if page.author %}
+
+<p>{{ page.date | date_to_string }} - written by {{ page.author }}</p>
+{% endif %}
+
+{% if page.content !="" %}
+<div class="mt-3">
+{{ content }}
+</div>
+<div class="text-center">
+<a class="btn btn-primary" href="/">back</a></div>  
+{% endif %}
+{% if page.content =="" %}
+        
+<div class="d-flex justify-content-end mt-5">
+<img class="wallpaper position-absolute  d-md-block d-none " src="https://images.unsplash.com/photo-1501436513145-30f24e19fcc8?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTN8fGJsb2clMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60" alt="jhsddhvs"></div>
+
+
+{% for post in paginator.posts%}
+        
+        
+<a href="{{post.url | prepend: site.baseurl}}"> <h4> <a class="text-decoration-none text-dark post-url" href="{{ post.url }}">{{ post.title }}</a></h4>
+<p><i class="fa-regular fa-calendar"></i> {{ post.date | date:"%B %d, %Y" }} - <i class="fa-regular fa-user"></i> {{ post.author }}
+</a>
+{% endfor %}
+
+ <!-- Pagination links -->
+ <div class="pagination d-flex flex-row justify-content-center">
+  {% if paginator.previous_page %}
+  <a href="{{ paginator.previous_page_path }}" class="previous p-2 nav-link text-primary">
+      <i class="fa-solid fa-arrow-left"></i>Previous
+  </a>
+  {% else %}
+  <span class="previous p-2">Previous</span>
+  {% endif %}
+  <span class="page_number p-2 ">
+      Page: {{ paginator.page }} of {{ paginator.total_pages }}
+  </span>
+  {% if paginator.next_page %}
+  <a href="{{ paginator.next_page_path }}" class="next p-2 nav-link text-primary">Next <i class="fa-solid fa-arrow-right"></i></a>
+  {% else %}
+  <span class="next p-2">Next</span>
+  {% endif %}
+</div>
+{% endif %}    
+</div>
+    {% include footer.html %}
+

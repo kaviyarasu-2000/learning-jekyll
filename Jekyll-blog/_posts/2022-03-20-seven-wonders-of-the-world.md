@@ -1,0 +1,11 @@
+---
+layout: post
+title: Seven Wonders of the world
+author: Barath
+tags: India
+---
+
+<img class="image" src="{{ site.baseurl }}/assets/images/engineering.jpg">
+The Seven Wonders of The Modern World are located all over the world.  They are all very unique in their own ways.  From ruins that contain many temples and tombs, to a city that is carved out of canyon walls.  These seven architectures are some of the greatest tourist attractions in the world.  They were all given a great award to be one of the seven wonders of the world because of their beauty and history.  One should see at least one of these great wonders in their lifetime.
+     Machu Picchu is located in Peru.  It is referred to as the “City of The Incas.”  Machu Picchu means “Old Mountain”, and it was built in 1450.  Many people, even the Incas had forgotten about Machu Picchu, but it was rediscovered in 1911.  Machu Picchu contains many ruins, temples, and tombs.  It is a great tourist site for Peru, and many people visit Machu Picchu every year.
+     The Taj Mahal is located in India.  It is recognized as the Jewel of Muslims in India.  Taj Mahal means “Crown of Palaces.”  It began to be built in 1632, and was finished in 1653.  It is a very big palace that contains a pool and a great garden in the backyard.  It is a huge tourist attraction for India and many people visit the palace every year.
