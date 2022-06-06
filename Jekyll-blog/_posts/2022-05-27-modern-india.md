@@ -3,7 +3,6 @@ layout: post
 title: Modern-india
 author: Madhav kohsla
 tags: India
-image: "/assets/images/modern.jpg"
 ---
 
 <img class="image" src="{{ site.baseurl }}/assets/images/modern-india.jpg">

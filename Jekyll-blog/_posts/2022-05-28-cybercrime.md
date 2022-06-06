@@ -2,7 +2,7 @@
 layout: post
 title: Cybercrime
 author: Yury Fedotov
-image: "/assets/images/cyber-crime.jpg"
+tags: cyber
 ---
 
 

@@ -2,8 +2,7 @@
 layout: post
 title: Agricultures
 author: Emmaline Soken-Huberty
-date: 2022-05-25
-image: "/assets/images/agricultures.jpg"
+tags: Environment
 ---
 
 

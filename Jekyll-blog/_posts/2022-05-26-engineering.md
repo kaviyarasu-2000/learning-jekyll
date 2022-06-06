@@ -3,7 +3,6 @@ layout: post
 title: Engineering
 author: Jaime Trosper
 tags: Engineering
-image: "/assets/images/engineering.jpg"
 ---
 
 <img class="image" src="{{ site.baseurl }}/assets/images/engineering.jpg">

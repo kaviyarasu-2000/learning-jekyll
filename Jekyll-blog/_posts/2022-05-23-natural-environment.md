@@ -3,7 +3,6 @@ layout: post
 title: Natural-Environment
 author: Dane
 tags: Environment
-image: "/assets/images/engineering.jpg"
 ---
 
 <img class="image" src="{{ site.baseurl }}/assets/images/natural-environment.jpg">
