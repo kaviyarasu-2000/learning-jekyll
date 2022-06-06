@@ -12,7 +12,7 @@ permalink: /about/
     <img class="image mt-5" src="{{ site.baseurl }}/assets/images/about.png">
     </div>
     <div class="text-center mt-5">
-<a class="btn btn-primary" href="/">back</a></div>
+<a class="btn btn-primary" onclick="history.go(-1)">back</a></div>
 </div>
 
 

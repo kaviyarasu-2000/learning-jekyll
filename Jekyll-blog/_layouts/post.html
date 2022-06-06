@@ -18,7 +18,7 @@ title: Blogs
 {{ content }}
 </div>
 <div class="text-center">
-<a class="btn btn-primary" href="/">back</a></div>  
+<a class="btn btn-primary" onclick="history.back()">back</a></div>  
 {% endif %}
 {% if page.content =="" %}
         
@@ -34,7 +34,7 @@ title: Blogs
 </a>
 {% endfor %}
 
- <!-- Pagination links -->
+
  <div class="pagination d-flex flex-row justify-content-center">
   {% if paginator.previous_page %}
   <a href="{{ paginator.previous_page_path }}" class="previous p-2 nav-link text-primary">
