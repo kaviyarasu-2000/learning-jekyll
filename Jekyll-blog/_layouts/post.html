@@ -3,8 +3,6 @@ layout: default
 title: Blogs
 ---
 
-
-{% include head.html %}
 {% include nav.html %}
 
 <div class="container">
@@ -32,8 +30,7 @@ title: Blogs
     {% for post in paginator.posts%}
     <a href="{{post.url | prepend: site.baseurl}}">
         <h4> <a class="text-decoration-none text-dark post-url" href="{{ post.url }}">{{ post.title }}</a></h4>
-        <p><i class="fa-regular fa-calendar"></i> {{ post.date | date:"%B %d, %Y" }} - <i
-                class="fa-regular fa-user"></i> {{ post.author }}
+        <p><i class="fa-regular fa-calendar"></i> {{ post.date | date:"%B %d, %Y" }} - <i class="fa-regular fa-user"></i> {{ post.author }}
     </a>
     {% endfor %}
 
