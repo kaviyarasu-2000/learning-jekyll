@@ -1,15 +1,15 @@
 html, body { background-image: url(https://images.unsplash.com/photo-1501436513145-30f24e19fcc8?ixlib=60); background-size: cover; }
 
-.pagetitle { color: green; }
+.nav-link { color: #000; }
 
-.image { border-radius: 20px; box-shadow: 5px 5px 5px black; display: block; margin: auto; height: 200px; width: 400px; margin-bottom: px; }
+.nav-brand { height: 60px; width: 150px; }
 
-.wallpaper { height: 350px; width: 300px; border-radius: 20px; box-shadow: 5px 5px 5px black; }
+.wallpaper { height: 350px; width: 300px; border-radius: 20px; box-shadow: 5px 5px 5px #000; }
 
 .post-url:hover { color: #8F00FF !important; }
 
-.nav-link { color: black; }
+.pagetitle { color: #008000; }
 
-.nav-brand { height: 60px; width: 150px; }
+.image { border-radius: 20px; box-shadow: 5px 5px 5px #000; display: block; margin: auto; height: 350px; width: 450px; margin-bottom: 40px; }
 
 /*# sourceMappingURL=main.css.map */

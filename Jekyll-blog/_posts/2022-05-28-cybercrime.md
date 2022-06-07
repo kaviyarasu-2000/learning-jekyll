@@ -6,7 +6,7 @@ tags: cyber
 ---
 
 
-<img class="image" src="{{ site.baseurl }}/assets/images/cyber-crime.jpg">
+<img class="image" src="/assets/images/cyber-crime.jpg" alt="image">
 
 
 Cyber. It is the inevitable prefix that currently defines our world. From people's privacy to inter-state relations, the term "cyber" dominates the headlines and discussions - so much so that we risk being paralyzed by the magnitude of the problems we face.

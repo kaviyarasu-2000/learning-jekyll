@@ -5,7 +5,7 @@ author: Jaime Trosper
 tags: Engineering
 ---
 
-<img class="image" src="{{ site.baseurl }}/assets/images/engineering.jpg">
+<img class="image" src="/assets/images/engineering.jpg" alt="image">
 
 
 Engineering

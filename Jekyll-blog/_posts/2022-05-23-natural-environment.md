@@ -5,7 +5,7 @@ author: Dane
 tags: Environment
 ---
 
-<img class="image" src="{{ site.baseurl }}/assets/images/natural-environment.jpg">
+<img class="image" src="/assets/images/natural-environment.jpg" alt="image">
 
 
 

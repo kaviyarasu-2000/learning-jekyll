@@ -6,7 +6,7 @@ tags: Environment
 ---
 
 
-<img class="image" src="{{ site.baseurl }}/assets/images/agricultures.jpg">
+<img class="image" src="/assets/images/agricultures.jpg" alt="image">
 
 Agriculture
 
