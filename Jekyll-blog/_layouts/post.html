@@ -6,6 +6,7 @@ title: Blogs
 
 {% include head.html %}
 {% include nav.html %}
+
 <div class="container">
     <h4 class="mt-5 pagetitle">{{ page.title }}</h4>
     {% if page.author %}
@@ -28,17 +29,13 @@ title: Blogs
             alt="jhsddhvs">
     </div>
 
-
     {% for post in paginator.posts%}
-
-
     <a href="{{post.url | prepend: site.baseurl}}">
         <h4> <a class="text-decoration-none text-dark post-url" href="{{ post.url }}">{{ post.title }}</a></h4>
         <p><i class="fa-regular fa-calendar"></i> {{ post.date | date:"%B %d, %Y" }} - <i
                 class="fa-regular fa-user"></i> {{ post.author }}
     </a>
     {% endfor %}
-
 
     <div class="pagination d-flex flex-row justify-content-center">
         {% if paginator.previous_page %}
