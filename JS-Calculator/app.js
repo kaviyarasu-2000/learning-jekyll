@@ -81,7 +81,7 @@ function calculate(numbers) {
         }
     ];
     let operator;
-    for (let operators of operatorPrecedence) {
+    for (let operators of operatorPrecedence) { 
         let newNumbers = [];
         for (let number of numbers) {
             if (number in operators) {
@@ -101,7 +101,16 @@ function calculate(numbers) {
         return numbers;
     } else {
 
-        document.getElementById('solution').value = numbers;
+        x=Number(numbers);
+        if(typeof x == 'number' && !isNaN(x)){
+        if (Number.isInteger(x)) {
+            document.getElementById('solution').value = numbers;
+        }
+        else {
+            document.getElementById('solution').value = parseFloat(numbers).toFixed(2);
+        }
+    
+    } 
     }
 }
 
