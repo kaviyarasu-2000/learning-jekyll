@@ -51,6 +51,7 @@ h1 {
   left: 481px;
   bottom: 29px;
   border-radius: 5px;
+  cursor: pointer;
 }
 .colortxt {
   background-color: #970634;
@@ -78,19 +79,18 @@ h1 {
   position: absolute;
   bottom: 90%;
   left: 85%;
-  border: 10px solid #fff;
-  border-color: transparent transparent rgba(0, 0, 0, 0.5);
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  transform: rotate(45deg);
+  border: 11px solid #fff;
+  transform: rotate(135deg);
   z-index: -1;
 }
 .popup .show {
     visibility: visible;
-    margin-left: -170px;
+    margin-left: -175px;
     width: 200px;
     top: 135%;
-    padding: 4px;
+    padding: 9px;
     height: 162px;
+    cursor: default;
 }
 .textshow {
     word-wrap: break-word ;
@@ -104,19 +104,18 @@ h1 {
   text-align: center;
   align-items: center;
   justify-content: center;
-    overflow-x: hidden;
-    overflow: hidden;
+  overflow-x: hidden;
+  overflow: hidden;
   overflow-y: auto;
-    color: #970634; 
+  color: #970634; 
   background-color: #b4e4b5;
--ms-overflow-style: none;
+  -ms-overflow-style: none;
   scrollbar-width: none; 
 }
 
 .showbox::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
-
 
 #one {
   background-color: #b3b5fd;
