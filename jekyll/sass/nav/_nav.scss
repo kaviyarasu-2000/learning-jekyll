@@ -10,3 +10,8 @@
 a.nav-link:hover{
     color: $color-danger !important;
 }
+@media only screen and (max-width: 992px) {
+.row-1 {
+    border: none;
+}
+}

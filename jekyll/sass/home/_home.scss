@@ -4,10 +4,7 @@
   background-image: url(../../assets/images/homebg.jpg);
   background-repeat: no-repeat;
   background-size:100% 100%;
-}
- .home-container .row {
-    height: 800px;
-    justify-content: flex-end;
+    height: 720px;
 }
 
 .poster {
@@ -18,7 +15,7 @@
   width: 500px; 
   border-radius: $border-radius;
   &-des{
-        padding: 20px;
+        padding: 15px;
     }
     
   &-title {
@@ -43,34 +40,39 @@
   padding: 15px;
     color:  #8490a1;
   border-radius: 10px;
-  width: 200px;
+  width: 250px;
   box-shadow: -2px 2px 5px 0px #8490a1; 
 }
 
 
-
 @media  only screen and (max-width: 992px) {
-.home-container .row {
-    height:450px;}
+
 .poster {
-    font-size: 5px;
-    height: 150px;
-    width: 150px; }
+    height: 290px;
+    width: 290px;
+    padding: 0px;
+    
+  }
 .poster .rounded {
-      height: 150px;
-      width: 150px;
-    margin-left: -20px;
-    margin-top: -20px;}
+    
+     height: 250px;
+    width: 250px;
+//    margin: auto;
+//    position: relative;
+//    right: 17px;
+//    bottom: 17px;
+}
+    
+    
+
 .poster-title {
-      font-size: 5px;}
-.poster-des {
-      font-size: 5px; 
-    padding: 0px;}
+      font-size: 10px;}
+.poster-des {   
+      font-size: 10px; 
+    }
 
 .form {
-    width: 100px;
-    font-size: 4px;}
-    .form-control{
-        font-size: 3px;
-    }} 
-
+    width: 150px;
+    font-size: 10px;}
+    
+    }

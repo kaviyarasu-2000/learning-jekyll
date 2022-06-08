@@ -1,27 +1,26 @@
 
 .client {
-  margin-bottom: 30px; 
+    margin-bottom: 30px; 
     &--title {
     @include bottom-line;
-    margin-top: 20px;
+    margin-top: 120px;
     margin-bottom: 25px;
     font-size: $font-size;
     
 }
  &-photo {
-     height: 130px;
-    width: 130px;
-    margin-top: 80px;
+    height: 130px;
+    width: 120px;
+    margin-top: 140px;
 }     
    &-reviewer {
   margin-top: 30px;
   font-size: 20px;
   padding-top: 20px;
   &--comment {
-  margin-top: -40px;
   padding-bottom: 20px; 
 }
-    }
+  }
  
 }
 .carousel-indicators{
@@ -32,10 +31,11 @@
   width: 10px !important;
   height: 10px !important;
   border-radius: 100% !important;
-  border: 1px solid #000000 !important;   
+  border: 1px solid $dark !important;   
 }
 .carousel-indicators .active {
-  background-color: #d41d1f !important; 
+  background-color: $color-danger !important; 
+  border-color: $color-danger !important;
 }
 
 
@@ -46,4 +46,4 @@
  }
 .double-quotes {
   font-size: 80px;
-    font-family: Georgia; }  
+  font-family: Georgia; }  

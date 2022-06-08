@@ -1,8 +1,10 @@
 html, body { font-family: 'Signika Negative', sans-serif; }
 
-.vertical-line { height: 70px; width: 50%; border-right: 1px dashed #000000; }
+.vertical-line { height: 150px; width: 50%; top: 10px; border-right: 1px dashed #000000; }
 
-.point { margin-top: 30px; align-self: center; height: 10px; width: 10px; background-color: #eda3a5; border-radius: 50%; }
+.point { margin: auto; height: 10px; width: 10px; background-color: #eda3a5; border-radius: 50%; bottom: 90px; }
+
+@media only screen and (max-width: 992px) { .vertical-line { height: 110px; } .point { bottom: 40px; } }
 
 .row-1 { border-right-style: solid; border-right-width: 1px; }
 
@@ -10,31 +12,35 @@ html, body { font-family: 'Signika Negative', sans-serif; }
 
 a.nav-link:hover { color: #d41d1f !important; }
 
-.home-container { background-image: url(../../assets/images/homebg.jpg); background-repeat: no-repeat; background-size: 100% 100%; }
+@media only screen and (max-width: 992px) { .row-1 { border: none; } }
 
-.home-container .row { height: 800px; justify-content: flex-end; }
+.home-container { background-image: url(../../assets/images/homebg.jpg); background-repeat: no-repeat; background-size: 100% 100%; height: 720px; }
 
 .poster { border-style: dashed; border-width: thin; padding: 20px !important; height: 500px; width: 500px; border-radius: 50%; }
 
-.poster-des { padding: 20px; }
+.poster-des { padding: 15px; }
 
 .poster-title { color: #d41d1f; font-weight: bold; font-size: 25px; }
 
 .poster .rounded { display: flex; flex-direction: column; justify-content: center; height: 450px; width: 450px; border-radius: 50% !important; background-color: #ffffff80; }
 
-.form { background-color: #ffffff; padding: 15px; color: #8490a1; border-radius: 10px; width: 200px; box-shadow: -2px 2px 5px 0px #8490a1; }
+.form { background-color: #ffffff; padding: 15px; color: #8490a1; border-radius: 10px; width: 250px; box-shadow: -2px 2px 5px 0px #8490a1; }
 
-@media only screen and (max-width: 992px) { .home-container .row { height: 450px; } .poster { font-size: 5px; height: 150px; width: 150px; } .poster .rounded { height: 150px; width: 150px; margin-left: -20px; margin-top: -20px; } .poster-title { font-size: 5px; } .poster-des { font-size: 5px; padding: 0px; } .form { width: 100px; font-size: 4px; } .form-control { font-size: 3px; } }
+@media only screen and (max-width: 992px) { .poster { height: 290px; width: 290px; padding: 0px; } .poster .rounded { height: 250px; width: 250px; } .poster-title { font-size: 10px; } .poster-des { font-size: 10px; } .form { width: 150px; font-size: 10px; } }
 
-.about { background-image: url(../../assets/images/about-bg.png); background-repeat: no-repeat; background-size: 350px 600px; background-position: left !important; padding-top: 30px; font-family: 'Signika Negative', sans-serif !important; }
+.aboutus { background-image: url(../../assets/images/about-bg.png); background-repeat: no-repeat; background-size: 350px 800px; background-position: left !important; padding-bottom: 120px; }
 
-.about--title { border-bottom: 2px solid transparent; border-image: linear-gradient(to right, #000000 50%, #d41d1f 50%); border-image-slice: 1; align-self: center; font-size: 20px; }
+.about { font-family: 'Signika Negative', sans-serif !important; }
+
+.about--title { border-bottom: 2px solid transparent; border-image: linear-gradient(to right, #000000 50%, #d41d1f 50%); border-image-slice: 1; align-self: center; }
 
 .about--des__one { margin-top: 30px; }
 
 .about--des__two { font-weight: 300; color: #4d4d4d; padding: 20px 0px; }
 
-.visa-title { margin-top: 20px; border-bottom: 2px solid transparent; border-image: linear-gradient(to right, #000000 50%, #d41d1f 50%); border-image-slice: 1; align-self: center; font-size: 20px; }
+.visas { background-color: #eaeeef; }
+
+.visa-title { margin-top: 100px; border-bottom: 2px solid transparent; border-image: linear-gradient(to right, #000000 50%, #d41d1f 50%); border-image-slice: 1; align-self: center; }
 
 .profile-border { padding: 5px; border: 1px dashed #000000; border-radius: 50%; width: 130px; }
 
@@ -42,31 +48,31 @@ a.nav-link:hover { color: #d41d1f !important; }
 
 .information { padding-top: 50px; }
 
+.information-1 { @extended .information; padding-bottom: 100px; }
+
 .visa-type { display: flex; flex-flow: column; align-items: center; width: 320px; }
 
 .visa-des { color: #666666; }
 
 .visa-heading { color: #d41d1f !important; margin-top: 20px; }
 
-@media only screen and (max-width: 992px) { .information { display: flex !important; flex-flow: column !important; align-self: center; } }
-
 .client { margin-bottom: 30px; }
 
-.client--title { border-bottom: 2px solid transparent; border-image: linear-gradient(to right, #000000 50%, #d41d1f 50%); border-image-slice: 1; align-self: center; font-size: 20px; margin-top: 20px; margin-bottom: 25px; font-size: 20px; }
+.client--title { border-bottom: 2px solid transparent; border-image: linear-gradient(to right, #000000 50%, #d41d1f 50%); border-image-slice: 1; align-self: center; margin-top: 120px; margin-bottom: 25px; font-size: 20px; }
 
-.client-photo { height: 130px; width: 130px; margin-top: 80px; }
+.client-photo { height: 130px; width: 120px; margin-top: 140px; }
 
 .client-reviewer { margin-top: 30px; font-size: 20px; padding-top: 20px; }
 
-.client-reviewer--comment { margin-top: -40px; padding-bottom: 20px; }
+.client-reviewer--comment { padding-bottom: 20px; }
 
 .carousel-indicators { margin-bottom: -20px; }
 
 .carousel-indicators button { width: 10px !important; height: 10px !important; border-radius: 100% !important; border: 1px solid #000000 !important; }
 
-.carousel-indicators .active { background-color: #d41d1f !important; }
+.carousel-indicators .active { background-color: #d41d1f !important; border-color: #d41d1f !important; }
 
-.line { border-bottom: 2px solid transparent; border-image: linear-gradient(to right, #000000 50%, #d41d1f 50%); border-image-slice: 1; align-self: center; font-size: 20px; width: 120px; margin-bottom: -20px; }
+.line { border-bottom: 2px solid transparent; border-image: linear-gradient(to right, #000000 50%, #d41d1f 50%); border-image-slice: 1; align-self: center; width: 120px; margin-bottom: -20px; }
 
 .double-quotes { font-size: 80px; font-family: Georgia; }
 

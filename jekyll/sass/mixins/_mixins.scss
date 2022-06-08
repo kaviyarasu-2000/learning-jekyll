@@ -5,12 +5,9 @@
     font-size: 12px;   
 }
 
-
-
 @mixin bottom-line{
     border-bottom: 2px solid transparent;
     border-image: linear-gradient(to right,  #000000 50%, #d41d1f 50%);
     border-image-slice: 1;
     align-self: center;
-    font-size: $font-size;
 }

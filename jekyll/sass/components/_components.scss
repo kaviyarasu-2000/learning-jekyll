@@ -1,13 +1,20 @@
 .vertical-line {
-  height: 70px;
+  height: 150px;
   width: 50%;
+    top: 10px;
   border-right: 1px dashed #000000; 
 }
 .point {
-  margin-top: 30px;
-  align-self: center;
+  margin: auto;
   height: 10px;
   width: 10px;
   background-color: #eda3a5;
   border-radius:  $border-radius;
+    bottom: 90px
+}
+@media only screen and (max-width: 992px) {
+.vertical-line {
+    height: 110px; }
+.point {
+    bottom: 40px}
 }
