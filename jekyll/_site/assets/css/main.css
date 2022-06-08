@@ -16,7 +16,7 @@ a.nav-link:hover { color: #d41d1f !important; }
 
 .home-container { background-image: url(../../assets/images/homebg.jpg); background-repeat: no-repeat; background-size: 100% 100%; height: 720px; }
 
-.poster { border-style: dashed; border-width: thin; padding: 20px !important; height: 500px; width: 500px; border-radius: 50%; }
+.poster { border-style: dashed; border-width: thin; padding: 20px !important; height: 500px; width: 500px; border-radius: 50%; margin-left: 250px; }
 
 .poster-des { padding: 15px; }
 
