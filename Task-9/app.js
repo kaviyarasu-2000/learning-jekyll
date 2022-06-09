@@ -188,10 +188,10 @@ $("#form").on('submit', function(e) {
         addDataToLocal();
 
         var dataString = $(this).serialize();
-        $.ajax({
-            type: "POST",
-            url: "index.html"
-        });
+//        $.ajax({
+//            type: "POST",
+//            url: "index.html"
+//        });
 
         e.preventDefault();
     } else {

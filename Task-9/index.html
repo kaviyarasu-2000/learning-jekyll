@@ -47,7 +47,7 @@
                         </div>
                         <div class="modal-body">
                             <!--form-->
-                            <form id="form" autocomplete="off">
+                            <form id="form" autocomplete="off" return="true">
                                 <div class="col-mb-3">
                                     <label for="personName">Person Name&nbsp; <span class="text-danger">*</span>
                                    </label>
@@ -61,11 +61,11 @@
                                 </div>
                                 <div class="col-mb-3">
                                     <label for="dueDate">Starting Date <span class="text-danger">*</span></label>
-                                    <input type="text" class="form-control date initDate datepicker" id="initDate" placeholder="Select the starting date" required>
+                                    <input type="text" class="form-control initDate datepicker" id="initDate" placeholder="Select the starting date" required>
                                 </div>
                                 <div class="col-mb-3">
                                     <label for="dueDate">Due Date</label>
-                                    <input type="text" name="date" class="form-control date dueDate datepicker" id="dueDate" placeholder="Select the due date">
+                                    <input type="text" class="form-control dueDate datepicker" id="dueDate" placeholder="Select the due date">
                                 </div>
                                 <div class="col-mb-3">
                                     <label for="comments">Comments</label>
@@ -81,8 +81,8 @@
                                     </select>
                                 </div>
                                 <div class="modal-footer">
-                                    <button type="submit" class="btn btn-primary" id="btnSave" name="submit" value="Submit">Submit</button>
-                                    <button type="button" class="btn btn-secondary" id="btnClear" name="clear">Clear</button>
+                                    <button type="submit" class="btn btn-primary" id="btnSave">Submit</button>
+                                    <button type="button" class="btn btn-secondary" id="btnClear">Clear</button>
                                 </div>
                             </form>
                         </div> 
