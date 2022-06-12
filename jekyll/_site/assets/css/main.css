@@ -26,7 +26,7 @@ a.nav-link:hover { color: #d41d1f !important; }
 
 .form { background-color: #ffffff; padding: 15px; color: #8490a1; border-radius: 10px; width: 250px; box-shadow: -2px 2px 5px 0px #8490a1; }
 
-@media only screen and (max-width: 992px) { .poster { height: 290px; width: 290px; padding: 0px; } .poster .rounded { height: 250px; width: 250px; } .poster-title { font-size: 10px; } .poster-des { font-size: 10px; } .form { width: 150px; font-size: 10px; } }
+@media only screen and (max-width: 992px) { .poster { height: 290px; width: 290px; padding: 0px; margin: 0px; } .poster .rounded { height: 250px; width: 250px; } .poster-title { font-size: 10px; } .poster-des { font-size: 10px; } .form { width: 150px; font-size: 10px; } }
 
 .aboutus { background-image: url(../../assets/images/about-bg.png); background-repeat: no-repeat; background-size: 350px 800px; background-position: left !important; padding-bottom: 120px; }
 
