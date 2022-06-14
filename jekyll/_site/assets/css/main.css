@@ -56,17 +56,15 @@ a.nav-link:hover { color: #d41d1f !important; }
 
 .visa-heading { color: #d41d1f !important; margin-top: 20px; }
 
-.client { margin-bottom: 30px; }
+.client { margin-bottom: 10px; }
 
-.client--title { border-bottom: 2px solid transparent; border-image: linear-gradient(to right, #000000 50%, #d41d1f 50%); border-image-slice: 1; align-self: center; margin-top: 120px; margin-bottom: 25px; font-size: 20px; }
+.client--title { border-bottom: 2px solid transparent; border-image: linear-gradient(to right, #000000 50%, #d41d1f 50%); border-image-slice: 1; align-self: center; margin-bottom: 25px; margin-top: 85px; font-size: 20px; }
 
-.client-photo { height: 130px; width: 120px; margin-top: 140px; }
+.client-photo { height: 130px; width: 120px; margin-top: 105px; }
 
 .client-reviewer { margin-top: 30px; font-size: 20px; padding-top: 20px; }
 
 .client-reviewer--comment { padding-bottom: 20px; }
-
-.carousel-indicators { margin-bottom: -20px; }
 
 .carousel-indicators button { width: 10px !important; height: 10px !important; border-radius: 100% !important; border: 1px solid #000000 !important; }
 
