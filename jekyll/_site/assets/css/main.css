@@ -18,19 +18,17 @@ a.nav-link:hover { color: #d41d1f !important; }
 
 .home-container { background-image: url(../../assets/images/homebg.jpg); background-repeat: no-repeat; background-size: 100% 100%; height: 720px; }
 
-.poster { border-style: dashed; border-width: thin; padding: 20px !important; height: 500px; width: 500px; border-radius: 50%; margin-left: 250px; }
-
 .poster-des { padding: 15px; }
 
 .poster-title { color: #d41d1f; font-weight: bold; font-size: 25px; }
 
-.poster .rounded { display: flex; flex-direction: column; justify-content: center; height: 450px; width: 450px; border-radius: 50% !important; background-color: #ffffff80; }
+.rounded { display: flex; flex-direction: column; justify-content: center; height: 450px; width: 450px; border-radius: 50% !important; background-color: #ffffff80; outline: 1px dashed; outline-offset: 20px; }
 
 .form { background-color: #ffffff; padding: 15px; color: #8490a1; border-radius: 10px; width: 250px; box-shadow: -2px 2px 5px 0px #8490a1; }
 
 @media only screen and (max-width: 992px) { .poster { height: 290px; width: 290px; padding: 0px; margin: 0px; } .poster .rounded { height: 250px; width: 250px; } .poster-title { font-size: 10px; } .poster-des { font-size: 10px; } .form { width: 150px; font-size: 10px; } }
 
-.aboutus { background-image: url(../../assets/images/about-bg.png); background-repeat: no-repeat; background-size: 350px 800px; background-position: left !important; padding-bottom: 120px; }
+.aboutus { background-image: url(../../assets/images/about-bg.png); background-repeat: no-repeat; background-size: 350px 100%; background-position: left !important; padding-bottom: 120px; }
 
 .about { font-family: 'Signika Negative', sans-serif !important; }
 
@@ -44,9 +42,7 @@ a.nav-link:hover { color: #d41d1f !important; }
 
 .visa-title { margin-top: 100px; border-bottom: 2px solid transparent; border-image: linear-gradient(to right, #000000 50%, #d41d1f 50%); border-image-slice: 1; align-self: center; }
 
-.profile-border { padding: 5px; border: 1px dashed #000000; border-radius: 50%; width: 130px; }
-
-.profile-photo { border-radius: 50%; width: 118px; }
+.profile-photo { border-radius: 50%; width: 118px; outline: 1px dashed; outline-offset: 5px; }
 
 .information { padding-top: 50px; }
 
@@ -93,5 +89,3 @@ carousel-indicators { bottom: -25px; }
 .email--input { background-color: #313538; border-radius: 0px; border: none; height: 38px; padding: 10px; }
 
 @media only screen and (max-width: 320px) { .email--input { margin-left: -15px; } }
-
-/*# sourceMappingURL=main.css.map */

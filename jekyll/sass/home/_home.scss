@@ -7,25 +7,17 @@
     height: 720px;
 }
 
-.poster {
-  border-style: dashed;
-  border-width: thin;
-  padding: 20px !important;
-  height: 500px;
-  width: 500px; 
-  border-radius: $border-radius;
-    margin-left: 250px;
-  &-des{
+.poster-des{
         padding: 15px;
     }
     
-  &-title {
+.poster-title {
     color: #d41d1f;
     font-weight: bold;
     font-size: 25px;
 }
-}
-.poster .rounded {
+
+.rounded {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -33,6 +25,8 @@
     width: 450px;
     border-radius:  $border-radius !important; 
     background-color:  #ffffff80;
+    outline: 1px dashed;
+    outline-offset: 20px;
    
 }
 

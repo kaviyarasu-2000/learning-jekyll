@@ -6,15 +6,11 @@
 	@include bottom-line;
 }
 
-.profile-border {
-	padding: 5px;
-	border: 1px dashed $dark;
-	border-radius: $border-radius;
-	width: 130px;
-}
 .profile-photo {
 	border-radius: $border-radius;
 	width: 118px;
+	outline: 1px dashed;
+    outline-offset: 5px;
 }
 
 
