@@ -33,3 +33,9 @@
     height: 38px;
     padding: 10px;
 }
+@media  only screen and (max-width: 320px) {
+    .email--input{
+        margin-left: -15px;
+    }
+    
+}

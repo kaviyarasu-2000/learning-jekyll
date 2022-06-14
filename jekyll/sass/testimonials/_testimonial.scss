@@ -1,4 +1,3 @@
-
 .client {
     margin-bottom: 10px; 
     &--title {
@@ -23,7 +22,9 @@
   }
  
 }
-
+carousel-indicators{
+    bottom: -25px;
+}
 .carousel-indicators button {
   width: 10px !important;
   height: 10px !important;

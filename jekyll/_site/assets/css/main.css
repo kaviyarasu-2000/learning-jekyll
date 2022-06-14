@@ -6,6 +6,8 @@ html, body { font-family: 'Signika Negative', sans-serif; }
 
 @media only screen and (max-width: 992px) { .vertical-line { height: 110px; } .point { bottom: 40px; } }
 
+.logo { height: 80px; }
+
 .row-1 { border-right-style: solid; border-right-width: 1px; }
 
 .row-2 { border-top-style: solid; border-top-width: 1px; }
@@ -66,6 +68,8 @@ a.nav-link:hover { color: #d41d1f !important; }
 
 .client-reviewer--comment { padding-bottom: 20px; }
 
+carousel-indicators { bottom: -25px; }
+
 .carousel-indicators button { width: 10px !important; height: 10px !important; border-radius: 100% !important; border: 1px solid #000000 !important; }
 
 .carousel-indicators .active { background-color: #d41d1f !important; border-color: #d41d1f !important; }
@@ -87,5 +91,7 @@ a.nav-link:hover { color: #d41d1f !important; }
 .subscribe--btn { background-color: #575e64; color: #84898d; border-radius: 0px; }
 
 .email--input { background-color: #313538; border-radius: 0px; border: none; height: 38px; padding: 10px; }
+
+@media only screen and (max-width: 320px) { .email--input { margin-left: -15px; } }
 
 /*# sourceMappingURL=main.css.map */
