@@ -18,21 +18,21 @@ title: Blogs
 
     <div class="mt-3 fw-bold post-content"> {{ content }}</div>
 
-    <div class="text-center">
+    <div class="text-center m-5">
         <a class="btn btn-primary" onclick="history.back()">back</a>
     </div>
     {% endif %}
     {% if page.content =="" %}
 
     <div class="d-flex justify-content-end mt-5">
-        <img class="wallpaper position-absolute  d-md-block d-none " src="/assets/images/nat.jpg"
-            alt="image">
+        <img class="wallpaper position-absolute  d-md-block d-none " src="/assets/images/nat.jpg" alt="image">
     </div>
 
     {% for post in paginator.posts %}
     <a href="{{post.url | prepend: site.baseurl}}">
         <h4> <a class="text-decoration-none text-dark post-url" href="{{ post.url }}">{{ post.title }}</a></h4>
-        <p><i class="fa-regular fa-calendar"></i> {{ post.date | date:"%B %d, %Y" }} - <i class="fa-regular fa-user"></i> {{ post.author }}
+        <p><i class="fa-regular fa-calendar"></i> {{ post.date | date:"%B %d, %Y" }} - <i
+                class="fa-regular fa-user"></i> {{ post.author }}
     </a>
     {% endfor %}
 
