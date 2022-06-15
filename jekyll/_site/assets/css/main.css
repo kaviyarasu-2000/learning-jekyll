@@ -46,7 +46,7 @@ a.nav-link:hover { color: #d41d1f !important; }
 
 .information { padding-top: 50px; }
 
-.information-1 { @extended .information; padding-bottom: 100px; }
+.information-1 { padding-bottom: 100px; }
 
 .visa-type { display: flex; flex-flow: column; align-items: center; width: 320px; }
 
@@ -74,6 +74,10 @@ carousel-indicators { bottom: -25px; }
 
 .double-quotes { font-size: 80px; font-family: Georgia; }
 
+@media only screen and (max-width: 575px) { .above { display: none; } .below { display: block; } }
+
+@media only screen and (min-width: 575px) { .above { display: block; } .below { display: none; } }
+
 .footer { font-family: initial !important; }
 
 .footer-content { text-decoration: none; color: white; opacity: 0.5; font-size: 12px; margin-top: 30px; }
@@ -89,3 +93,5 @@ carousel-indicators { bottom: -25px; }
 .email--input { background-color: #313538; border-radius: 0px; border: none; height: 38px; padding: 10px; }
 
 @media only screen and (max-width: 320px) { .email--input { margin-left: -15px; } }
+
+/*# sourceMappingURL=main.css.map */

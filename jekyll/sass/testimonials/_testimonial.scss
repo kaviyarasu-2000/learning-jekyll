@@ -45,3 +45,23 @@ carousel-indicators{
 .double-quotes {
   font-size: 80px;
   font-family: Georgia; }  
+
+
+
+  @media only screen and (max-width: 575px) {
+    .above {
+       display: none;
+    }
+    .below {
+       display: block;
+    }
+ }
+ 
+ @media only screen and (min-width: 575px) {
+    .above {
+       display: block;
+    }
+    .below {
+       display: none;
+    }
+ }
