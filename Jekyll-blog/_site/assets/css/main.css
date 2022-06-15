@@ -12,6 +12,8 @@ html, body { background-color: #c1e5a6; }
 
 .welcome { width: 280px; }
 
+.fst-italic { color: #fd0303; }
+
 .card-title { color: #fe6601; }
 
 .desc { font-weight: 500; }
