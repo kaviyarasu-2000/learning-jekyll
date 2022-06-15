@@ -8,17 +8,21 @@ html, body { background-color: #c1e5a6; }
 
 .home { height: 400px; background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSl1wyibApd6XbdkJ--un1ody5HWtphngZeg&usqp=CAU); background-repeat: no-repeat; background-size: cover; }
 
-.head { font-size: 40px; color: darkorange; font-family: cursive; }
+.head { font-size: 40px; color: #fe6601; font-family: cursive; }
+
+.welcome { width: 280px; }
+
+.card-title { color: #fe6601; }
 
 .desc { font-weight: 500; }
 
-.card { background-color: #76d987; }
+.card { background-color: #2a0960; }
 
 .wallpaper { height: 350px; width: 300px; border-radius: 20px; box-shadow: 5px 5px 5px #000; }
 
 .post-url:hover { color: #8F00FF !important; }
 
-.pagetitle { font-variant: small-caps; }
+.pagetitle { font-variant: small-caps; text-shadow: 0 0 20px darkblue; }
 
 .image { border-radius: 20px; box-shadow: 5px 5px 5px #000; display: block; margin: auto; height: 350px; width: 450px; margin-bottom: 40px; }
 
