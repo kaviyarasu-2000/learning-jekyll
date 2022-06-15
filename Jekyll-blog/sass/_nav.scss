@@ -1,7 +1,19 @@
+.nav-brand{
+    height: 75px;
+    width: 75px;
+}
 .nav-link{
     color: $dark;
 }
-.nav-brand{
-    height: 60px;
-    width: 150px;
-} 
+.card-img-top{
+    height: 100px;
+    width: 100px;
+    
+   box-shadow: $shadow;
+}
+.home{
+    height: 400px;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSl1wyibApd6XbdkJ--un1ody5HWtphngZeg&usqp=CAU);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

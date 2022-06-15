@@ -4,7 +4,9 @@ title: Blogs
 ---
 
 {% include nav.html %}
-
+{% if page.content =="" %}
+{% include home.html %}
+{% endif %}
 <div class="container">
     <h4 class="mt-5 pagetitle">{{ page.title }}</h4>
     {% if page.author %}
@@ -14,7 +16,7 @@ title: Blogs
 
     {% if page.content !="" %}
 
-    <div class="mt-3 fw-bold"> {{ content }}</div>
+    <div class="mt-3 fw-bold post-content"> {{ content }}</div>
 
     <div class="text-center">
         <a class="btn btn-primary" onclick="history.back()">back</a>
@@ -23,11 +25,11 @@ title: Blogs
     {% if page.content =="" %}
 
     <div class="d-flex justify-content-end mt-5">
-        <img class="wallpaper position-absolute  d-md-block d-none " src="/assets/images/backround.avif"
+        <img class="wallpaper position-absolute  d-md-block d-none " src="/assets/images/nat.jpg"
             alt="image">
     </div>
 
-    {% for post in paginator.posts%}
+    {% for post in paginator.posts %}
     <a href="{{post.url | prepend: site.baseurl}}">
         <h4> <a class="text-decoration-none text-dark post-url" href="{{ post.url }}">{{ post.title }}</a></h4>
         <p><i class="fa-regular fa-calendar"></i> {{ post.date | date:"%B %d, %Y" }} - <i class="fa-regular fa-user"></i> {{ post.author }}

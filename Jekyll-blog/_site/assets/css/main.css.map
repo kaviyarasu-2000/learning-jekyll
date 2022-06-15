@@ -6,17 +6,19 @@
 		"_sass/main.scss",
 		"sass/_variables.scss",
 		"sass/_nav.scss",
+		"sass/_home.scss",
 		"sass/_page.scss",
 		"sass/_post.scss"
 	],
 	"sourcesContent": [
 		"@import \"main\";\n",
-		"html,body{\r\n    background-image: url(https://images.unsplash.com/photo-1501436513145-30f24e19fcc8?ixlib=60);\r\n    background-size: cover;\r\n}\r\n\r\n@import\"../sass/variables.scss\";\r\n\r\n@import\"../sass/nav.scss\"; \r\n\r\n@import\"../sass/page.scss\";\r\n\r\n@import\"../sass/post.scss\";\r\n\r\n\r\n",
+		"html,body{\r\n    background-color:#c1e5a6;\r\n}\r\n\r\n@import\"../sass/variables.scss\";\r\n\r\n@import\"../sass/nav.scss\";\r\n\r\n@import\"../sass/home.scss\";\r\n\r\n@import\"../sass/page.scss\";\r\n\r\n@import\"../sass/post.scss\";\r\n\r\n\r\n",
 		"$dark: #000;\r\n$shadow:5px 5px 5px $dark;",
-		".nav-link{\r\n    color: $dark;\r\n}\r\n.nav-brand{\r\n    height: 60px;\r\n    width: 150px;\r\n} ",
+		".nav-brand{\r\n    height: 75px;\r\n    width: 75px;\r\n}\r\n.nav-link{\r\n    color: $dark;\r\n}\r\n.card-img-top{\r\n    height: 100px;\r\n    width: 100px;\r\n    \r\n   box-shadow: $shadow;\r\n}\r\n.home{\r\n    height: 400px;\r\n    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSl1wyibApd6XbdkJ--un1ody5HWtphngZeg&usqp=CAU);\r\n    background-repeat: no-repeat;\r\n    background-size: cover;\r\n}\r\n",
+		".head{\r\n    font-size: 40px;\r\n    color: darkorange;\r\n    font-family: cursive;\r\n}\r\n.desc{\r\n    font-weight: 500;\r\n\r\n}\r\n.card{\r\n    background-color: #76d987;\r\n}",
 		".wallpaper{\r\n    height: 350px;\r\n    width: 300px;\r\n    border-radius: 20px;\r\n    box-shadow: $shadow;    \r\n}",
-		".post-url:hover {\r\n    color: #8F00FF !important;\r\n}\r\n.pagetitle{\r\n    color: #008000;\r\n}\r\n.image{\r\n    border-radius: 20px;\r\n    box-shadow: $shadow;\r\n    display: block;\r\n    margin: auto;\r\n    height: 350px;\r\n    width:450px;\r\n    margin-bottom: 40px;\r\n}"
+		".post-url:hover {\r\n    color: #8F00FF !important;\r\n}\r\n.pagetitle{\r\n    font-variant: small-caps;\r\n}\r\n.image{\r\n    border-radius: 20px;\r\n    box-shadow: $shadow;\r\n    display: block;\r\n    margin: auto;\r\n    height: 350px;\r\n    width:450px;\r\n    margin-bottom: 40px;\r\n}\r\n.post-content{\r\n    color: #b05e20;\r\n}"
 	],
 	"names": [],
-	"mappings": "ACAA,AAAA,IAAI,EAAC,IAAI,CAAA,EACL,gBAAgB,EAAE,0EAA0E,EAC5F,eAAe,EAAE,KAAK,GACzB;;AEHD,AAAA,SAAS,CAAA,EACL,KAAK,EDDF,IAAI,GCEV;;AACD,AAAA,UAAU,CAAA,EACN,MAAM,EAAE,IAAI,EACZ,KAAK,EAAE,KAAK,GACf;;ACND,AAAA,UAAU,CAAA,EACN,MAAM,EAAE,KAAK,EACb,KAAK,EAAE,KAAK,EACZ,aAAa,EAAE,IAAI,EACnB,UAAU,EFHN,GAAG,CAAC,GAAG,CAAC,GAAG,CADZ,IAAI,GEKV;;ACLD,AAAA,SAAS,CAAC,KAAK,CAAC,EACZ,KAAK,EAAE,kBAAkB,GAC5B;;AACD,AAAA,UAAU,CAAA,EACN,KAAK,EAAE,OAAO,GACjB;;AACD,AAAA,MAAM,CAAA,EACF,aAAa,EAAE,IAAI,EACnB,UAAU,EHPN,GAAG,CAAC,GAAG,CAAC,GAAG,CADZ,IAAI,EGSP,OAAO,EAAE,KAAK,EACd,MAAM,EAAE,IAAI,EACZ,MAAM,EAAE,KAAK,EACb,KAAK,EAAC,KAAK,EACX,aAAa,EAAE,IAAI,GACtB"
+	"mappings": "ACAA,AAAA,IAAI,EAAC,IAAI,CAAA,EACL,gBAAgB,EAAC,OAAO,GAC3B;;AEFD,AAAA,UAAU,CAAA,EACN,MAAM,EAAE,IAAI,EACZ,KAAK,EAAE,IAAI,GACd;;AACD,AAAA,SAAS,CAAA,EACL,KAAK,EDLF,IAAI,GCMV;;AACD,AAAA,aAAa,CAAA,EACT,MAAM,EAAE,KAAK,EACb,KAAK,EAAE,KAAK,EAEb,UAAU,EDVL,GAAG,CAAC,GAAG,CAAC,GAAG,CADZ,IAAI,GCYV;;AACD,AAAA,KAAK,CAAA,EACD,MAAM,EAAE,KAAK,EACb,gBAAgB,EAAE,wGAAwG,EAC1H,iBAAiB,EAAE,SAAS,EAC5B,eAAe,EAAE,KAAK,GACzB;;AClBD,AAAA,KAAK,CAAA,EACD,SAAS,EAAE,IAAI,EACf,KAAK,EAAE,UAAU,EACjB,WAAW,EAAE,OAAO,GACvB;;AACD,AAAA,KAAK,CAAA,EACD,WAAW,EAAE,GAAG,GAEnB;;AACD,AAAA,KAAK,CAAA,EACD,gBAAgB,EAAE,OAAO,GAC5B;;ACXD,AAAA,UAAU,CAAA,EACN,MAAM,EAAE,KAAK,EACb,KAAK,EAAE,KAAK,EACZ,aAAa,EAAE,IAAI,EACnB,UAAU,EHHN,GAAG,CAAC,GAAG,CAAC,GAAG,CADZ,IAAI,GGKV;;ACLD,AAAA,SAAS,CAAC,KAAK,CAAC,EACZ,KAAK,EAAE,kBAAkB,GAC5B;;AACD,AAAA,UAAU,CAAA,EACN,YAAY,EAAE,UAAU,GAC3B;;AACD,AAAA,MAAM,CAAA,EACF,aAAa,EAAE,IAAI,EACnB,UAAU,EJPN,GAAG,CAAC,GAAG,CAAC,GAAG,CADZ,IAAI,EISP,OAAO,EAAE,KAAK,EACd,MAAM,EAAE,IAAI,EACZ,MAAM,EAAE,KAAK,EACb,KAAK,EAAC,KAAK,EACX,aAAa,EAAE,IAAI,GACtB;;AACD,AAAA,aAAa,CAAA,EACT,KAAK,EAAE,OAAO,GACjB"
 }
