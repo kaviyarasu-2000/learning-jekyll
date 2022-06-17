@@ -1,8 +1,10 @@
 ---
 layout: post
 title: Younster-life
-author: Susanna olsson
+author: Susanna
+image: /assets/images/younsters.jpg
 tags: India
+des: The age where the age group is no longer of a child but yet to turn out to be a grown-up is the youth age.
 ---
 
 <img class="image" src="/assets/images/younsters.jpg" alt="image">

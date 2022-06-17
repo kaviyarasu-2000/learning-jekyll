@@ -1,0 +1,34 @@
+<script type="text/javascript">
+
+  var postsURL = [{% for post in site.posts %}"{{ post.url }}"{% unless forloop.last %}, {% endunless %} {% endfor %}];
+
+  var postsTitle = [{% for post in site.posts %}"{{ post.title }}"{% unless forloop.last %}, {% endunless %} {% endfor %}];
+
+  var postsDes = [{% for post in site.posts %}"{{ post.des }}"{% unless forloop.last %}, {% endunless %} {% endfor %}];
+
+  var postsImg = [{% for post in site.posts %}"{{ post.image }}"{% unless forloop.last %}, {% endunless %} {% endfor %}];
+
+  var randomIndexUsed = [];
+  var count = 0;
+  var numberOfPosts = postsURL.length;
+  while (count < numberOfPosts) {
+    var randomIndex;
+    var postURL;
+    var postTitle;
+    var postDes;
+    var postImg;
+    randomIndex = Math.floor(Math.random() * postsURL.length);
+    if (randomIndexUsed.indexOf(randomIndex) == "-1") {
+      postURL = postsURL[randomIndex];
+      postTitle = postsTitle[randomIndex];
+      postDes = postsDes[randomIndex];
+      postImg = postsImg[randomIndex];
+      if (count == (numberOfPosts - 1)) {
+        document.write('<h1><a class="random-title" href="' + postURL + '">' + postTitle + '</a></h1>' + '<img class="random-image" src="' + postImg + '">' + '<h4>' + postDes + '</h4>');
+      }
+      randomIndexUsed.push(randomIndex);
+      count++;
+    }
+  }
+
+</script>

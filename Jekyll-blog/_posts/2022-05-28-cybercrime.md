@@ -1,8 +1,10 @@
 ---
 layout: post
 title: Cybercrime
-author: Yury Fedotov
+author: Fedotov
+image: /assets/images/cyber-crime.jpg
 tags: cyber
+des: Cyber. It is the inevitable prefix that currently defines our world. From people's privacy to inter-state relations
 ---
 
 

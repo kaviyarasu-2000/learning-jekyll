@@ -1,9 +1,6 @@
 .post-url:hover {
     color: #8F00FF !important;
 }
-.pagetitle{
-    font-variant: small-caps;
-}
 .image{
     border-radius: 20px;
     box-shadow: $shadow;
@@ -15,4 +12,21 @@
 }
 .post-content{
     color: #b05e20;
+}
+.card{
+    background-color: #2a0960;
+}
+.card-title{
+    color:#fe6601;
+}
+.card-flex{
+    width:1200px;
+}
+.card{
+    width: 250px;
+}
+.des{
+    margin-top: -50px;
+    width: 220px;
+    padding: 2px;
 }

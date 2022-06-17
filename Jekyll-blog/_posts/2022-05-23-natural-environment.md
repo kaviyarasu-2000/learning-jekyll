@@ -2,7 +2,9 @@
 layout: post
 title: Natural-Environment
 author: Dane
+image: /assets/images/natural-environment.jpg
 tags: Environment
+des: The natural environment or natural world encompasses all living and non-living things occurring naturally, meaning in this case not artificial.
 ---
 
 <img class="image" src="/assets/images/natural-environment.jpg" alt="image">

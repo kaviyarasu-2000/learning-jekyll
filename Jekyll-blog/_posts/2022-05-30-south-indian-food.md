@@ -1,8 +1,10 @@
 ---
 layout: post
 title: South-Indian-Food
-author:  Dassana Amit
+author: Dassana 
+image: /assets/images/southindian.jpg
 tags: Food
+des: This South Indian Coconut Chickpea Curry is a spicy and super delicious curry made with white chickpeas, coconut and spices.
 ---
 
 <img class="image" src="/assets/images/southindian.jpg" alt="image">

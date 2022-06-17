@@ -1,8 +1,10 @@
 ---
 layout: post
 title: Engineering
-author: Jaime Trosper
+author: Jaime
+image: /assets/images/engineering.jpg
 tags: Engineering
+des: Engineering is surely a word most people have heard of before, but have you actually ever wondered what it means to be an engineer
 ---
 
 <img class="image" src="/assets/images/engineering.jpg" alt="image">

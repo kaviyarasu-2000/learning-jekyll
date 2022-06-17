@@ -1,7 +1,5 @@
 html, body { background-color: #c1e5a6; }
 
-.about { background-color: #fff !important; }
-
 .nav-link:hover { color: #f79205 !important; }
 
 .navbar { background-color: #00008b; }
@@ -14,26 +12,28 @@ html, body { background-color: #c1e5a6; }
 
 .home { height: 400px; background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSl1wyibApd6XbdkJ--un1ody5HWtphngZeg&usqp=CAU); background-repeat: no-repeat; background-size: cover; }
 
-.head { font-size: 40px; color: #fe6601; font-family: cursive; }
+.random-title { color: red; text-decoration: none; font-variant: small-caps; }
 
-.welcome { width: 280px; }
-
-.fst-italic { color: #fd0303; }
-
-.card-title { color: #fe6601; }
-
-.desc { font-weight: 500; }
-
-.card { background-color: #2a0960; }
+.random-image { box-shadow: 5px 5px 5px #000; border-radius: 10px; }
 
 .wallpaper { height: 350px; width: 300px; border-radius: 20px; box-shadow: 5px 5px 5px #000; }
 
-.post-url:hover { color: #8F00FF !important; }
+.about { background-color: #fff !important; }
 
-.pagetitle { font-variant: small-caps; }
+.post-url:hover { color: #8F00FF !important; }
 
 .image { border-radius: 20px; box-shadow: 5px 5px 5px #000; display: block; margin: auto; height: 350px; width: 450px; margin-bottom: 40px; }
 
 .post-content { color: #b05e20; }
+
+.card { background-color: #2a0960; }
+
+.card-title { color: #fe6601; }
+
+.card-flex { width: 1200px; }
+
+.card { width: 250px; }
+
+.des { margin-top: -50px; width: 220px; padding: 2px; }
 
 /*# sourceMappingURL=main.css.map */

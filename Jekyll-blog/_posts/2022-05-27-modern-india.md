@@ -1,8 +1,10 @@
 ---
 layout: post
 title: Modern-india
-author: Madhav kohsla
+author: Madhav
+image: /assets/images/modern-india.jpg
 tags: India
+des: The history of modern constitutionalism has immortalized several events of much moment.
 ---
 
 <img class="image" src="/assets/images/modern-india.jpg" alt="image">

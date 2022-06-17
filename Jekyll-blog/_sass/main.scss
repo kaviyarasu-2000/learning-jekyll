@@ -1,17 +1,13 @@
 html,body{
     background-color:#c1e5a6;
 }
-.about{
-    background-color: #fff !important;
-}
+
 @import"../sass/variables.scss";
 
 @import"../sass/nav.scss";
 
-@import"../sass/home.scss";
+@import"../sass/randompost.scss";
 
 @import"../sass/page.scss";
 
 @import"../sass/post.scss";
-
-
