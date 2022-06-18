@@ -26,7 +26,7 @@ a.nav-link:hover { color: #d41d1f !important; }
 
 .form { background-color: #ffffff; padding: 15px; color: #8490a1; border-radius: 10px; width: 250px; box-shadow: -2px 2px 5px 0px #8490a1; }
 
-@media only screen and (max-width: 992px) { .poster { height: 290px; width: 290px; padding: 0px; margin: 0px; } .poster .rounded { height: 250px; width: 250px; } .poster-title { font-size: 10px; } .poster-des { font-size: 10px; } .form { width: 150px; font-size: 10px; } }
+@media only screen and (max-width: 992px) { .rounded { height: 230px; width: 230px; } .poster-title { font-size: 10px; } .poster-des { font-size: 10px; } .form { width: 180px; font-size: 10px; } }
 
 .aboutus { background-image: url(../../assets/images/about-bg.png); background-repeat: no-repeat; background-size: 350px 100%; background-position: left !important; padding-bottom: 120px; }
 
@@ -64,17 +64,15 @@ a.nav-link:hover { color: #d41d1f !important; }
 
 .client-reviewer--comment { padding-bottom: 20px; }
 
-carousel-indicators { bottom: -25px; }
+.carousel-indicators button, .carousels-indicators button { width: 10px !important; height: 10px !important; border-radius: 100% !important; border: 1px solid #000000 !important; }
 
-.carousel-indicators button { width: 10px !important; height: 10px !important; border-radius: 100% !important; border: 1px solid #000000 !important; }
-
-.carousel-indicators .active { background-color: #d41d1f !important; border-color: #d41d1f !important; }
+.carousel-indicators .active, .carousel-indicators .active { background-color: #d41d1f !important; border-color: #d41d1f !important; }
 
 .line { border-bottom: 2px solid transparent; border-image: linear-gradient(to right, #000000 50%, #d41d1f 50%); border-image-slice: 1; align-self: center; width: 120px; margin-bottom: -20px; }
 
 .double-quotes { font-size: 80px; font-family: Georgia; }
 
-@media only screen and (max-width: 575px) { .above { display: none; } .below { display: block; } }
+@media only screen and (max-width: 575px) { .above { display: none; } .below { display: block; } .client-photo { margin-top: 50px; } }
 
 @media only screen and (min-width: 575px) { .above { display: block; } .below { display: none; } }
 

@@ -22,16 +22,13 @@
   }
  
 }
-carousel-indicators{
-    bottom: -25px;
-}
-.carousel-indicators button {
+.carousel-indicators button ,.carousels-indicators button {
   width: 10px !important;
   height: 10px !important;
   border-radius: 100% !important;
   border: 1px solid $dark !important;   
 }
-.carousel-indicators .active {
+.carousel-indicators .active , .carousel-indicators .active {
   background-color: $color-danger !important; 
   border-color: $color-danger !important;
 }
@@ -53,14 +50,18 @@ carousel-indicators{
        display: none;
     }
     .below {
-       display: block;
+       display: block; 
+    }
+    .client-photo{
+      margin-top: 50px;
     }
  }
  
  @media only screen and (min-width: 575px) {
     .above {
-       display: block;
+       display: block;     
     }
+
     .below {
        display: none;
     }
