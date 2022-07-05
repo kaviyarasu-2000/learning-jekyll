@@ -24,7 +24,7 @@
       postDes = postsDes[randomIndex];
       postImg = postsImg[randomIndex];
       if (count == (numberOfPosts - 1)) {
-        document.write('<h1><a class="random-title" href="' + postURL + '">' + postTitle + '</a></h1>' + '<img class="random-image" src="' + postImg + '">' + '<h4>' + postDes + '</h4>');
+        document.write(  '<img class="random-image" src="' + postImg + '">' +  '<div class="d-flex flex-column"><h1 class="mt-3"><a class="random-title" href="' + postURL + '">' + postTitle + '</a></h1>' + '<p class="postDes">' + postDes + '</p>'+'</div>');
       }
       randomIndexUsed.push(randomIndex);
       count++;

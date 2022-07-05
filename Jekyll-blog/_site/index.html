@@ -17,10 +17,6 @@
     <nav class="navbar navbar-expand-lg container-fluid">
   <div class="container-fluid text-white">
     <img class="nav-brand" src="/assets/images/a.jpg" alt="Avatar Logo">
-    <a href="#" class="p-3 text-decoration-none text-white"> <i class="fa fa-phone" aria-hidden="true"></i>&nbsp;+91
-      9876543210</a>
-    <a href="#" class="p-3 text-decoration-none text-white"><i
-        class="fa-solid fa-envelope"></i>&nbsp;myblog@gmail.com</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
       aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
       <span><i class="fas fa-bars"></i></span>
@@ -54,8 +50,7 @@
 </nav>
 <div class="container">
     
-    <h2 class="mt-2"> Blog </h2>
-    <div class="random bg-warning mx-auto text-center  mt-5">
+    <div class="random mx-auto text-center d-flex flex-sm-row flex-column mt-5">
         <script type="text/javascript">
 
   var postsURL = ["/2022/05/30/south-indian-food.html",  "/2022/05/29/younsters-life.html",  "/2022/05/28/cybercrime.html",  "/2022/05/27/modern-india.html",  "/2022/05/26/engineering.html",  "/2022/05/25/agriculture.html",  "/2022/05/24/mechanical-engineering.html",  "/2022/05/23/natural-environment.html" ];
@@ -82,7 +77,7 @@
       postDes = postsDes[randomIndex];
       postImg = postsImg[randomIndex];
       if (count == (numberOfPosts - 1)) {
-        document.write('<h1><a class="random-title" href="' + postURL + '">' + postTitle + '</a></h1>' + '<img class="random-image" src="' + postImg + '">' + '<h4>' + postDes + '</h4>');
+        document.write(  '<img class="random-image" src="' + postImg + '">' +  '<div class="d-flex flex-column"><h1 class="mt-3"><a class="random-title" href="' + postURL + '">' + postTitle + '</a></h1>' + '<p class="postDes">' + postDes + '</p>'+'</div>');
       }
       randomIndexUsed.push(randomIndex);
       count++;
@@ -92,21 +87,23 @@
 </script>
         
     </div>
-    <div class="d-flex flex-wrap card-flex m-auto d-sm-row">
+
+    <div class="d-flex flex-wrap card-flex justify-content-evenly m-auto d-sm-row">
         
         
         <div class="row text-center m-2 g-4">
             <div class="col">
-                <div class="card h-100 text-white">
-                    <h4> <a class="text-decoration-none text-info post-url" href="/2022/05/30/south-indian-food.html">
+                <div class="card post-cards h-100">
+                    <h4> <a class="text-decoration-none post-url" href="/2022/05/30/south-indian-food.html">
                             <div class="mt-3">South-Indian-Food</div>
                         </a></h4>
                     <p class="d-inline-block"> <i class="fa-regular fa-calendar"></i> May 30, 2022
                         - <i class="fa-regular fa-user"></i>
                         Dassana</p>
+                        <hr>
                     <img src="/assets/images/southindian.jpg" alt="image">
 
-                    <div class="card-body h-100 card bg-white text-dark mx-auto fw-bold des"> This South Indian Coconut Chickpea Curry is a spicy and super delicious curry made with white chickpeas, coconut and spices.</div>
+                    <div class="card-body rounded-top h-100 card p-3 text-dark mx-auto fw-bold des"> This South Indian Coconut Chickpea Curry is a spicy and super delicious curry made with white chickpeas, coconut and spices.</div>
                 </div>
             </div>
         </div>
@@ -115,16 +112,17 @@
         
         <div class="row text-center m-2 g-4">
             <div class="col">
-                <div class="card h-100 text-white">
-                    <h4> <a class="text-decoration-none text-info post-url" href="/2022/05/29/younsters-life.html">
+                <div class="card post-cards h-100">
+                    <h4> <a class="text-decoration-none post-url" href="/2022/05/29/younsters-life.html">
                             <div class="mt-3">Younster-life</div>
                         </a></h4>
                     <p class="d-inline-block"> <i class="fa-regular fa-calendar"></i> May 29, 2022
                         - <i class="fa-regular fa-user"></i>
                         Susanna</p>
+                        <hr>
                     <img src="/assets/images/younsters.jpg" alt="image">
 
-                    <div class="card-body h-100 card bg-white text-dark mx-auto fw-bold des"> The age where the age group is no longer of a child but yet to turn out to be a grown-up is the youth age.</div>
+                    <div class="card-body rounded-top h-100 card p-3 text-dark mx-auto fw-bold des"> The age where the age group is no longer of a child but yet to turn out to be a grown-up is the youth age.</div>
                 </div>
             </div>
         </div>
@@ -133,16 +131,17 @@
         
         <div class="row text-center m-2 g-4">
             <div class="col">
-                <div class="card h-100 text-white">
-                    <h4> <a class="text-decoration-none text-info post-url" href="/2022/05/28/cybercrime.html">
+                <div class="card post-cards h-100">
+                    <h4> <a class="text-decoration-none post-url" href="/2022/05/28/cybercrime.html">
                             <div class="mt-3">Cybercrime</div>
                         </a></h4>
                     <p class="d-inline-block"> <i class="fa-regular fa-calendar"></i> May 28, 2022
                         - <i class="fa-regular fa-user"></i>
                         Fedotov</p>
+                        <hr>
                     <img src="/assets/images/cyber-crime.jpg" alt="image">
 
-                    <div class="card-body h-100 card bg-white text-dark mx-auto fw-bold des"> Cyber. It is the inevitable prefix that currently defines our world. From people's privacy to inter-state relations</div>
+                    <div class="card-body rounded-top h-100 card p-3 text-dark mx-auto fw-bold des"> Cyber. It is the inevitable prefix that currently defines our world. From people's privacy to inter-state relations</div>
                 </div>
             </div>
         </div>
@@ -151,16 +150,17 @@
         
         <div class="row text-center m-2 g-4">
             <div class="col">
-                <div class="card h-100 text-white">
-                    <h4> <a class="text-decoration-none text-info post-url" href="/2022/05/27/modern-india.html">
+                <div class="card post-cards h-100">
+                    <h4> <a class="text-decoration-none post-url" href="/2022/05/27/modern-india.html">
                             <div class="mt-3">Modern-india</div>
                         </a></h4>
                     <p class="d-inline-block"> <i class="fa-regular fa-calendar"></i> May 27, 2022
                         - <i class="fa-regular fa-user"></i>
                         Madhav</p>
+                        <hr>
                     <img src="/assets/images/modern-india.jpg" alt="image">
 
-                    <div class="card-body h-100 card bg-white text-dark mx-auto fw-bold des"> The history of modern constitutionalism has immortalized several events of much moment.</div>
+                    <div class="card-body rounded-top h-100 card p-3 text-dark mx-auto fw-bold des"> The history of modern constitutionalism has immortalized several events of much moment.</div>
                 </div>
             </div>
         </div>
@@ -169,16 +169,17 @@
         
         <div class="row text-center m-2 g-4">
             <div class="col">
-                <div class="card h-100 text-white">
-                    <h4> <a class="text-decoration-none text-info post-url" href="/2022/05/26/engineering.html">
+                <div class="card post-cards h-100">
+                    <h4> <a class="text-decoration-none post-url" href="/2022/05/26/engineering.html">
                             <div class="mt-3">Engineering</div>
                         </a></h4>
                     <p class="d-inline-block"> <i class="fa-regular fa-calendar"></i> May 26, 2022
                         - <i class="fa-regular fa-user"></i>
                         Jaime</p>
+                        <hr>
                     <img src="/assets/images/engineering.jpg" alt="image">
 
-                    <div class="card-body h-100 card bg-white text-dark mx-auto fw-bold des"> Engineering is surely a word most people have heard of before, but have you actually ever wondered what it means to be an engineer</div>
+                    <div class="card-body rounded-top h-100 card p-3 text-dark mx-auto fw-bold des"> Engineering is surely a word most people have heard of before, but have you actually ever wondered what it means to be an engineer</div>
                 </div>
             </div>
         </div>
@@ -187,16 +188,17 @@
         
         <div class="row text-center m-2 g-4">
             <div class="col">
-                <div class="card h-100 text-white">
-                    <h4> <a class="text-decoration-none text-info post-url" href="/2022/05/25/agriculture.html">
+                <div class="card post-cards h-100">
+                    <h4> <a class="text-decoration-none post-url" href="/2022/05/25/agriculture.html">
                             <div class="mt-3">Agricultures</div>
                         </a></h4>
                     <p class="d-inline-block"> <i class="fa-regular fa-calendar"></i> May 25, 2022
                         - <i class="fa-regular fa-user"></i>
                         Soken</p>
+                        <hr>
                     <img src="/assets/images/agricultures.jpg" alt="image">
 
-                    <div class="card-body h-100 card bg-white text-dark mx-auto fw-bold des"> Agriculture or farming is the practice of cultivating plants and livestock. Agriculture was the key development in the rise of sedentary human civilization,</div>
+                    <div class="card-body rounded-top h-100 card p-3 text-dark mx-auto fw-bold des"> Agriculture or farming is the practice of cultivating plants and livestock. Agriculture was the key development in the rise of sedentary human civilization,</div>
                 </div>
             </div>
         </div>
@@ -205,16 +207,17 @@
         
         <div class="row text-center m-2 g-4">
             <div class="col">
-                <div class="card h-100 text-white">
-                    <h4> <a class="text-decoration-none text-info post-url" href="/2022/05/24/mechanical-engineering.html">
+                <div class="card post-cards h-100">
+                    <h4> <a class="text-decoration-none post-url" href="/2022/05/24/mechanical-engineering.html">
                             <div class="mt-3">Mechanical engineering</div>
                         </a></h4>
                     <p class="d-inline-block"> <i class="fa-regular fa-calendar"></i> May 24, 2022
                         - <i class="fa-regular fa-user"></i>
                         mike</p>
+                        <hr>
                     <img src="/assets/images/mechanical-engineering.jpg" alt="image">
 
-                    <div class="card-body h-100 card bg-white text-dark mx-auto fw-bold des"> Mechanical engineering is the study, design, development, construction, and testing of mechanical and thermal sensors and devices, including tools, engines, and machines.</div>
+                    <div class="card-body rounded-top h-100 card p-3 text-dark mx-auto fw-bold des"> Mechanical engineering is the study, design, development, construction, and testing of mechanical and thermal sensors and devices, including tools, engines, and machines.</div>
                 </div>
             </div>
         </div>
@@ -223,16 +226,17 @@
         
         <div class="row text-center m-2 g-4">
             <div class="col">
-                <div class="card h-100 text-white">
-                    <h4> <a class="text-decoration-none text-info post-url" href="/2022/05/23/natural-environment.html">
+                <div class="card post-cards h-100">
+                    <h4> <a class="text-decoration-none post-url" href="/2022/05/23/natural-environment.html">
                             <div class="mt-3">Natural-Environment</div>
                         </a></h4>
                     <p class="d-inline-block"> <i class="fa-regular fa-calendar"></i> May 23, 2022
                         - <i class="fa-regular fa-user"></i>
                         Dane</p>
+                        <hr>
                     <img src="/assets/images/natural-environment.jpg" alt="image">
 
-                    <div class="card-body h-100 card bg-white text-dark mx-auto fw-bold des"> The natural environment or natural world encompasses all living and non-living things occurring naturally, meaning in this case not artificial.</div>
+                    <div class="card-body rounded-top h-100 card p-3 text-dark mx-auto fw-bold des"> The natural environment or natural world encompasses all living and non-living things occurring naturally, meaning in this case not artificial.</div>
                 </div>
             </div>
         </div>
@@ -241,7 +245,7 @@
     </div>
     
 </div>
-<div class="container-fluid bg-dark pt-3">
+<div class="container-fluid bg-dark mt-3 pt-3">
   <footer class="text-center">
     <div class="container d-flex justify-content-center py-5">
       <p class="btn btn-primary mx-2">

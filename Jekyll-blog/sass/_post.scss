@@ -13,20 +13,26 @@
 .post-content{
     color: #b05e20;
 }
-.card{
-    background-color: #2a0960;
-}
-.card-title{
-    color:#fe6601;
-}
-.card-flex{
-    width:1200px;
-}
-.card{
+.post-cards{
     width: 250px;
+    box-shadow: 0 0 15px #000;
 }
-.des{
+.post-cards:hover{
+    transform: scale(1.05);
+    background-color: #eeb823;
+}
+.card-body{
     margin-top: -50px;
     width: 220px;
     padding: 2px;
+}
+.postDes{
+    padding: 20px;
+    font-weight: bold;
+}
+.btn-primary:hover{
+    background-color: #000;
+}
+.btn-primary:active{
+    transform: translateY(4px);
 }
