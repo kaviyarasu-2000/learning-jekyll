@@ -1,5 +1,8 @@
 .post-url:hover {
-    color: #8F00FF !important;
+    color: #3d17e8 !important;
+}
+.nav-link{
+    font-weight: bold;
 }
 .image{
     border-radius: 20px;
@@ -10,29 +13,29 @@
     width:450px;
     margin-bottom: 40px;
 }
-.post-content{
-    color: #b05e20;
-}
+
 .post-cards{
     width: 250px;
-    box-shadow: 0 0 15px #000;
+    box-shadow: 0 0 5px #000;
 }
 .post-cards:hover{
     transform: scale(1.05);
-    background-color: #eeb823;
 }
 .card-body{
     margin-top: -50px;
-    width: 220px;
+    margin-bottom: 0px;
+    width: 220px; 
     padding: 2px;
-    background-color: #a9a9a9;
+    border-radius: 0px;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
 }
 .postDes{
     padding: 20px;
     font-weight: bold;
 }
 .btn-primary:hover{
-    background-color: #000;
+    background-color: #000000;
 }
 .btn-primary:active{
     transform: translateY(4px);

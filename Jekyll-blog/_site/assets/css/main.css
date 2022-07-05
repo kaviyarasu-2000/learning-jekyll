@@ -1,6 +1,4 @@
-.nav-link:hover { color: #f79205 !important; }
-
-.navbar { background-color: #00008b; }
+.nav-link:hover { color: #2b2eec !important; }
 
 .nav-brand { height: 75px; width: 75px; }
 
@@ -10,30 +8,34 @@
 
 .home { height: 400px; background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSl1wyibApd6XbdkJ--un1ody5HWtphngZeg&usqp=CAU); background-repeat: no-repeat; background-size: cover; }
 
-.random { box-shadow: inset 0 0 10px #000000; padding: 20px; }
+.random { box-shadow: 0 0 5px #000000; padding: 20px; }
 
-.random:hover { transform: scale(1.09); background-color: #eeb823; }
+.random:hover { transform: scale(1.05); }
 
-.random-title { text-decoration: none; font-variant: small-caps; }
+.random-title { text-decoration: none; font-variant: small-caps; color: #000000 !important; }
+
+.random-title:hover { color: #3d17e8 !important; }
 
 .random-image { box-shadow: 5px 5px 5px #000; border-radius: 10px; }
 
 .wallpaper { height: 350px; width: 300px; border-radius: 20px; box-shadow: 5px 5px 5px #000; }
 
-.post-url:hover { color: #8F00FF !important; }
+.post-url:hover { color: #3d17e8 !important; }
+
+.nav-link { font-weight: bold; }
 
 .image { border-radius: 20px; box-shadow: 5px 5px 5px #000; display: block; margin: auto; height: 350px; width: 450px; margin-bottom: 40px; }
 
-.post-content { color: #b05e20; }
+.post-cards { width: 250px; box-shadow: 0 0 5px #000; }
 
-.post-cards { width: 250px; box-shadow: 0 0 15px #000; }
+.post-cards:hover { transform: scale(1.05); }
 
-.post-cards:hover { transform: scale(1.05); background-color: #eeb823; }
-
-.card-body { margin-top: -50px; width: 220px; padding: 2px; background-color: #a9a9a9; }
+.card-body { margin-top: -50px; margin-bottom: 0px; width: 220px; padding: 2px; border-radius: 0px; border-top-right-radius: 5px; border-top-left-radius: 5px; }
 
 .postDes { padding: 20px; font-weight: bold; }
 
-.btn-primary:hover { background-color: #000; }
+.btn-primary:hover { background-color: #000000; }
 
 .btn-primary:active { transform: translateY(4px); }
+
+/*# sourceMappingURL=main.css.map */
