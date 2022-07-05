@@ -30,14 +30,10 @@
 
 .post-cards:hover { transform: scale(1.05); background-color: #eeb823; }
 
-.card-body { margin-top: -50px; width: 220px; padding: 2px; }
-
-.card-body:hover { background-color: darkgray; }
+.card-body { margin-top: -50px; width: 220px; padding: 2px; background-color: #a9a9a9; }
 
 .postDes { padding: 20px; font-weight: bold; }
 
 .btn-primary:hover { background-color: #000; }
 
 .btn-primary:active { transform: translateY(4px); }
-
-/*# sourceMappingURL=main.css.map */
