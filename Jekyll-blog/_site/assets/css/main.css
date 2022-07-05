@@ -16,7 +16,7 @@
 
 .random-title { text-decoration: none; font-variant: small-caps; }
 
-.random-image { box-shadow: 5px 5px 5px #000; border-radius: 10px; height: 150px; width: 250px; }
+.random-image { box-shadow: 5px 5px 5px #000; border-radius: 10px; }
 
 .wallpaper { height: 350px; width: 300px; border-radius: 20px; box-shadow: 5px 5px 5px #000; }
 
@@ -31,6 +31,8 @@
 .post-cards:hover { transform: scale(1.05); background-color: #eeb823; }
 
 .card-body { margin-top: -50px; width: 220px; padding: 2px; }
+
+.card-body:hover { background-color: darkgray; }
 
 .postDes { padding: 20px; font-weight: bold; }
 

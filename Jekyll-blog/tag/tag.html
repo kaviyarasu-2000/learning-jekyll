@@ -4,10 +4,8 @@ title: Tags
 permalink: /tags/
 ---
 
-<div class="d-flex justify-content-end mt-5">
-    <img class="wallpaper position-absolute d-md-block d-none" src="/assets/images/tag.jpg" alt="jhsddhvs"></div>
       {% for tags in site.tags %}
-      <h2 id="{{ tag | first }}">#{{ tag | first }}</h2>
+      <h2 id="{{ tags | first }}">#{{ tags | first }}</h2>
     <ol type="i">
          {% for posts in tags  %}{% for post in posts %}{% if post.title != null %}
          <li><a class="text-decoration-none text-dark post-url" href="{{ post.url}}">{{ post.title }}</a></li>
