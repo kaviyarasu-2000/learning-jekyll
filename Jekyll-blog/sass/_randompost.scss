@@ -1,22 +1,33 @@
-.random{
-  box-shadow:0 0 5px #000000;
-  padding: 20px;
-}
-.random:hover{
-  transform: scale(1.05);
-}
 .random-title{
     text-decoration: none;
-  font-variant: small-caps; 
-  color: #000000 !important;
-  
+    color: #000;
+    font-size: 75px;
 }
-.random-title:hover{
-  color: #3d17e8 !important;
-
+.home{
+  margin-top: 300px;
 }
 .random-image{
-   box-shadow: $shadow;
-   border-radius: 10px;
-
+  border-radius: 10px;
+  margin-right: 50px;
+  width: 510px;
+  height: 360px;
+}
+.postDes{
+  padding: 20px;
+  padding-left: 40px;
+}
+@media only screen and (max-width: 768px) {
+  .random-image{
+    width: 300px;
+    height:200px;
+  }
+  .random-title{
+    font-size: 30px;
+  }
+  .nav-bar-button{
+    margin-bottom: 20px !important;
+  }
+  #btn-back-to-top{
+    visibility: hidden;
+  }
 }

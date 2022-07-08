@@ -4,6 +4,8 @@ title: Agricultures
 author: Soken
 image: /assets/images/agricultures.jpg
 tags: Environment
+num: 154
+view: 1.2k
 des: Agriculture or farming is the practice of cultivating plants and livestock. Agriculture was the key development in the rise of sedentary human civilization,
 ---
 

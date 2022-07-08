@@ -14,51 +14,72 @@
   </head> 
   </head>
   <body>
-    <div class="bg-light">
-    <nav class="navbar navbar-expand-lg bg-white container-fluid">
+    
+    <nav class="navbar navbar-expand-lg navbar-light">
   <div class="container-fluid">
-    <img class="nav-brand" src="/assets/images/a.jpg" alt="Avatar Logo">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-      aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false"
+      aria-label="Toggle navigation">
       <span><i class="fas fa-bars"></i></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarText">
-      <ul class="navbar-nav ms-md-auto mb-2 mb-lg-0">
+    <img class="nav-brand m-auto" src="/assets/images/a.jpg" alt="Avatar Logo">
+    <div class="collapse navbar-collapse " id="navbarsExampleDefault">
+      <ul class="navbar-nav mb-2 ms-1 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="/">Blog</a>
+          <a class="nav-link ms-3" aria-current="page" href="/"><span class="nav-blg">Blog<div
+                class="nav-blog bg-white border">Blog</div></span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/tags/index.html">Tag</a>
+          <a class="nav-link ms-3" href="/tags/index.html"><span class="nav-tag d-sm-none"> Tag<div
+                class="nav-tags bg-white border">Tag</div></span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/about/index.html">About</a>
+          <a class="nav-link ms-3" href="/about/index.html"><span class="nav-abt">About<div
+                class="nav-about bg-white border">About</div></span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#"><i class="fab fa-facebook-f"></i>&nbsp;Facebook</a>
+          <a class="nav-link ms-3" href="#"> <span class="nav-fb"> <i class="fab fa-facebook-f"></i>&nbsp;Facebook <div
+                class="nav-facebook bg-white border">Facebook</div></span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#"><i class="fab fa-youtube"></i>&nbsp;You tube</a>
+          <a class="nav-link ms-3" href="#"><span class="nav-u-tube"> <i class="fab fa-youtube"></i>&nbsp;YouTube <div
+                class="nav-youtube bg-white border">YouTube</div></span></a>
         </li>
+
         <li class="nav-item">
-          <a class="nav-link" href="#"><i class="fa-brands fa-instagram"></i>&nbsp;instagram</a>
+          <a class="nav-link ms-3" href="#"><span class="nav-insta"> <i
+                class="fa-brands fa-instagram"></i>&nbsp;Instagram<div class="nav-instagram bg-white border">Instagram
+              </div></span></a>
         </li>
+
         <li class="nav-item">
-          <a class="nav-link" href="#"><i class="fab fa-twitter"></i>&nbsp;Twitter</a>
+          <a class="nav-link ms-3" href="#"><span class="nav-twit"> <i class="fab fa-twitter"></i>&nbsp;Twitter<div
+                class="nav-twitter bg-white border">Twitter</div></span></a>
         </li>
       </ul>
     </div>
+    <div class="ms-md-auto">
+      <div class="d-flex">
+        <div class="mt-1 me-3"><i class="fa-brands fa-searchengin"></i> Sign in</div>
+        <button class="btn nav-bar-button text-white" type="submit">Search</button>
+      </div>
+    </div>
   </div>
 </nav>
-<div class="container">
+
+<button class="btn btn-dark btn-floating btn-lg" id="btn-back-to-top">
+  <i class="fas fa-arrow-up"></i>
+</button>
+<div class="container-fluid">
     
-    <div class="random mx-auto text-center bg-white d-flex flex-sm-row order-last flex-column mt-5">
+    <div class="random text-center bg-white d-flex flex-md-row  flex-column">
         <script type="text/javascript">
 
   var postsURL = ["/2022/05/30/south-indian-food.html",  "/2022/05/29/younsters-life.html",  "/2022/05/28/cybercrime.html",  "/2022/05/27/modern-india.html",  "/2022/05/26/engineering.html",  "/2022/05/25/agriculture.html",  "/2022/05/24/mechanical-engineering.html",  "/2022/05/23/natural-environment.html" ];
 
-  var postsTitle = ["South-Indian-Food",  "Younster-life",  "Cybercrime",  "Modern-india",  "Engineering",  "Agricultures",  "Mechanical engineering",  "Natural-Environment" ];
+  var postsTitle = ["Indian Food",  "Younster-life",  "Cybercrime",  "Modern India",  "Engineering",  "Agricultures",  "Mechanical",  "Environment" ];
 
-  var postsDes = ["This South Indian Coconut Chickpea Curry is a spicy and super delicious curry made with white chickpeas, coconut and spices.",  "The age where the age group is no longer of a child but yet to turn out to be a grown-up is the youth age.",  "Cyber. It is the inevitable prefix that currently defines our world. From people's privacy to inter-state relations",  "The history of modern constitutionalism has immortalized several events of much moment.",  "Engineering is surely a word most people have heard of before, but have you actually ever wondered what it means to be an engineer",  "Agriculture or farming is the practice of cultivating plants and livestock. Agriculture was the key development in the rise of sedentary human civilization,",  "Mechanical engineering is the study, design, development, construction, and testing of mechanical and thermal sensors and devices, including tools, engines, and machines.",  "The natural environment or natural world encompasses all living and non-living things occurring naturally, meaning in this case not artificial." ];
+  var postsDes = ["This South Indian Coconut Chickpea Curry is a spicy and super delicious curry made with white chickpeas, coconut and spices.",  "It is an age recognized by traits of heroism, toughness, muscle, stimulation, curiosity, judgmental attitude and even much more. At this stage, even though driven by fantasy or freedom and the power to choose his or her response, all must be cautiously exercised.",  "Cyber. It is the inevitable prefix that currently defines our world. From people's privacy to inter-state relations the term cyber dominates the headlines and discussions.",  "The history of modern constitutionalism has immortalized several events of much moment. It has, however, cast scant attention upon a great deal other episodes that merit greater engagement",  "Engineering is surely a word most people have heard of before, but have you actually ever wondered what it means to be an engineer",  "Agriculture or farming is the practice of cultivating plants and livestock. Agriculture was the key development in the rise of sedentary human civilization,",  "Mechanical engineering is the study, design, development, construction, and testing of mechanical and thermal sensors and devices, including tools, engines, and machines.",  "The natural environment or natural world encompasses all living and non-living things occurring naturally, meaning in this case not artificial." ];
 
   var postsImg = ["/assets/images/southindian.jpg",  "/assets/images/younsters.jpg",  "/assets/images/cyber-crime.jpg",  "/assets/images/modern-india.jpg",  "/assets/images/engineering.jpg",  "/assets/images/agricultures.jpg",  "/assets/images/mechanical-engineering.jpg",  "/assets/images/natural-environment.jpg" ];
 
@@ -78,175 +99,636 @@
       postDes = postsDes[randomIndex];
       postImg = postsImg[randomIndex];
       if (count == (numberOfPosts - 1)) {
-        document.write(  '<img class="random-image" src="' + postImg + '">' +  '<div class="d-flex flex-column"><h1 class="mt-3"><a class="random-title" href="' + postURL + '">' + postTitle + '</a></h1>' + '<p class="postDes">' + postDes + '</p>'+'</div>');
+        document.write('<div class="d-flex flex-column bg-light"><h1 class="mt-5 random-title">' + postTitle + '</h1>' + '<p class="postDes mb-0">' + postDes + '</p>' + '<button class="nav-bar-button text-white m-auto btn">'+ '<a class="fw-normal text-decoration-none text-white" href="' + postURL + '">' + 'View </a> </button>' + '</div>' + '<img class="random-image" src="' + postImg + '">');
       }
       randomIndexUsed.push(randomIndex);
       count++;
     }
   }
 
+
+
+
+  let mybutton = document.getElementById("btn-back-to-top");
+
+window.onscroll = function () {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  if (
+    document.body.scrollTop > 20 ||
+    document.documentElement.scrollTop > 20
+  ) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+mybutton.addEventListener("click", backToTop);
+
+function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+
 </script>
+
         
+
+    </div>
+    
+    <div class="mt-5">
+        <div class="container d-flex justify-content-between flex-wrap d-md-column">
+    <div class="p-2 text-dark sub-nav"> <span class="sub-all"> All
+            <div class="sub-alls bg-white">
+                <div class="d-flex">
+                    <div><i class="fa-solid fa-1"></i></div>
+                    <div class="mt-1">Environment</div>
+                </div>
+                <div class="d-flex">
+                    <div><i class="fa-solid fa-2"></i></div>
+                    <div class="mt-1">India</div>
+                </div>
+                <div class="d-flex">
+                    <div><i class="fa-solid fa-3"></i></div>
+                    <div class="mt-1">Cyber</div>
+                </div>
+                <div class="d-flex">
+                    <div><i class="fa-solid fa-4"></i></div>
+                    <div class="mt-1">Engineering</div>
+                </div>
+                <div class="d-flex">
+                    <div><i class="fa-solid fa-5"></i></div>
+                    <div class="mt-1">Food</div>
+                </div>
+            
+            </div>
+        </span>
     </div>
 
-    <div class="d-flex flex-wrap card-flex justify-content-evenly m-auto d-sm-row">
-        
-        
-        <div class="row text-center m-2 g-4">
-            <div class="col">
-                <div class="card post-cards h-100">
-                    <h4> <a class="text-decoration-none" href="/2022/05/30/south-indian-food.html">
-                            <div class="mt-3 text-dark post-url">South-Indian-Food</div>
-                        </a></h4>
-                    <p class="d-inline-block"> <i class="fa-regular fa-calendar"></i> May 30, 2022
-                        - <i class="fa-regular fa-user"></i>
-                        Dassana</p>
-                        <hr>
-                    <img src="/assets/images/southindian.jpg" alt="image">
 
-                    <div class="card-body h-100 card p-3 text-dark mx-auto fw-bold des"> This South Indian Coconut Chickpea Curry is a spicy and super delicious curry made with white chickpeas, coconut and spices.</div>
+    <div class="p-3 text-dark sub-nav">
+        <span class="sub-animat">Animation
+            <div class="sub-animation p-3 bg-white">
+                <div class="d-flex">
+                    <div><i class="fa-solid fa-1"></i></div>
+                    <div class="mt-1">Environment</div>
+                </div>
+                <div class="d-flex">
+                    <div><i class="fa-solid fa-2"></i></div>
+                    <div class="mt-1">India</div>
+                </div>
+                <div class="d-flex">
+                    <div><i class="fa-solid fa-3"></i></div>
+                    <div class="mt-1">Cyber</div>
+                </div>
+                <div class="d-flex">
+                    <div><i class="fa-solid fa-4"></i></div>
+                    <div class="mt-1">Engineering</div>
+                </div>
+                <div class="d-flex">
+                    <div><i class="fa-solid fa-5"></i></div>
+                    <div class="mt-1">Food</div>
                 </div>
             </div>
+        </span>
+    </div>
+
+    <div class="p-3 text-dark sub-nav">
+        <span class="sub-brand">Branding
+            <div class="sub-brands p-3 bg-white">
+                <div class="d-flex">
+                    <div><i class="fa-solid fa-1"></i></div>
+                    <div class="mt-1">Environment</div>
+                </div>
+                <div class="d-flex">
+                    <div><i class="fa-solid fa-2"></i></div>
+                    <div class="mt-1">India</div>
+                </div>
+                <div class="d-flex">
+                    <div><i class="fa-solid fa-3"></i></div>
+                    <div class="mt-1">Cyber</div>
+                </div>
+                <div class="d-flex">
+                    <div><i class="fa-solid fa-4"></i></div>
+                    <div class="mt-1">Engineering</div>
+                </div>
+                <div class="d-flex">
+                    <div><i class="fa-solid fa-5"></i></div>
+                    <div class="mt-1">Food</div>
+                </div>
+            </div>
+        </span>
+    </div>
+   
+    <div class="p-3 text-dark sub-nav">
+        <span class="sub-illustrat">Illustration
+            <div class="sub-illustration p-3 bg-white">
+                <div class="d-flex">
+                    <div><i class="fa-solid fa-1"></i></div>
+                    <div class="mt-1">Environment</div>
+                </div>
+                <div class="d-flex">
+                    <div><i class="fa-solid fa-2"></i></div>
+                    <div class="mt-1">India</div>
+                </div>
+                <div class="d-flex">
+                    <div><i class="fa-solid fa-3"></i></div>
+                    <div class="mt-1">Cyber</div>
+                </div>
+                <div class="d-flex">
+                    <div><i class="fa-solid fa-4"></i></div>
+                    <div class="mt-1">Engineering</div>
+                </div>
+                <div class="d-flex">
+                    <div><i class="fa-solid fa-5"></i></div>
+                    <div class="mt-1">Food</div>
+                </div>
+            </div>
+        </span>
+    </div>
+   
+    <div class="p-3 text-dark sub-nav">
+        <span class="sub-design">design
+            <div class="sub-designs p-3 bg-white">
+                <div class="d-flex">
+                    <div><i class="fa-solid fa-1"></i></div>
+                    <div class="mt-1">Environment</div>
+                </div>
+                <div class="d-flex">
+                    <div><i class="fa-solid fa-2"></i></div>
+                    <div class="mt-1">India</div>
+                </div>
+                <div class="d-flex">
+                    <div><i class="fa-solid fa-3"></i></div>
+                    <div class="mt-1">Cyber</div>
+                </div>
+                <div class="d-flex">
+                    <div><i class="fa-solid fa-4"></i></div>
+                    <div class="mt-1">Engineering</div>
+                </div>
+                <div class="d-flex">
+                    <div><i class="fa-solid fa-5"></i></div>
+                    <div class="mt-1">Food</div>
+                </div>
+            </div>
+        </span>
+    </div>
+   
+
+
+<!-- 
+    <div class="p-3 text-dark sub-nav">Branding</div>
+    <div class="p-3 text-dark sub-nav">Illustration</div>
+    <div class="p-3 text-dark sub-nav">Design</div> -->
+    <div class="dropdown">
+        <div class="btn mt-2" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false"> <i
+                class="fa-solid fa-filter"></i>
+            Tags
+        </div>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Environment</a></li>
+            <li><a class="dropdown-item" href="#">India</a></li>
+            <li><a class="dropdown-item" href="#">Cyber</a></li>
+            <li><a class="dropdown-item" href="#">Engineering</a></li>
+            <li><a class="dropdown-item" href="#">Food</a></li>
+        </ul>
+    </div>
+</div>
+    </div>
+    
+    <div class="d-flex flex-wrap justify-content-evenly m-auto d-sm-row">
+        
+        
+        <div class="text-center m-2  g-4">
+
+            <div class="card post-cards h-100 mt-3">
+                <div class="post-img">
+                    <img class="poster-img" src="/assets/images/southindian.jpg" alt="image">
+
+                    <div class="d-flex justify-content-between" id="hover-title">
+                        <div class="post-titles">
+                            <a class="text-decoration-none fw-bold text-white post-url" href="/2022/05/30/south-indian-food.html">Indian Food</a>
+                        </div>
+                        <div class="icon d-flex">
+                            <div class="icon-like"><i class="fa-solid fa-heart"></i>
+                                <div class="icon-heart bg-white border">like</div>
+                            </div>
+                            <div class="icon-file ms-4 me-2"><i class="fa-solid fa-folder-plus"></i>
+                                <div class="icon-plus bg-white border">save</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="d-flex justify-content-between mt-2">
+                    <div class="user"> <i class="fa-regular fa-user fa-solid"></i>&nbsp;
+                        Dassana
+                    </div>
+                    <div class="io"><span class="i"> <i class="fa-solid fa-heart"></i>
+                            <div class="add-like bg-white border">add like</div>
+                        </span>
+                        197&nbsp;<i class="fa-solid fa-eye ico"></i>1.3k</div>
+                </div>
+            </div>
+
         </div>
         
         
         
-        <div class="row text-center m-2 g-4">
-            <div class="col">
-                <div class="card post-cards h-100">
-                    <h4> <a class="text-decoration-none" href="/2022/05/29/younsters-life.html">
-                            <div class="mt-3 text-dark post-url">Younster-life</div>
-                        </a></h4>
-                    <p class="d-inline-block"> <i class="fa-regular fa-calendar"></i> May 29, 2022
-                        - <i class="fa-regular fa-user"></i>
-                        Susanna</p>
-                        <hr>
-                    <img src="/assets/images/younsters.jpg" alt="image">
+        <div class="text-center m-2  g-4">
 
-                    <div class="card-body h-100 card p-3 text-dark mx-auto fw-bold des"> The age where the age group is no longer of a child but yet to turn out to be a grown-up is the youth age.</div>
+            <div class="card post-cards h-100 mt-3">
+                <div class="post-img">
+                    <img class="poster-img" src="/assets/images/younsters.jpg" alt="image">
+
+                    <div class="d-flex justify-content-between" id="hover-title">
+                        <div class="post-titles">
+                            <a class="text-decoration-none fw-bold text-white post-url" href="/2022/05/29/younsters-life.html">Younster-life</a>
+                        </div>
+                        <div class="icon d-flex">
+                            <div class="icon-like"><i class="fa-solid fa-heart"></i>
+                                <div class="icon-heart bg-white border">like</div>
+                            </div>
+                            <div class="icon-file ms-4 me-2"><i class="fa-solid fa-folder-plus"></i>
+                                <div class="icon-plus bg-white border">save</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="d-flex justify-content-between mt-2">
+                    <div class="user"> <i class="fa-regular fa-user fa-solid"></i>&nbsp;
+                        Susanna
+                    </div>
+                    <div class="io"><span class="i"> <i class="fa-solid fa-heart"></i>
+                            <div class="add-like bg-white border">add like</div>
+                        </span>
+                        185&nbsp;<i class="fa-solid fa-eye ico"></i>1.2k</div>
                 </div>
             </div>
+
         </div>
         
         
         
-        <div class="row text-center m-2 g-4">
-            <div class="col">
-                <div class="card post-cards h-100">
-                    <h4> <a class="text-decoration-none" href="/2022/05/28/cybercrime.html">
-                            <div class="mt-3 text-dark post-url">Cybercrime</div>
-                        </a></h4>
-                    <p class="d-inline-block"> <i class="fa-regular fa-calendar"></i> May 28, 2022
-                        - <i class="fa-regular fa-user"></i>
-                        Fedotov</p>
-                        <hr>
-                    <img src="/assets/images/cyber-crime.jpg" alt="image">
+        <div class="text-center m-2  g-4">
 
-                    <div class="card-body h-100 card p-3 text-dark mx-auto fw-bold des"> Cyber. It is the inevitable prefix that currently defines our world. From people's privacy to inter-state relations</div>
+            <div class="card post-cards h-100 mt-3">
+                <div class="post-img">
+                    <img class="poster-img" src="/assets/images/cyber-crime.jpg" alt="image">
+
+                    <div class="d-flex justify-content-between" id="hover-title">
+                        <div class="post-titles">
+                            <a class="text-decoration-none fw-bold text-white post-url" href="/2022/05/28/cybercrime.html">Cybercrime</a>
+                        </div>
+                        <div class="icon d-flex">
+                            <div class="icon-like"><i class="fa-solid fa-heart"></i>
+                                <div class="icon-heart bg-white border">like</div>
+                            </div>
+                            <div class="icon-file ms-4 me-2"><i class="fa-solid fa-folder-plus"></i>
+                                <div class="icon-plus bg-white border">save</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="d-flex justify-content-between mt-2">
+                    <div class="user"> <i class="fa-regular fa-user fa-solid"></i>&nbsp;
+                        Fedotov
+                    </div>
+                    <div class="io"><span class="i"> <i class="fa-solid fa-heart"></i>
+                            <div class="add-like bg-white border">add like</div>
+                        </span>
+                        300&nbsp;<i class="fa-solid fa-eye ico"></i>1.7k</div>
                 </div>
             </div>
+
         </div>
         
         
         
-        <div class="row text-center m-2 g-4">
-            <div class="col">
-                <div class="card post-cards h-100">
-                    <h4> <a class="text-decoration-none" href="/2022/05/27/modern-india.html">
-                            <div class="mt-3 text-dark post-url">Modern-india</div>
-                        </a></h4>
-                    <p class="d-inline-block"> <i class="fa-regular fa-calendar"></i> May 27, 2022
-                        - <i class="fa-regular fa-user"></i>
-                        Madhav</p>
-                        <hr>
-                    <img src="/assets/images/modern-india.jpg" alt="image">
+        <div class="text-center m-2  g-4">
 
-                    <div class="card-body h-100 card p-3 text-dark mx-auto fw-bold des"> The history of modern constitutionalism has immortalized several events of much moment.</div>
+            <div class="card post-cards h-100 mt-3">
+                <div class="post-img">
+                    <img class="poster-img" src="/assets/images/modern-india.jpg" alt="image">
+
+                    <div class="d-flex justify-content-between" id="hover-title">
+                        <div class="post-titles">
+                            <a class="text-decoration-none fw-bold text-white post-url" href="/2022/05/27/modern-india.html">Modern India</a>
+                        </div>
+                        <div class="icon d-flex">
+                            <div class="icon-like"><i class="fa-solid fa-heart"></i>
+                                <div class="icon-heart bg-white border">like</div>
+                            </div>
+                            <div class="icon-file ms-4 me-2"><i class="fa-solid fa-folder-plus"></i>
+                                <div class="icon-plus bg-white border">save</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="d-flex justify-content-between mt-2">
+                    <div class="user"> <i class="fa-regular fa-user fa-solid"></i>&nbsp;
+                        Madhav
+                    </div>
+                    <div class="io"><span class="i"> <i class="fa-solid fa-heart"></i>
+                            <div class="add-like bg-white border">add like</div>
+                        </span>
+                        222&nbsp;<i class="fa-solid fa-eye ico"></i>1.2K</div>
                 </div>
             </div>
+
         </div>
         
         
         
-        <div class="row text-center m-2 g-4">
-            <div class="col">
-                <div class="card post-cards h-100">
-                    <h4> <a class="text-decoration-none" href="/2022/05/26/engineering.html">
-                            <div class="mt-3 text-dark post-url">Engineering</div>
-                        </a></h4>
-                    <p class="d-inline-block"> <i class="fa-regular fa-calendar"></i> May 26, 2022
-                        - <i class="fa-regular fa-user"></i>
-                        Jaime</p>
-                        <hr>
-                    <img src="/assets/images/engineering.jpg" alt="image">
+        <div class="text-center m-2  g-4">
 
-                    <div class="card-body h-100 card p-3 text-dark mx-auto fw-bold des"> Engineering is surely a word most people have heard of before, but have you actually ever wondered what it means to be an engineer</div>
+            <div class="card post-cards h-100 mt-3">
+                <div class="post-img">
+                    <img class="poster-img" src="/assets/images/engineering.jpg" alt="image">
+
+                    <div class="d-flex justify-content-between" id="hover-title">
+                        <div class="post-titles">
+                            <a class="text-decoration-none fw-bold text-white post-url" href="/2022/05/26/engineering.html">Engineering</a>
+                        </div>
+                        <div class="icon d-flex">
+                            <div class="icon-like"><i class="fa-solid fa-heart"></i>
+                                <div class="icon-heart bg-white border">like</div>
+                            </div>
+                            <div class="icon-file ms-4 me-2"><i class="fa-solid fa-folder-plus"></i>
+                                <div class="icon-plus bg-white border">save</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="d-flex justify-content-between mt-2">
+                    <div class="user"> <i class="fa-regular fa-user fa-solid"></i>&nbsp;
+                        Jaime
+                    </div>
+                    <div class="io"><span class="i"> <i class="fa-solid fa-heart"></i>
+                            <div class="add-like bg-white border">add like</div>
+                        </span>
+                        189&nbsp;<i class="fa-solid fa-eye ico"></i>1.4k</div>
                 </div>
             </div>
+
         </div>
         
         
         
-        <div class="row text-center m-2 g-4">
-            <div class="col">
-                <div class="card post-cards h-100">
-                    <h4> <a class="text-decoration-none" href="/2022/05/25/agriculture.html">
-                            <div class="mt-3 text-dark post-url">Agricultures</div>
-                        </a></h4>
-                    <p class="d-inline-block"> <i class="fa-regular fa-calendar"></i> May 25, 2022
-                        - <i class="fa-regular fa-user"></i>
-                        Soken</p>
-                        <hr>
-                    <img src="/assets/images/agricultures.jpg" alt="image">
+        <div class="text-center m-2  g-4">
 
-                    <div class="card-body h-100 card p-3 text-dark mx-auto fw-bold des"> Agriculture or farming is the practice of cultivating plants and livestock. Agriculture was the key development in the rise of sedentary human civilization,</div>
+            <div class="card post-cards h-100 mt-3">
+                <div class="post-img">
+                    <img class="poster-img" src="/assets/images/agricultures.jpg" alt="image">
+
+                    <div class="d-flex justify-content-between" id="hover-title">
+                        <div class="post-titles">
+                            <a class="text-decoration-none fw-bold text-white post-url" href="/2022/05/25/agriculture.html">Agricultures</a>
+                        </div>
+                        <div class="icon d-flex">
+                            <div class="icon-like"><i class="fa-solid fa-heart"></i>
+                                <div class="icon-heart bg-white border">like</div>
+                            </div>
+                            <div class="icon-file ms-4 me-2"><i class="fa-solid fa-folder-plus"></i>
+                                <div class="icon-plus bg-white border">save</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="d-flex justify-content-between mt-2">
+                    <div class="user"> <i class="fa-regular fa-user fa-solid"></i>&nbsp;
+                        Soken
+                    </div>
+                    <div class="io"><span class="i"> <i class="fa-solid fa-heart"></i>
+                            <div class="add-like bg-white border">add like</div>
+                        </span>
+                        154&nbsp;<i class="fa-solid fa-eye ico"></i>1.2k</div>
                 </div>
             </div>
+
         </div>
         
         
         
-        <div class="row text-center m-2 g-4">
-            <div class="col">
-                <div class="card post-cards h-100">
-                    <h4> <a class="text-decoration-none" href="/2022/05/24/mechanical-engineering.html">
-                            <div class="mt-3 text-dark post-url">Mechanical engineering</div>
-                        </a></h4>
-                    <p class="d-inline-block"> <i class="fa-regular fa-calendar"></i> May 24, 2022
-                        - <i class="fa-regular fa-user"></i>
-                        mike</p>
-                        <hr>
-                    <img src="/assets/images/mechanical-engineering.jpg" alt="image">
+        <div class="text-center m-2  g-4">
 
-                    <div class="card-body h-100 card p-3 text-dark mx-auto fw-bold des"> Mechanical engineering is the study, design, development, construction, and testing of mechanical and thermal sensors and devices, including tools, engines, and machines.</div>
+            <div class="card post-cards h-100 mt-3">
+                <div class="post-img">
+                    <img class="poster-img" src="/assets/images/mechanical-engineering.jpg" alt="image">
+
+                    <div class="d-flex justify-content-between" id="hover-title">
+                        <div class="post-titles">
+                            <a class="text-decoration-none fw-bold text-white post-url" href="/2022/05/24/mechanical-engineering.html">Mechanical</a>
+                        </div>
+                        <div class="icon d-flex">
+                            <div class="icon-like"><i class="fa-solid fa-heart"></i>
+                                <div class="icon-heart bg-white border">like</div>
+                            </div>
+                            <div class="icon-file ms-4 me-2"><i class="fa-solid fa-folder-plus"></i>
+                                <div class="icon-plus bg-white border">save</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="d-flex justify-content-between mt-2">
+                    <div class="user"> <i class="fa-regular fa-user fa-solid"></i>&nbsp;
+                        mike
+                    </div>
+                    <div class="io"><span class="i"> <i class="fa-solid fa-heart"></i>
+                            <div class="add-like bg-white border">add like</div>
+                        </span>
+                        128&nbsp;<i class="fa-solid fa-eye ico"></i>2.1k</div>
                 </div>
             </div>
+
         </div>
         
         
         
-        <div class="row text-center m-2 g-4">
-            <div class="col">
-                <div class="card post-cards h-100">
-                    <h4> <a class="text-decoration-none" href="/2022/05/23/natural-environment.html">
-                            <div class="mt-3 text-dark post-url">Natural-Environment</div>
-                        </a></h4>
-                    <p class="d-inline-block"> <i class="fa-regular fa-calendar"></i> May 23, 2022
-                        - <i class="fa-regular fa-user"></i>
-                        Dane</p>
-                        <hr>
-                    <img src="/assets/images/natural-environment.jpg" alt="image">
+        <div class="text-center m-2  g-4">
 
-                    <div class="card-body h-100 card p-3 text-dark mx-auto fw-bold des"> The natural environment or natural world encompasses all living and non-living things occurring naturally, meaning in this case not artificial.</div>
+            <div class="card post-cards h-100 mt-3">
+                <div class="post-img">
+                    <img class="poster-img" src="/assets/images/natural-environment.jpg" alt="image">
+
+                    <div class="d-flex justify-content-between" id="hover-title">
+                        <div class="post-titles">
+                            <a class="text-decoration-none fw-bold text-white post-url" href="/2022/05/23/natural-environment.html">Environment</a>
+                        </div>
+                        <div class="icon d-flex">
+                            <div class="icon-like"><i class="fa-solid fa-heart"></i>
+                                <div class="icon-heart bg-white border">like</div>
+                            </div>
+                            <div class="icon-file ms-4 me-2"><i class="fa-solid fa-folder-plus"></i>
+                                <div class="icon-plus bg-white border">save</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="d-flex justify-content-between mt-2">
+                    <div class="user"> <i class="fa-regular fa-user fa-solid"></i>&nbsp;
+                        Dane
+                    </div>
+                    <div class="io"><span class="i"> <i class="fa-solid fa-heart"></i>
+                            <div class="add-like bg-white border">add like</div>
+                        </span>
+                        120&nbsp;<i class="fa-solid fa-eye ico"></i>200</div>
                 </div>
             </div>
+
         </div>
         
         
     </div>
     
 </div>
-<div class="container-fluid bg-dark mt-3 pt-3">
+<div class="container-fluid bg-light  mt-3 pt-3">
+
+  <footer class="text-center text-lg-start text-dark">
+
+    <section class=" bg-light">
+      <div class="container text-center text-md-start mt-5">
+        
+        <div class="row mt-3">
+        
+          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+            
+            <h6 class="text footer-head">JEKYLL</h6>
+            <p>
+There is show in the some general topics in the blog.
+            </p>
+
+            <div class="text-decoration-none">
+              <a href="" class="text-dark text-decoration-none me-4">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="" class="text-dark text-decoration-none me-4">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="" class="text-dark text-decoration-none me-4">
+                <i class="fab fa-google"></i>
+              </a>
+              <a href="" class="text-dark text-decoration-none me-4">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="" class="text-dark text-decoration-none me-4">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </div>
+
+
+
+
+
+          </div>
+                   
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 text-decoration-none">
+            
+            <h6 class="text">Blogs</h6>
+            <p>
+              <a href="#" class="text-dark text-decoration-none">Engineer</a>
+            </p>
+            <p>
+              <a href="#" class="text-dark text-decoration-none">Mechanical</a>
+            </p>
+            <p>
+              <a href="#" class="text-dark text-decoration-none">Younsters-life</a>
+            </p>
+            <p>
+              <a href="#" class="text-dark text-decoration-none">South-indian-food</a>
+            </p>
+            <p>
+              <a href="#" class="text-dark text-decoration-none">Cybercrime</a>
+            </p>
+            <p>
+              <a href="#" class="text-dark text-decoration-none">Modern India</a>
+            </p>     
+            <p>
+              <a href="#" class="text-dark text-decoration-none">Agriculture</a>
+            </p>
+          
+          </div>
+        
+
+      
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+            
+            <h6 class="text">Posts</h6>
+            <p>
+              <a href="#" class="text-dark text-decoration-none">Environment</a>
+            </p>
+            <p>
+              <a href="#" class="text-dark text-decoration-none">Agriculture</a>
+            </p>
+            <p>
+              <a href="#" class="text-dark text-decoration-none">Cybercrime</a>
+            </p>
+            <p>
+              <a href="#" class="text-dark text-decoration-none">Naturals</a>
+            </p>
+            <p>
+              <a href="#" class="text-dark text-decoration-none">South-indian-food</a>
+            </p>
+            <p>
+              <a href="#" class="text-dark text-decoration-none">Mechanical</a>
+            </p>
+            <p>
+              <a href="#" class="text-dark text-decoration-none">Engineering</a>
+            </p>
+          </div>
+
+        
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-4">
+            <h6 class="p-0">Contact</h6>
+            <p><i class="fas fa-home mr-3"></i> Karur, NY 10012, INDIA</p>
+            <p><i class="fas fa-envelope mr-3"></i> info@example.com</p>
+            <p><i class="fas fa-phone mr-3"></i> + 01 234 567 88</p>
+            <p><i class="fas fa-print mr-3"></i> + 01 234 567 89</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr>
+<div class="m-5 bg-light">
+      <div class="footer-lower-content d-flex justify-content-between">
+      <div class="ms-2 footer-link">© 2022 blog. All rights reserved.</div>
+      <div class="total-shots-container">
+        
+          <span class="shots-count text-dark">120</span>
+        <span class="footer-link">  POSTS </span>
+        
+        </div>
+    </div>
+  </div>
+
+
+  </footer>
+
+
+
+</div>
+
+
+<!-- 
+<div class="container-fluid bg-white mt-3 pt-3">
   <footer class="text-center">
     <div class="container d-flex justify-content-center py-5">
       <p class="btn btn-primary mx-2">
@@ -262,12 +744,12 @@
         <i class="fab fa-twitter"></i>
       </p>
     </div>
-    <div class="text-center text-white p-3">
+    <div class="text-center text-dark p-3">
       © 2020 Copyright:
-      <a class="text-white" href="#blog">blog</a>
+      <a class="text-dark" href="#blog">blog</a>
     </div>
   </footer>
-</div>
-  </div>
+</div> -->
+  
   </body>
 </html>

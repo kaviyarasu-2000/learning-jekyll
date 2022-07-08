@@ -4,7 +4,9 @@ title: Younster-life
 author: Susanna
 image: /assets/images/younsters.jpg
 tags: India
-des: The age where the age group is no longer of a child but yet to turn out to be a grown-up is the youth age.
+num: 185
+view: 1.2k
+des: It is an age recognized by traits of heroism, toughness, muscle, stimulation, curiosity, judgmental attitude and even much more. At this stage, even though driven by fantasy or freedom and the power to choose his or her response, all must be cautiously exercised.
 ---
 
 <img class="image" src="/assets/images/younsters.jpg" alt="image">

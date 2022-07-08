@@ -1,34 +1,55 @@
-<nav class="navbar navbar-expand-lg bg-white container-fluid">
+<nav class="navbar navbar-expand-lg navbar-light">
   <div class="container-fluid">
-    <img class="nav-brand" src="/assets/images/a.jpg" alt="Avatar Logo">
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
-      aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler navbar-toggler-right collapsed" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false"
+      aria-label="Toggle navigation">
       <span><i class="fas fa-bars"></i></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarText">
-      <ul class="navbar-nav ms-md-auto mb-2 mb-lg-0">
+    <img class="nav-brand m-auto" src="/assets/images/a.jpg" alt="Avatar Logo">
+    <div class="collapse navbar-collapse " id="navbarsExampleDefault">
+      <ul class="navbar-nav mb-2 ms-1 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="/">Blog</a>
+          <a class="nav-link ms-3" aria-current="page" href="/"><span class="nav-blg">Blog<div
+                class="nav-blog bg-white border">Blog</div></span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/tags/index.html">Tag</a>
+          <a class="nav-link ms-3" href="/tags/index.html"><span class="nav-tag d-sm-none"> Tag<div
+                class="nav-tags bg-white border">Tag</div></span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="/about/index.html">About</a>
+          <a class="nav-link ms-3" href="/about/index.html"><span class="nav-abt">About<div
+                class="nav-about bg-white border">About</div></span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#"><i class="fab fa-facebook-f"></i>&nbsp;Facebook</a>
+          <a class="nav-link ms-3" href="#"> <span class="nav-fb"> <i class="fab fa-facebook-f"></i>&nbsp;Facebook <div
+                class="nav-facebook bg-white border">Facebook</div></span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#"><i class="fab fa-youtube"></i>&nbsp;You tube</a>
+          <a class="nav-link ms-3" href="#"><span class="nav-u-tube"> <i class="fab fa-youtube"></i>&nbsp;YouTube <div
+                class="nav-youtube bg-white border">YouTube</div></span></a>
         </li>
+
         <li class="nav-item">
-          <a class="nav-link" href="#"><i class="fa-brands fa-instagram"></i>&nbsp;instagram</a>
+          <a class="nav-link ms-3" href="#"><span class="nav-insta"> <i
+                class="fa-brands fa-instagram"></i>&nbsp;Instagram<div class="nav-instagram bg-white border">Instagram
+              </div></span></a>
         </li>
+
         <li class="nav-item">
-          <a class="nav-link" href="#"><i class="fab fa-twitter"></i>&nbsp;Twitter</a>
+          <a class="nav-link ms-3" href="#"><span class="nav-twit"> <i class="fab fa-twitter"></i>&nbsp;Twitter<div
+                class="nav-twitter bg-white border">Twitter</div></span></a>
         </li>
       </ul>
     </div>
+    <div class="ms-md-auto">
+      <div class="d-flex">
+        <div class="mt-1 me-3"><i class="fa-brands fa-searchengin"></i> Sign in</div>
+        <button class="btn nav-bar-button text-white" type="submit">Search</button>
+      </div>
+    </div>
   </div>
 </nav>
+
+<button class="btn btn-dark btn-floating btn-lg" id="btn-back-to-top">
+  <i class="fas fa-arrow-up"></i>
+</button>

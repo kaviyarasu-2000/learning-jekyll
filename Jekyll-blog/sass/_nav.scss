@@ -1,22 +1,126 @@
-.nav-link:hover{
-    color: #2b2eec !important;
+.nav-link {
+    font-weight: 500;
 }
-.nav-brand{
+
+.nav-link:hover {
+    color: #0a0a0a !important;
+}
+
+.nav-brand {
     height: 75px;
     width: 75px;
 }
-.nav-link{
-    color: $dark;
+
+
+.footer-head {
+    color: #ea4c89;
 }
- 
-.card-img-top{
-    height: 100px;
-    width: 100px;    
-   box-shadow: $shadow;
+
+.nav-bar-button {
+    background-color: #ea4c89;
+    width: 120px;
+    margin-top: 0px !important;
+    border-radius: 10px;
 }
-.home{
-    height: 400px;
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSl1wyibApd6XbdkJ--un1ody5HWtphngZeg&usqp=CAU);
-    background-repeat: no-repeat;
-    background-size: cover;
+
+.fa-light,
+.sub-nav {
+    cursor: pointer;
+}
+
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    border-radius: 50%;
+    display: none;
+}
+
+.nav-facebook,
+.nav-youtube,
+.nav-instagram,
+.nav-twitter,
+.nav-blog,
+.nav-tags,
+.nav-about
+ {
+    visibility: hidden;
+    z-index: 1;
+    position: absolute;
+}
+
+.sub-animation,
+.sub-alls,
+.sub-brands,
+.sub-illustration,
+.sub-designs {
+    visibility: hidden;
+    z-index: 1;
+    position: absolute;
+    padding: 10px;
+    box-shadow: 0px 22px 85px 5px #0000008f;
+}
+
+
+
+.nav-blg:hover .nav-blog {
+    visibility: visible;
+    left: 8%;
+}
+
+.nav-tag:hover .nav-tags {
+    visibility: visible;
+    left: 14%;
+}
+
+.nav-abt:hover .nav-about {
+    visibility: visible;
+    left: 19%;
+}
+
+.nav-fb:hover .nav-facebook {
+    visibility: visible;
+    left: 25%;
+}
+
+.nav-u-tube:hover .nav-youtube {
+    visibility: visible;
+    left: 33%;
+}
+
+.nav-insta:hover .nav-instagram {
+    visibility: visible;
+    left: 42%;
+}
+
+.nav-twit:hover .nav-twitter {
+    visibility: visible;
+    left: 51%;
+}
+
+.sub-animat:hover .sub-animation {
+    visibility: visible;
+    left: 20%;
+    top: 538px;
+}
+
+.sub-all:hover .sub-alls {
+    visibility: visible;
+    left: 5%;
+    top: 530px;
+}
+.sub-brand:hover .sub-brands {
+    visibility: visible;
+    left: 35%;
+    top: 540px;
+}
+.sub-illustrat:hover .sub-illustration {
+    visibility: visible;
+    left: 53%;
+    top: 540px;
+}
+.sub-design:hover .sub-designs {
+    visibility: visible;
+    left: 68%;
+    top: 538px;
 }

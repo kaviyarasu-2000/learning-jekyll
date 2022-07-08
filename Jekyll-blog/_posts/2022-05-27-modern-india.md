@@ -1,10 +1,12 @@
 ---
 layout: post
-title: Modern-india
+title: Modern India
 author: Madhav
 image: /assets/images/modern-india.jpg
 tags: India
-des: The history of modern constitutionalism has immortalized several events of much moment.
+num: 222
+view: 1.2K
+des: The history of modern constitutionalism has immortalized several events of much moment. It has, however, cast scant attention upon a great deal other episodes that merit greater engagement
 ---
 
 <img class="image" src="/assets/images/modern-india.jpg" alt="image">

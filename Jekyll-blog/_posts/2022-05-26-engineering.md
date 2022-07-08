@@ -4,6 +4,8 @@ title: Engineering
 author: Jaime
 image: /assets/images/engineering.jpg
 tags: Engineering
+num: 189
+view: 1.4k
 des: Engineering is surely a word most people have heard of before, but have you actually ever wondered what it means to be an engineer
 ---
 

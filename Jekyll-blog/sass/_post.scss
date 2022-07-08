@@ -1,42 +1,98 @@
-.post-url:hover {
-    color: #3d17e8 !important;
-}
-.nav-link{
-    font-weight: bold;
-}
-.image{
+.image {
     border-radius: 20px;
     box-shadow: $shadow;
     display: block;
     margin: auto;
     height: 350px;
-    width:450px;
+    width: 450px;
     margin-bottom: 40px;
 }
 
-.post-cards{
+.post-cards {
     width: 250px;
-    box-shadow: 0 0 5px #000;
+    border: 0px;
 }
-.post-cards:hover{
+
+.post-img:hover #hover-title {
+    visibility: visible;
     transform: scale(1.05);
+    background: linear-gradient(#FF00FF05, black);
+    height: 60px;
 }
-.card-body{
-    margin-top: -50px;
-    margin-bottom: 0px;
-    width: 220px; 
-    padding: 2px;
-    border-radius: 0px;
-    border-top-right-radius: 5px;
-    border-top-left-radius: 5px;
+
+#hover-title {
+    visibility: hidden;
+    z-index: 1;
+    position: absolute;
+    width: 95%;
+    margin: auto;
+    padding-left: 10px;
+    right: 0%;
+    left: 0%;
+    bottom: 52px;
+    border-radius: 10px;
 }
-.postDes{
-    padding: 20px;
-    font-weight: bold;
+
+.poster-img {
+    height: 200px;
+    width: 250px;
+    border-radius: 10px;
 }
-.btn-primary:hover{
+
+.fa-heart:hover,
+.ico:hover,
+.fa-solid:hover {
+    color: #ea4c89;
+}
+
+.fa-solid {
+    color: #000000;
+    padding: 7px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.icon, .fa-solid {
+    cursor: pointer;
+}
+
+.icon-heart,
+.icon-plus, .add-like {
+    visibility: hidden;
+    z-index: 1;
+    position: absolute;
+    padding: 1px;
+}
+
+.icon-like:hover .icon-heart {
+    visibility: visible;
+    right: 45px;
+    bottom: 15px;
+    padding: 3px;
+}
+
+.icon-file:hover .icon-plus {
+    visibility: visible;
+    left: 90%;
+    padding: 3px;
+    bottom: 18px;
+}
+.i:hover .add-like {
+    visibility: visible;
+    right:40px;
+    padding: 3px;
+}
+
+
+
+.footer-link {
+    opacity: 0.5;
+}
+
+.btn-primary:hover {
     background-color: #000000;
 }
-.btn-primary:active{
+
+.btn-primary:active {
     transform: translateY(4px);
 }

@@ -1,38 +1,80 @@
-.nav-link:hover { color: #2b2eec !important; }
+.nav-link { font-weight: 500; }
+
+.nav-link:hover { color: #0a0a0a !important; }
 
 .nav-brand { height: 75px; width: 75px; }
 
-.nav-link { color: #000; }
+.footer-head { color: #ea4c89; }
 
-.card-img-top { height: 100px; width: 100px; box-shadow: 5px 5px 5px #000; }
+.nav-bar-button { background-color: #ea4c89; width: 120px; margin-top: 0px !important; border-radius: 10px; }
 
-.home { height: 400px; background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQSl1wyibApd6XbdkJ--un1ody5HWtphngZeg&usqp=CAU); background-repeat: no-repeat; background-size: cover; }
+.fa-light, .sub-nav { cursor: pointer; }
 
-.random { box-shadow: 0 0 5px #000000; padding: 20px; }
+#btn-back-to-top { position: fixed; bottom: 20px; right: 20px; border-radius: 50%; display: none; }
 
-.random:hover { transform: scale(1.05); }
+.nav-facebook, .nav-youtube, .nav-instagram, .nav-twitter, .nav-blog, .nav-tags, .nav-about { visibility: hidden; z-index: 1; position: absolute; }
 
-.random-title { text-decoration: none; font-variant: small-caps; color: #000000 !important; }
+.sub-animation, .sub-alls, .sub-brands, .sub-illustration, .sub-designs { visibility: hidden; z-index: 1; position: absolute; padding: 10px; box-shadow: 0px 22px 85px 5px #0000008f; }
 
-.random-title:hover { color: #3d17e8 !important; }
+.nav-blg:hover .nav-blog { visibility: visible; left: 8%; }
 
-.random-image { box-shadow: 5px 5px 5px #000; border-radius: 10px; }
+.nav-tag:hover .nav-tags { visibility: visible; left: 14%; }
 
-.wallpaper { height: 350px; width: 300px; border-radius: 20px; box-shadow: 5px 5px 5px #000; }
+.nav-abt:hover .nav-about { visibility: visible; left: 19%; }
 
-.post-url:hover { color: #3d17e8 !important; }
+.nav-fb:hover .nav-facebook { visibility: visible; left: 25%; }
 
-.nav-link { font-weight: bold; }
+.nav-u-tube:hover .nav-youtube { visibility: visible; left: 33%; }
+
+.nav-insta:hover .nav-instagram { visibility: visible; left: 42%; }
+
+.nav-twit:hover .nav-twitter { visibility: visible; left: 51%; }
+
+.sub-animat:hover .sub-animation { visibility: visible; left: 20%; top: 538px; }
+
+.sub-all:hover .sub-alls { visibility: visible; left: 5%; top: 530px; }
+
+.sub-brand:hover .sub-brands { visibility: visible; left: 35%; top: 540px; }
+
+.sub-illustrat:hover .sub-illustration { visibility: visible; left: 53%; top: 540px; }
+
+.sub-design:hover .sub-designs { visibility: visible; left: 68%; top: 538px; }
+
+.random-title { text-decoration: none; color: #000; font-size: 75px; }
+
+.home { margin-top: 300px; }
+
+.random-image { border-radius: 10px; margin-right: 50px; width: 510px; height: 360px; }
+
+.postDes { padding: 20px; padding-left: 40px; }
+
+@media only screen and (max-width: 768px) { .random-image { width: 300px; height: 200px; } .random-title { font-size: 30px; } .nav-bar-button { margin-bottom: 20px !important; } #btn-back-to-top { visibility: hidden; } }
 
 .image { border-radius: 20px; box-shadow: 5px 5px 5px #000; display: block; margin: auto; height: 350px; width: 450px; margin-bottom: 40px; }
 
-.post-cards { width: 250px; box-shadow: 0 0 5px #000; }
+.post-cards { width: 250px; border: 0px; }
 
-.post-cards:hover { transform: scale(1.05); }
+.post-img:hover #hover-title { visibility: visible; transform: scale(1.05); background: linear-gradient(#FF00FF05, black); height: 60px; }
 
-.card-body { margin-top: -50px; margin-bottom: 0px; width: 220px; padding: 2px; border-radius: 0px; border-top-right-radius: 5px; border-top-left-radius: 5px; }
+#hover-title { visibility: hidden; z-index: 1; position: absolute; width: 95%; margin: auto; padding-left: 10px; right: 0%; left: 0%; bottom: 52px; border-radius: 10px; }
 
-.postDes { padding: 20px; font-weight: bold; }
+.poster-img { height: 200px; width: 250px; border-radius: 10px; }
+
+.fa-heart:hover, .ico:hover, .fa-solid:hover { color: #ea4c89; }
+
+.fa-solid { color: #000000; padding: 7px; background-color: #fff; border-radius: 5px; }
+
+.icon, .fa-solid { cursor: pointer; }
+
+.icon-heart, .icon-plus, .add-like { visibility: hidden; z-index: 1; position: absolute; padding: 1px; }
+
+.icon-like:hover .icon-heart { visibility: visible; right: 45px; bottom: 15px; padding: 3px; }
+
+.icon-file:hover .icon-plus { visibility: visible; left: 90%; padding: 3px; bottom: 18px; }
+
+.i:hover .add-like { visibility: visible; right: 40px; padding: 3px; }
+
+.footer-link { opacity: 0.5; }
 
 .btn-primary:hover { background-color: #000000; }
 

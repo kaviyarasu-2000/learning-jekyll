@@ -4,7 +4,9 @@ title: Cybercrime
 author: Fedotov
 image: /assets/images/cyber-crime.jpg
 tags: cyber
-des: Cyber. It is the inevitable prefix that currently defines our world. From people's privacy to inter-state relations
+num: 300
+view: 1.7k
+des: Cyber. It is the inevitable prefix that currently defines our world. From people's privacy to inter-state relations the term cyber dominates the headlines and discussions.
 ---
 
 
