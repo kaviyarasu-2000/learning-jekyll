@@ -1,0 +1,74 @@
+.nav-bar-button{
+    background-color: #388E3C;
+    border-radius: 26px;
+    padding: 8px 25px;
+    
+}
+.nav-heading{
+    font-size:42px;
+}
+.nav-link{
+    margin-left: 10px;
+    color:#000 !important;
+}
+.content {
+  color: #82858A;
+  }
+
+.home-btn{
+    width: 200px;
+    border-radius: 10px;
+}
+.content-img{
+  height: 400px;
+  width: 700px;
+  padding:0px 30px;
+}
+.transform{
+ background: linear-gradient(to right, #8BC34A,  #388E3C);
+  /* background-image: url(images/transform-img.png); */
+  height: 300px;
+ transform: skewY(357deg);
+}
+.transform p {
+  transform: rotate(-356deg);
+}
+.transform h1 {
+  transform: rotate(-356deg);
+}
+.dark-images{
+padding-bottom: 40px;
+    background: #000;
+    background-image: url(images/val.png);
+    height: 400px;
+        transform: skewY(357deg);
+}
+.dark-images h1{
+    padding-top: 100px;
+       transform: skewY(-357deg); 
+}
+.dark-images p, .trans-btn{
+       transform: skewY(-357deg);
+    
+}
+.client-img{
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  margin: auto;
+}
+.client-name{
+  color: #388E3C;
+}
+.carousel-indicators button ,.carousels-indicators button {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50% !important;
+  border: 1px solid #000 !important;   
+  position: relative;
+  left: -20px;
+}
+.carousel-indicators .active , .carousel-indicators .active {
+  background-color: green!important; 
+  border-color: green!important;
+}
