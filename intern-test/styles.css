@@ -1,74 +1,173 @@
-.nav-bar-button{
-    background-color: #388E3C;
-    border-radius: 26px;
-    padding: 8px 25px;
-    
+.nav-bar-button {
+  background-color: #388E3C;
+  border-radius: 26px;
+  padding: 8px 25px;
+
 }
-.nav-heading{
-    font-size:42px;
+
+.nav-heading {
+  font-size: 42px;
 }
-.nav-link{
-    margin-left: 10px;
-    color:#000 !important;
+
+.nav-link {
+  margin-left: 10px;
+  color: #000 !important;
 }
+
 .content {
   color: #82858A;
-  }
+}
 
-.home-btn{
-    width: 200px;
-    border-radius: 10px;
+.home {
+  height: 500px;
 }
-.content-img{
+
+.home-content-img {
   height: 400px;
-  width: 700px;
-  padding:0px 30px;
+  width: 250px;
 }
-.transform{
- background: linear-gradient(to right, #8BC34A,  #388E3C);
-  /* background-image: url(images/transform-img.png); */
-  height: 300px;
- transform: skewY(357deg);
+
+.home-btn {
+  padding-right: 80px;
+  border-radius: 10px;
 }
+
+.content-img {
+  width: 600px;
+}
+
+.transform {
+  background-image: url(images/transform-img.png), linear-gradient(to right, #8BC34A, #388E3C);
+  background-repeat: no-repeat;
+  background-position: right;
+  transform: skewY(356deg);
+  padding: 40px;
+}
+
 .transform p {
   transform: rotate(-356deg);
 }
+
 .transform h1 {
   transform: rotate(-356deg);
 }
-.dark-images{
-padding-bottom: 40px;
-    background: #000;
-    background-image: url(images/val.png);
-    height: 400px;
-        transform: skewY(357deg);
+
+.dark-images {
+  padding-bottom: 40px;
+  background: url(images/val.png), #000;
+  height: 400px;
+  background-position: top;
+  transform: skewY(356deg);
 }
-.dark-images h1{
-    padding-top: 100px;
-       transform: skewY(-357deg); 
+
+.card-transform {
+  transform: rotate(-5deg);
 }
-.dark-images p, .trans-btn{
-       transform: skewY(-357deg);
-    
+
+.card-content {
+  transform: rotate(5deg);
 }
-.client-img{
+
+.dark-images h1 {
+  padding-top: 100px;
+  transform: skewY(-356deg);
+}
+
+.dark-images p,
+.trans-btn {
+  transform: skewY(-356deg);
+
+}
+
+
+.card-hover-img-1 {
+  margin-top: -10px;
+  height: 300px;
+  width: 150px;
+}
+
+.card-hover-img-2 {
+
+  height: 300px;
+  width: 150px;
+  margin-top: -10px;
+}
+
+.client-img {
   height: 100px;
   width: 100px;
   border-radius: 50%;
   margin: auto;
 }
-.client-name{
+
+.client-name {
   color: #388E3C;
 }
-.carousel-indicators button ,.carousels-indicators button {
+
+.card {
+  margin: 25px;
+}
+
+.carousel-indicators {
+  position: relative;
+  top: 700px;
+}
+
+.carousel-indicators button {
   width: 10px !important;
   height: 10px !important;
   border-radius: 50% !important;
-  border: 1px solid #000 !important;   
-  position: relative;
-  left: -20px;
+  border: 1px !important;
+  background-color: #82858A !important;
+
 }
-.carousel-indicators .active , .carousel-indicators .active {
-  background-color: green!important; 
-  border-color: green!important;
+
+.carousel-indicators .active {
+  background-color: #388E3C !important;
+  border-color: #388E3C !important;
+  padding: 1px;
+}
+
+.footer-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.footer-container:after {
+  width: 100%;
+  content: "";
+  display: block;
+  height: 100%;
+  position: absolute;
+  top: 10%;
+  transform: skewY(-4deg);
+  background-color: rgba(248, 248, 248, 1);
+  z-index: 2;
+}
+
+.footer-content {
+  position: relative;
+  z-index: 3;
+  padding: 100px 100px 20px 100px;
+
+}
+
+@media only screen and (max-width:320px) {
+  .content-img {
+    height: 410px;
+    width: 300px;
+    padding: 0px;
+  }
+
+  .home-btn {
+    margin-left: 0px !important;
+  }
+
+  .carousel-indicators {
+    position: relative;
+    top: 1355px;
+  }
+
 }
