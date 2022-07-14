@@ -1,8 +1,16 @@
+.container-fluid {
+  overflow: hidden;
+}
+
 .nav-bar-button {
   background-color: #388E3C;
   border-radius: 26px;
   padding: 8px 25px;
+  width: fit-content;
+}
 
+.navbar-toggler {
+  width: fit-content;
 }
 
 .nav-heading {
@@ -22,17 +30,17 @@
 }
 
 .home-content-img {
-  height: 400px;
-  width: 250px;
+  height: 450px;
 }
 
 .home-btn {
   padding-right: 80px;
-  border-radius: 10px;
+  border-radius: 26px;
+  margin-top: 2px;
 }
 
 .content-img {
-  width: 600px;
+  width: 530px;
 }
 
 .transform {
@@ -41,6 +49,7 @@
   background-position: right;
   transform: skewY(-4deg);
   padding: 100px;
+  overflow: hidden;
 }
 
 .transform p {
@@ -58,6 +67,7 @@
   background-position: center;
   background-repeat: no-repeat;
   transform: skewY(-4deg);
+  overflow: hidden;
 }
 
 .dark-images h1 {
@@ -93,7 +103,7 @@
 
 .carousel-indicators {
   position: relative;
-  top: 700px;
+  top: 770px;
 }
 
 .carousel-indicators button {
@@ -133,24 +143,48 @@
 .footer-content {
   position: relative;
   z-index: 3;
-  padding: 100px 100px 20px 100px;
+  padding: 100px 100px 50px 100px;
 
 }
 
 @media only screen and (max-width:320px) {
   .content-img {
-    height: 410px;
-    width: 300px;
-    padding: 0px;
+    width: 100%;
   }
 
-  .home-btn {
-    margin-left: 0px !important;
+  .transform {
+    padding: 20px;
+    margin-bottom: -13px;
   }
 
   .carousel-indicators {
     position: relative;
     top: 1410px;
+  }
+
+}
+
+@media only screen and (min-width:375px) and (max-width:575px) {
+  .content-img {
+    width: 100%;
+  }
+
+  .transform {
+    padding: 20px;
+    margin-bottom: -30px;
+  }
+
+  .carousel-indicators {
+    position: relative;
+    top: 1300px;
+  }
+
+}
+
+@media only screen and (min-width:576px) and (max-width:768px) {
+
+  .content-img {
+    width: 100%;
   }
 
 }
