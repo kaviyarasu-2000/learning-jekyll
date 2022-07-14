@@ -10,7 +10,6 @@
 }
 
 .nav-link {
-  margin-left: 10px;
   color: #000 !important;
 }
 
@@ -40,73 +39,57 @@
   background-image: url(images/transform-img.png), linear-gradient(to right, #8BC34A, #388E3C);
   background-repeat: no-repeat;
   background-position: right;
-  transform: skewY(356deg);
-  padding: 40px;
+  transform: skewY(-4deg);
+  padding: 100px;
 }
 
 .transform p {
-  transform: rotate(-356deg);
+  transform: rotate(4deg);
 }
 
 .transform h1 {
-  transform: rotate(-356deg);
+  transform: rotate(4deg);
 }
 
 .dark-images {
   padding-bottom: 40px;
-  background: url(images/val.png), #000;
+  background: url(images/banner-bg.png), #000;
   height: 400px;
-  background-position: top;
-  transform: skewY(356deg);
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: skewY(-4deg);
+}
+
+.dark-images h1 {
+  padding-top: 100px;
+  transform: skewY(4deg);
+}
+
+.dark-images p,
+.trans-btn {
+  transform: skewY(4deg);
+
 }
 
 .card-transform {
   transform: rotate(-5deg);
+  margin: 25px;
 }
 
 .card-content {
   transform: rotate(5deg);
 }
 
-.dark-images h1 {
-  padding-top: 100px;
-  transform: skewY(-356deg);
-}
-
-.dark-images p,
-.trans-btn {
-  transform: skewY(-356deg);
-
-}
-
-
-.card-hover-img-1 {
+.card-hover-img {
   margin-top: -10px;
   height: 300px;
   width: 150px;
-}
-
-.card-hover-img-2 {
-
-  height: 300px;
-  width: 150px;
-  margin-top: -10px;
-}
-
-.client-img {
-  height: 100px;
-  width: 100px;
-  border-radius: 50%;
-  margin: auto;
 }
 
 .client-name {
   color: #388E3C;
 }
 
-.card {
-  margin: 25px;
-}
 
 .carousel-indicators {
   position: relative;
@@ -143,7 +126,7 @@
   position: absolute;
   top: 10%;
   transform: skewY(-4deg);
-  background-color: rgba(248, 248, 248, 1);
+  background-color: #f8f8f8;
   z-index: 2;
 }
 
@@ -167,7 +150,7 @@
 
   .carousel-indicators {
     position: relative;
-    top: 1355px;
+    top: 1410px;
   }
 
 }
