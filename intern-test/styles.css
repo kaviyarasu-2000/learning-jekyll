@@ -35,6 +35,7 @@
 
 .home-btn {
   padding-right: 80px;
+  padding-left: 20px;
   border-radius: 26px;
   margin-top: 2px;
 }
@@ -44,12 +45,17 @@
 }
 
 .transform {
-  background-image: url(images/transform-img.png), linear-gradient(to right, #8BC34A, #388E3C);
-  background-repeat: no-repeat;
-  background-position: right;
+  background-image: linear-gradient(to right, #8BC34A, #388E3C);
   transform: skewY(-4deg);
   padding: 100px;
   overflow: hidden;
+}
+
+.banner {
+  background-image: url(images/transform-img.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 350px 400px;
 }
 
 .transform p {
@@ -62,12 +68,15 @@
 
 .dark-images {
   padding-bottom: 40px;
-  background: url(images/banner-bg.png), #000;
+  background: #000;
   height: 400px;
+  transform: skewY(-4deg);
+}
+
+.dark-bg {
+  background: url(images/dark-bg.png);
   background-position: center;
   background-repeat: no-repeat;
-  transform: skewY(-4deg);
-  overflow: hidden;
 }
 
 .dark-images h1 {
@@ -82,12 +91,12 @@
 }
 
 .card-transform {
-  transform: rotate(-5deg);
+  transform: skewY(-6deg);
   margin: 25px;
 }
 
 .card-content {
-  transform: rotate(5deg);
+  transform: skewY(6deg);
 }
 
 .card-hover-img {
@@ -167,16 +176,18 @@
 @media only screen and (min-width:375px) and (max-width:575px) {
   .content-img {
     width: 100%;
+    margin-bottom: -30px;
   }
 
   .transform {
     padding: 20px;
     margin-bottom: -30px;
+
   }
 
   .carousel-indicators {
     position: relative;
-    top: 1300px;
+    top: 1330px;
   }
 
 }
@@ -185,6 +196,7 @@
 
   .content-img {
     width: 100%;
+    margin-top: -30px;
   }
 
 }
