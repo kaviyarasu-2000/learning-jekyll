@@ -1,0 +1,45 @@
+.col-img {
+    background-image: url("images/Rectangle 5303.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.left-side {
+    background-color: white;
+    line-height: 1;
+}
+
+.left-side > b {
+    padding: 20px;
+}
+
+.left-side > p {
+    padding-top: 10px;
+    font-size: 11px;
+}
+.right-side{
+    max-width: 405px;
+}
+.float {
+    float: right;
+}
+
+.col-right {
+    line-height: 2;
+}
+
+.log-in {
+    background: #39C8AF;
+    text-decoration: none;
+    padding: 20px 75px;
+
+    box-shadow: 2px 27px 20px rgba(0, 0, 0, 0.11);
+    border-radius: 60px;
+}
+
+input {
+    border-Radius: 40px;
+    Padding: 3px 50px 3px 25px;
+}
